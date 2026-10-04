@@ -10,10 +10,21 @@ The final v9.1 evidence merge passed all core science gates. The short FCS *Code
 
 See [`RESULTS_SUMMARY.md`](RESULTS_SUMMARY.md) and [`results/final/FINAL_EVIDENCE_TABLE.csv`](results/final/FINAL_EVIDENCE_TABLE.csv).
 
+## Quick start
+
+A minimal runnable example is available at [`examples/quickstart.py`](examples/quickstart.py). From the repository root:
+
+```bash
+python examples/quickstart.py
+```
+
+The example loads the frozen v3 verifier, constructs an `Artifact`, `Step`, and `Intent`, and demonstrates why bilinear interpolation of nominal land-cover classes is returned as **REFUTED** with evidence and a repair suggestion.
+
 ## Start here
 
+- `examples/quickstart.py` — minimal executable verifier example.
 - `notebooks/history/v3_controlled_benchmark.ipynb` — frozen controlled scientific-invariant benchmark.
-- `notebooks/core/v6_strong_decomposed_llm_baselines.ipynb` — Qwen/Mistral 7B baseline evaluation.
+- `notebooks/core/v6_strong_decomposed_llm_baselines.ipynb` — Qwen/Mistral 7B baseline evaluation on the blinded baseline set.
 - `notebooks/core/v8_multiregion_realworld_replication.ipynb` — live Sentinel/WorldCover/IMERG/CopDEM replication.
 - `notebooks/core/v8_1_robustness_corrections.ipynb` — corrected IMERG/CopDEM methodology.
 - `notebooks/core/v8_2_imerg_recovery.ipynb` — resilient four-region rainy IMERG recovery.
@@ -22,6 +33,7 @@ See [`RESULTS_SUMMARY.md`](RESULTS_SUMMARY.md) and [`results/final/FINAL_EVIDENC
 ## Repository layout
 
 ```text
+examples/       minimal runnable usage example
 notebooks/
   core/          main scientific experiments
   final/         closure/merge notebooks
@@ -37,7 +49,7 @@ requirements/    reproducibility environments
 
 ## Evidence boundaries
 
-1. v3 labels are a **controlled generated reference**, not independent human ground truth.
+1. v3 labels are a **controlled generated reference**, not independent human ground truth or an independent performance estimate.
 2. Qwen/Mistral outputs are baselines, not scientific adjudication.
 3. Live-data counterfactual labels encode explicit scientific rules; they are not human annotations.
 4. v7 reviewer forms are pending. No human accuracy or Cohen's kappa is claimed.
