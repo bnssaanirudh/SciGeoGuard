@@ -1,0 +1,31 @@
+SciGeoGuard-X Human Validation — Reviewer Instructions
+======================================================
+
+Work independently.
+
+For each case choose exactly one verdict:
+
+PROVEN
+The supplied evidence is sufficient for the declared scientific workflow and no scientific contradiction is present.
+
+REFUTED
+At least one actual scientific operation, transformation, physical assumption, geospatial relation,
+temporal relation, or evaluation design contradicts the declared scientific goal.
+
+UNPROVEN
+No definite contradiction is established, but evidence genuinely required by the workflow is missing.
+
+IMPORTANT NULL SEMANTICS
+Optional intent fields set to null mean that no additional constraint of that kind was declared.
+Do not label a case UNPROVEN merely because an optional intent field is null.
+
+Fill:
+- reviewer_verdict
+- primary_error_class
+- severity: LOW / MEDIUM / HIGH / CRITICAL
+- confidence_1_to_5
+- reason
+- reviewer_id
+
+Do not discuss answers with the other reviewer until both files are submitted.
+Do not attempt to infer the software system's expected answer.

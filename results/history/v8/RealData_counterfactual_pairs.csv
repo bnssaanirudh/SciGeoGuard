@@ -1,0 +1,54 @@
+region,source,replicate,real_data_mode,operation,variant,rule_label,measured_effect_name,measured_effect_value
+Bengaluru_India,Sentinel-2 L2A,2024-01-01/2024-03-31,live,NDVI with B08 NIR and B04 red,scientifically_valid,PROVEN,mean_absolute_index_difference_vs_wrong_variant,0.06949712336063385
+Bengaluru_India,Sentinel-2 L2A,2024-01-01/2024-03-31,live,Substitute B11 SWIR for B08 NIR but treat result as NDVI,scientifically_invalid,REFUTED,sign_flip_fraction,0.012434248481352021
+Bengaluru_India,Sentinel-2 L2A,2024-08-01/2024-10-31,live,NDVI with B08 NIR and B04 red,scientifically_valid,PROVEN,mean_absolute_index_difference_vs_wrong_variant,0.07691025733947754
+Bengaluru_India,Sentinel-2 L2A,2024-08-01/2024-10-31,live,Substitute B11 SWIR for B08 NIR but treat result as NDVI,scientifically_invalid,REFUTED,sign_flip_fraction,0.06318436794932832
+Rotterdam_Netherlands,Sentinel-2 L2A,2024-04-01/2024-06-30,live,NDVI with B08 NIR and B04 red,scientifically_valid,PROVEN,mean_absolute_index_difference_vs_wrong_variant,0.11013363301753998
+Rotterdam_Netherlands,Sentinel-2 L2A,2024-04-01/2024-06-30,live,Substitute B11 SWIR for B08 NIR but treat result as NDVI,scientifically_invalid,REFUTED,sign_flip_fraction,0.024763179167614998
+Rotterdam_Netherlands,Sentinel-2 L2A,2024-09-01/2024-11-30,live,NDVI with B08 NIR and B04 red,scientifically_valid,PROVEN,mean_absolute_index_difference_vs_wrong_variant,0.09155269712209702
+Rotterdam_Netherlands,Sentinel-2 L2A,2024-09-01/2024-11-30,live,Substitute B11 SWIR for B08 NIR but treat result as NDVI,scientifically_invalid,REFUTED,sign_flip_fraction,0.027362007784777476
+CentralValley_USA,Sentinel-2 L2A,2024-03-01/2024-05-31,live,NDVI with B08 NIR and B04 red,scientifically_valid,PROVEN,mean_absolute_index_difference_vs_wrong_variant,0.1344529390335083
+CentralValley_USA,Sentinel-2 L2A,2024-03-01/2024-05-31,live,Substitute B11 SWIR for B08 NIR but treat result as NDVI,scientifically_invalid,REFUTED,sign_flip_fraction,0.008177493051957228
+CentralValley_USA,Sentinel-2 L2A,2024-08-01/2024-10-31,live,NDVI with B08 NIR and B04 red,scientifically_valid,PROVEN,mean_absolute_index_difference_vs_wrong_variant,0.11399924755096436
+CentralValley_USA,Sentinel-2 L2A,2024-08-01/2024-10-31,live,Substitute B11 SWIR for B08 NIR but treat result as NDVI,scientifically_invalid,REFUTED,sign_flip_fraction,0.007780768904567001
+Manaus_Brazil,Sentinel-2 L2A,2024-01-01/2024-03-31,live,NDVI with B08 NIR and B04 red,scientifically_valid,PROVEN,mean_absolute_index_difference_vs_wrong_variant,0.09757714718580246
+Manaus_Brazil,Sentinel-2 L2A,2024-01-01/2024-03-31,live,Substitute B11 SWIR for B08 NIR but treat result as NDVI,scientifically_invalid,REFUTED,sign_flip_fraction,0.18406817782821203
+Manaus_Brazil,Sentinel-2 L2A,2024-07-01/2024-09-30,live,NDVI with B08 NIR and B04 red,scientifically_valid,PROVEN,mean_absolute_index_difference_vs_wrong_variant,0.09153701364994049
+Manaus_Brazil,Sentinel-2 L2A,2024-07-01/2024-09-30,live,Substitute B11 SWIR for B08 NIR but treat result as NDVI,scientifically_invalid,REFUTED,sign_flip_fraction,0.056067648470457476
+Bengaluru_India,ESA WorldCover,static_2021_product,live,Nearest-neighbour categorical resampling,scientifically_valid,PROVEN,valid_class_fraction,1.0
+Bengaluru_India,ESA WorldCover,static_2021_product,live,Bilinear interpolation of nominal land-cover classes,scientifically_invalid,REFUTED,invalid_class_fraction,0.14598958333333334
+Rotterdam_Netherlands,ESA WorldCover,static_2021_product,live,Nearest-neighbour categorical resampling,scientifically_valid,PROVEN,valid_class_fraction,1.0
+Rotterdam_Netherlands,ESA WorldCover,static_2021_product,live,Bilinear interpolation of nominal land-cover classes,scientifically_invalid,REFUTED,invalid_class_fraction,0.190625
+CentralValley_USA,ESA WorldCover,static_2021_product,live,Nearest-neighbour categorical resampling,scientifically_valid,PROVEN,valid_class_fraction,1.0
+CentralValley_USA,ESA WorldCover,static_2021_product,live,Bilinear interpolation of nominal land-cover classes,scientifically_invalid,REFUTED,invalid_class_fraction,0.11390625
+Manaus_Brazil,ESA WorldCover,static_2021_product,live,Nearest-neighbour categorical resampling,scientifically_valid,PROVEN,valid_class_fraction,1.0
+Manaus_Brazil,ESA WorldCover,static_2021_product,live,Bilinear interpolation of nominal land-cover classes,scientifically_invalid,REFUTED,invalid_class_fraction,0.07486328125
+Bengaluru_India,GPM IMERG V07,2024-05-20,live,Integrate precipitation rate × 0.5 h,scientifically_valid,PROVEN,mean_daily_accumulation_mm,10.21157455015625
+Bengaluru_India,GPM IMERG V07,2024-05-20,live,Sum MM/Hr samples without multiplying by duration and label result mm,scientifically_invalid,REFUTED,numeric_overstatement_factor,2.0
+Bengaluru_India,GPM IMERG V07,2024-05-20,live,Mean MM/Hr samples and label numeric result daily accumulation mm,scientifically_invalid,REFUTED,fraction_of_true_accumulation,0.10263157894736841
+Rotterdam_Netherlands,GPM IMERG V07,2024-02-22,live,Integrate precipitation rate × 0.5 h,scientifically_valid,PROVEN,mean_daily_accumulation_mm,9.312998999374999
+Rotterdam_Netherlands,GPM IMERG V07,2024-02-22,live,Sum MM/Hr samples without multiplying by duration and label result mm,scientifically_invalid,REFUTED,numeric_overstatement_factor,2.0
+Rotterdam_Netherlands,GPM IMERG V07,2024-02-22,live,Mean MM/Hr samples and label numeric result daily accumulation mm,scientifically_invalid,REFUTED,fraction_of_true_accumulation,0.15384615384615385
+Rotterdam_Netherlands,GPM IMERG V07,2024-10-15,live,Integrate precipitation rate × 0.5 h,scientifically_valid,PROVEN,mean_daily_accumulation_mm,0.4289454420789474
+Rotterdam_Netherlands,GPM IMERG V07,2024-10-15,live,Sum MM/Hr samples without multiplying by duration and label result mm,scientifically_invalid,REFUTED,numeric_overstatement_factor,2.0
+Rotterdam_Netherlands,GPM IMERG V07,2024-10-15,live,Mean MM/Hr samples and label numeric result daily accumulation mm,scientifically_invalid,REFUTED,fraction_of_true_accumulation,0.6666666666666667
+CentralValley_USA,GPM IMERG V07,2024-02-05,live,Integrate precipitation rate × 0.5 h,scientifically_valid,PROVEN,mean_daily_accumulation_mm,0.9482160326785714
+CentralValley_USA,GPM IMERG V07,2024-02-05,live,Sum MM/Hr samples without multiplying by duration and label result mm,scientifically_invalid,REFUTED,numeric_overstatement_factor,2.0
+CentralValley_USA,GPM IMERG V07,2024-02-05,live,Mean MM/Hr samples and label numeric result daily accumulation mm,scientifically_invalid,REFUTED,fraction_of_true_accumulation,0.4
+CentralValley_USA,GPM IMERG V07,2024-11-20,live,Integrate precipitation rate × 0.5 h,scientifically_valid,PROVEN,mean_daily_accumulation_mm,18.0497055375
+CentralValley_USA,GPM IMERG V07,2024-11-20,live,Sum MM/Hr samples without multiplying by duration and label result mm,scientifically_invalid,REFUTED,numeric_overstatement_factor,2.0
+CentralValley_USA,GPM IMERG V07,2024-11-20,live,Mean MM/Hr samples and label numeric result daily accumulation mm,scientifically_invalid,REFUTED,fraction_of_true_accumulation,0.0606060606060606
+Manaus_Brazil,GPM IMERG V07,2024-03-15,live,Integrate precipitation rate × 0.5 h,scientifically_valid,PROVEN,mean_daily_accumulation_mm,11.853244039200003
+Manaus_Brazil,GPM IMERG V07,2024-03-15,live,Sum MM/Hr samples without multiplying by duration and label result mm,scientifically_invalid,REFUTED,numeric_overstatement_factor,2.0
+Manaus_Brazil,GPM IMERG V07,2024-03-15,live,Mean MM/Hr samples and label numeric result daily accumulation mm,scientifically_invalid,REFUTED,fraction_of_true_accumulation,0.10555555555555556
+Manaus_Brazil,GPM IMERG V07,2024-08-18,live,Integrate precipitation rate × 0.5 h,scientifically_valid,PROVEN,mean_daily_accumulation_mm,0.21749877750000002
+Manaus_Brazil,GPM IMERG V07,2024-08-18,live,Sum MM/Hr samples without multiplying by duration and label result mm,scientifically_invalid,REFUTED,numeric_overstatement_factor,2.0
+Manaus_Brazil,GPM IMERG V07,2024-08-18,live,Mean MM/Hr samples and label numeric result daily accumulation mm,scientifically_invalid,REFUTED,fraction_of_true_accumulation,2.0
+Bengaluru_India,Copernicus DEM GLO-30,static_DSM,live,Interpolate DSM to 10 m grid while retaining ~30 m source provenance,scientifically_valid,PROVEN,pixel_count_inflation_factor,9.0
+Bengaluru_India,Copernicus DEM GLO-30,static_DSM,live,Interpolate ~30 m DSM to 10 m and claim native 10 m information,scientifically_invalid,REFUTED,derived_pixel_fraction_without_distinct_source_sample,0.8888888888888888
+Rotterdam_Netherlands,Copernicus DEM GLO-30,static_DSM,live,Interpolate DSM to 10 m grid while retaining ~30 m source provenance,scientifically_valid,PROVEN,pixel_count_inflation_factor,9.0
+Rotterdam_Netherlands,Copernicus DEM GLO-30,static_DSM,live,Interpolate ~30 m DSM to 10 m and claim native 10 m information,scientifically_invalid,REFUTED,derived_pixel_fraction_without_distinct_source_sample,0.8888888888888888
+CentralValley_USA,Copernicus DEM GLO-30,static_DSM,live,Interpolate DSM to 10 m grid while retaining ~30 m source provenance,scientifically_valid,PROVEN,pixel_count_inflation_factor,9.0
+CentralValley_USA,Copernicus DEM GLO-30,static_DSM,live,Interpolate ~30 m DSM to 10 m and claim native 10 m information,scientifically_invalid,REFUTED,derived_pixel_fraction_without_distinct_source_sample,0.8888888888888888
+Manaus_Brazil,Copernicus DEM GLO-30,static_DSM,live,Interpolate DSM to 10 m grid while retaining ~30 m source provenance,scientifically_valid,PROVEN,pixel_count_inflation_factor,9.0
+Manaus_Brazil,Copernicus DEM GLO-30,static_DSM,live,Interpolate ~30 m DSM to 10 m and claim native 10 m information,scientifically_invalid,REFUTED,derived_pixel_fraction_without_distinct_source_sample,0.8888888888888888

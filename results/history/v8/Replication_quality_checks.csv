@@ -1,0 +1,5 @@
+check,passed
+no_synthetic_results_when_live,True
+counterfactual_labels_are_only_proven_or_refuted,True
+source_registry_written,True
+failed_live_requests_not_relabelled_success,True

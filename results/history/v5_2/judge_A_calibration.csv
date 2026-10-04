@@ -1,0 +1,64 @@
+cal_id,truth,judge,model_id,load_mode,verdict,error_class,severity,confidence,reason,raw_output
+CAL_P_01,PROVEN,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,PROVEN,NONE,LOW,5,"The resampling operation uses nearest neighbour interpolation, which preserves categorical identity without requiring additional constraints.","{
+  ""verdict"": ""PROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The resampling operation uses nearest neighbour interpolation, which preserves categorical identity without requiring additional constraints.""
+}"
+CAL_P_02,PROVEN,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires a unit for the declared quantity 'accumulation', which is missing.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires a unit for the declared quantity 'accumulation', which is missing.""
+}"
+CAL_P_03,PROVEN,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,PROVEN,NONE,LOW,5,"The vertical datums are the same, allowing the combination of elevation and water level.","{
+  ""verdict"": ""PROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The vertical datums are the same, allowing the combination of elevation and water level.""
+}"
+CAL_R_01,REFUTED,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"Required unit is not provided, which is necessary for the resampling operation.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""Required unit is not provided, which is necessary for the resampling operation.""
+}"
+CAL_R_02,REFUTED,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,PROVEN,NONE,LOW,5,Temporal aggregation of precipitation rate with a sample duration of 0.5 hours results in an accumulation of rainfall.,"{
+  ""verdict"": ""PROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""Temporal aggregation of precipitation rate with a sample duration of 0.5 hours results in an accumulation of rainfall.""
+}"
+CAL_R_03,REFUTED,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires elevation data to calculate the flood area, which is not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires elevation data to calculate the flood area, which is not provided in the artifacts.""
+}"
+CAL_U_01,UNPROVEN,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,vertical_datum,HIGH,5,"The vertical datum of 'water_level' is not provided, which is required for the combine_vertical operation.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""vertical_datum"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 5,
+  ""reason"": ""The vertical datum of 'water_level' is not provided, which is required for the combine_vertical operation.""
+}"
+CAL_U_02,UNPROVEN,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,provenance,MEDIUM,5,"Source provenance is missing, which is necessary for certifying the input.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""provenance"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 5,
+  ""reason"": ""Source provenance is missing, which is necessary for certifying the input.""
+}"
+CAL_U_03,UNPROVEN,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,optional_intent_null,MEDIUM,5,"The available_time and acquisition_time are null, which are required for the forecast to be made at the specified decision_time.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""optional_intent_null"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 5,
+  ""reason"": ""The available_time and acquisition_time are null, which are required for the forecast to be made at the specified decision_time.""
+}"

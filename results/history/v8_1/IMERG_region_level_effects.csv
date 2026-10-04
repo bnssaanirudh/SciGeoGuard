@@ -1,0 +1,4 @@
+region,raw_sum_factor,mean_as_accum_fraction,zero_reconstructed_fraction
+Bengaluru_India,,,1.0
+Manaus_Brazil,2.0,0.04166666666666667,0.8020833333333333
+Rotterdam_Netherlands,,,1.0

@@ -1,0 +1,49 @@
+{
+  "name": "SciGeoGuard-X Robustness Corrections v8.1",
+  "created_utc": "2026-10-03T06:24:04.334167+00:00",
+  "live_data": true,
+  "source_v8_preserved": {
+    "Sentinel2_multiregion_results": "embedded from user's completed live v8 run",
+    "WorldCover_multiregion_results": "embedded from user's completed live v8 run"
+  },
+  "corrections": {
+    "IMERG": {
+      "old_issue": "precipitation CSV row count was interpreted as temporal completeness",
+      "new_method": "verify 48 half-hour source time coordinates separately; reconstruct absent 0.0-serialized precipitation slots as zero rain; calculate full-day dimensional counterfactuals"
+    },
+    "CopDEM": {
+      "old_issue": "scipy.ndimage.zoom array-coordinate round trip produced edge/alignment artifacts",
+      "new_method": "rasterio.reproject with exact aligned affine source/fine/native transforms and core-area round-trip metrics"
+    }
+  },
+  "bootstrap": {
+    "unit": "geographic region",
+    "regions": 4,
+    "replicates": 10000,
+    "statistic": "median",
+    "interval": "percentile 95%"
+  },
+  "publication_ready": false,
+  "source_registry": {
+    "imerg_v07": {
+      "dataset_title": "GPM IMERG Final Precipitation L3 Half Hourly 0.1 degree x 0.1 degree V07 2024",
+      "dataset_id": "precipitation_2024_v07",
+      "erddap": "https://erddap.aoml.noaa.gov/hdb/erddap/griddap/precipitation_2024_v07",
+      "precipitation_units": "MM/Hr",
+      "time_interval_hours": 0.5,
+      "expected_intervals_per_day": 48,
+      "lat_grid_start": -89.95,
+      "lon_grid_start": -179.95,
+      "grid_step_degree": 0.1,
+      "important_serialization_note": "ERDDAP metadata declares precipitation missing_value/_FillValue as 0.0; zero-rain rows can therefore be absent from CSV output. Temporal completeness must be verified from the time coordinate, not row counts."
+    },
+    "copdem": {
+      "product": "Copernicus DEM GLO-30",
+      "base": "https://copernicus-dem-30m.s3.amazonaws.com",
+      "surface_model": "DSM",
+      "horizontal_crs": "EPSG:4326",
+      "vertical_datum": "EGM2008 / EPSG:3855",
+      "nominal_resolution_m": 30
+    }
+  }
+}

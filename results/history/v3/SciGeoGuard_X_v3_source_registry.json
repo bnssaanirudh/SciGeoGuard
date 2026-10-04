@@ -1,0 +1,32 @@
+{
+  "sentinel2": {
+    "provider": "Microsoft Planetary Computer",
+    "collection": "sentinel-2-l2a",
+    "stac": "https://planetarycomputer.microsoft.com/api/stac/v1",
+    "purpose": "surface-reflectance bands, cloud mask, mixed native resolutions"
+  },
+  "worldcover": {
+    "provider": "Microsoft Planetary Computer / ESA",
+    "collection": "esa-worldcover",
+    "stac": "https://planetarycomputer.microsoft.com/api/stac/v1",
+    "purpose": "nominal categorical raster and interpolation validity"
+  },
+  "copernicus_dem": {
+    "provider": "AWS Open Data / Copernicus",
+    "bucket": "https://copernicus-dem-30m.s3.amazonaws.com",
+    "product": "Copernicus DEM GLO-30",
+    "surface_model": "DSM",
+    "horizontal_crs": "EPSG:4326",
+    "vertical_datum": "EGM2008 / EPSG:3855",
+    "purpose": "terrain semantics, DSM-vs-DTM, vertical datum"
+  },
+  "imerg": {
+    "provider": "NOAA/AOML ERDDAP mirror of NASA GPM IMERG",
+    "dataset": "precipitation_2024_v07",
+    "base": "https://erddap.aoml.noaa.gov/hdb/erddap/griddap/precipitation_2024_v07",
+    "units": "MM/Hr",
+    "temporal_resolution": "30 minutes",
+    "spatial_resolution": "0.1 degree",
+    "purpose": "rate vs accumulation and temporal support"
+  }
+}

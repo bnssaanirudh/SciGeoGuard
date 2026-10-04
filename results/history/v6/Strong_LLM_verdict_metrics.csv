@@ -1,0 +1,4 @@
+system,accuracy_vs_generated_reference,macro_f1_vs_generated_reference,FSCR_vs_generated_reference,false_refutation_rate_vs_generated_reference,parse_or_verdict_coverage
+Strong_Qwen_7B,0.4444444444444444,0.2979496935108857,0.6964285714285714,0.28125,1.0
+Strong_Mistral_7B,0.38333333333333336,0.30311080978149413,0.6964285714285714,0.109375,1.0
+SciGeoGuard_X,1.0,1.0,0.0,0.0,1.0

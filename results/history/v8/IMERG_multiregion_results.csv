@@ -1,0 +1,9 @@
+region,date,mode,status,rows,grid_cells,mean_intervals_per_cell,mean_correct_daily_accum_mm,max_correct_daily_accum_mm,mean_wrong_raw_rate_sum_numeric,mean_wrong_rate_mean_numeric,median_raw_sum_overstatement_factor,median_mean_as_accum_fraction_of_true,precipitation_column,source_units,interval_hours,error
+Bengaluru_India,2024-05-20,live,SUCCESS,298.0,16.0,18.625,10.21157455015625,19.8150024,20.4231491003125,1.003931948951936,2.0,0.10263157894736841,precipitation,MM/Hr,0.5,
+Bengaluru_India,2024-09-15,live,FAILED,,,,,,,,,,,,,RuntimeError('IMERG query returned no numeric precipitation.')
+Rotterdam_Netherlands,2024-02-22,live,SUCCESS,278.0,20.0,13.9,9.312998999374999,15.8049928065,18.625997998749998,1.3603824693517501,2.0,0.15384615384615385,precipitation,MM/Hr,0.5,
+Rotterdam_Netherlands,2024-10-15,live,SUCCESS,54.0,19.0,2.8421052631578947,0.4289454420789474,0.920013435,0.8578908841578948,0.27658514752280705,2.0,0.6666666666666667,precipitation,MM/Hr,0.5,
+CentralValley_USA,2024-02-05,live,SUCCESS,85.0,14.0,6.071428571428571,0.9482160326785714,4.500091587,1.8964320653571427,0.24219476324928882,2.0,0.4,precipitation,MM/Hr,0.5,
+CentralValley_USA,2024-11-20,live,SUCCESS,537.0,16.0,33.5625,18.0497055375,27.659912378,36.099411075,1.0618831546908476,2.0,0.0606060606060606,precipitation,MM/Hr,0.5,
+Manaus_Brazil,2024-03-15,live,SUCCESS,381.0,20.0,19.05,11.853244039200003,24.445068453,23.706488078400007,1.185149168042471,2.0,0.10555555555555556,precipitation,MM/Hr,0.5,
+Manaus_Brazil,2024-08-18,live,SUCCESS,2.0,2.0,1.0,0.21749877750000002,0.244995115,0.43499755500000004,0.43499755500000004,2.0,2.0,precipitation,MM/Hr,0.5,

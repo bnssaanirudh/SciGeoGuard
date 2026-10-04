@@ -1,0 +1,5 @@
+source,replicates,successful,failed,success_fraction
+Sentinel-2,8,8,0,1.0
+WorldCover,4,4,0,1.0
+IMERG,8,7,1,0.875
+CopDEM,4,4,0,1.0

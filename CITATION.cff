@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use SciGeoGuard-X, please cite the associated software release and paper."
+title: "SciGeoGuard-X: Proof-Carrying Scientific Verification for Earth-Observation Workflows"
+type: software
+version: "1.0.0"
+date-released: 2026-10-04
+authors:
+  - family-names: "Badampudi"
+    given-names: "Agasthya Anirudh"
+license: Apache-2.0

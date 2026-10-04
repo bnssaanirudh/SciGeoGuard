@@ -1,0 +1,10 @@
+split,system,accuracy,FSCR,proof_coverage,valid_certification_rate
+dev,runtime,0.23958333333333334,1.0,1.0,1.0
+dev,metadata_baseline,0.23958333333333334,1.0,1.0,1.0
+dev,scigeoguard_x,1.0,0.0,1.0,1.0
+heldout,runtime,0.2777777777777778,1.0,1.0,1.0
+heldout,metadata_baseline,0.5069444444444444,1.0,0.7708333333333334,1.0
+heldout,scigeoguard_x,1.0,0.0,0.6388888888888888,1.0
+all,runtime,0.2523148148148148,1.0,1.0,1.0
+all,metadata_baseline,0.3287037037037037,1.0,0.9236111111111112,1.0
+all,scigeoguard_x,1.0,0.0,0.8796296296296297,1.0

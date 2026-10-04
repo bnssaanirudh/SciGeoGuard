@@ -1,0 +1,17 @@
+system_1,system_2,exact_agreement,cohens_kappa
+Strong_Qwen_7B,Strong_Qwen_7B,1.0,1.0
+Strong_Qwen_7B,Strong_Mistral_7B,0.6888888888888889,0.32530120481927716
+Strong_Qwen_7B,SciGeoGuard_X,0.4444444444444444,0.015748031496062898
+Strong_Qwen_7B,Generated_Reference,0.4444444444444444,0.015748031496062898
+Strong_Mistral_7B,Strong_Qwen_7B,0.6888888888888889,0.32530120481927716
+Strong_Mistral_7B,Strong_Mistral_7B,1.0,1.0
+Strong_Mistral_7B,SciGeoGuard_X,0.38333333333333336,0.055051078320090874
+Strong_Mistral_7B,Generated_Reference,0.38333333333333336,0.055051078320090874
+SciGeoGuard_X,Strong_Qwen_7B,0.4444444444444444,0.015748031496062898
+SciGeoGuard_X,Strong_Mistral_7B,0.38333333333333336,0.055051078320090874
+SciGeoGuard_X,SciGeoGuard_X,1.0,1.0
+SciGeoGuard_X,Generated_Reference,1.0,1.0
+Generated_Reference,Strong_Qwen_7B,0.4444444444444444,0.015748031496062898
+Generated_Reference,Strong_Mistral_7B,0.38333333333333336,0.055051078320090874
+Generated_Reference,SciGeoGuard_X,1.0,1.0
+Generated_Reference,Generated_Reference,1.0,1.0

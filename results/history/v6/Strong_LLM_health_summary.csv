@@ -1,0 +1,3 @@
+model,parse_success,mean_obligation_parse_rate,max_label_fraction,healthy_calibration,healthy
+strong_A,1.0,1.0,0.7,False,False
+strong_B,1.0,1.0,0.7055555555555556,False,False

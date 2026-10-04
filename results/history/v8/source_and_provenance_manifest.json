@@ -1,0 +1,105 @@
+{
+  "experiment": "SciGeoGuard-X Multi-Region Real-World Replication v8",
+  "live_data": true,
+  "created_utc": "2026-10-02T18:46:31.205157+00:00",
+  "sources": {
+    "sentinel2": {
+      "provider": "Microsoft Planetary Computer / Copernicus",
+      "collection": "sentinel-2-l2a",
+      "stac": "https://planetarycomputer.microsoft.com/api/stac/v1",
+      "product_semantics": "Sentinel-2 Level-2A surface reflectance"
+    },
+    "worldcover": {
+      "provider": "Microsoft Planetary Computer / ESA",
+      "collection": "esa-worldcover",
+      "stac": "https://planetarycomputer.microsoft.com/api/stac/v1",
+      "product_semantics": "10 m nominal categorical land cover"
+    },
+    "imerg": {
+      "provider": "NOAA/AOML ERDDAP mirror of NASA GPM IMERG",
+      "dataset": "precipitation_2024_v07",
+      "base": "https://erddap.aoml.noaa.gov/hdb/erddap/griddap/precipitation_2024_v07",
+      "units": "MM/Hr",
+      "temporal_resolution_hours": 0.5,
+      "spatial_resolution_degree": 0.1,
+      "product_semantics": "IMERG Final V07 precipitation rate"
+    },
+    "copdem": {
+      "provider": "AWS Open Data / Copernicus",
+      "base": "https://copernicus-dem-30m.s3.amazonaws.com",
+      "product": "Copernicus DEM GLO-30",
+      "surface_model": "DSM",
+      "horizontal_crs": "EPSG:4326",
+      "vertical_datum": "EGM2008 / EPSG:3855",
+      "nominal_resolution_m": 30
+    },
+    "accessed_utc": "2026-10-02T18:44:55.164173+00:00"
+  },
+  "regions": {
+    "Bengaluru_India": {
+      "bbox": [
+        77.56,
+        12.95,
+        77.62,
+        13.01
+      ],
+      "sentinel_windows": [
+        "2024-01-01/2024-03-31",
+        "2024-08-01/2024-10-31"
+      ],
+      "imerg_dates": [
+        "2024-05-20",
+        "2024-09-15"
+      ]
+    },
+    "Rotterdam_Netherlands": {
+      "bbox": [
+        4.43,
+        51.9,
+        4.51,
+        51.98
+      ],
+      "sentinel_windows": [
+        "2024-04-01/2024-06-30",
+        "2024-09-01/2024-11-30"
+      ],
+      "imerg_dates": [
+        "2024-02-22",
+        "2024-10-15"
+      ]
+    },
+    "CentralValley_USA": {
+      "bbox": [
+        -121.85,
+        38.45,
+        -121.77,
+        38.53
+      ],
+      "sentinel_windows": [
+        "2024-03-01/2024-05-31",
+        "2024-08-01/2024-10-31"
+      ],
+      "imerg_dates": [
+        "2024-02-05",
+        "2024-11-20"
+      ]
+    },
+    "Manaus_Brazil": {
+      "bbox": [
+        -60.08,
+        -3.16,
+        -60.0,
+        -3.08
+      ],
+      "sentinel_windows": [
+        "2024-01-01/2024-03-31",
+        "2024-07-01/2024-09-30"
+      ],
+      "imerg_dates": [
+        "2024-03-15",
+        "2024-08-18"
+      ]
+    }
+  },
+  "interpretation": "Real-data paired counterfactual stress tests. Not human ground truth and not independent expert labels."
+}

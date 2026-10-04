@@ -1,0 +1,10 @@
+layer,version,status,result,boundary
+Controlled benchmark,v3,COMPLETE,"445 cases: 145 PROVEN, 278 REFUTED, 22 UNPROVEN",Generated scientific-invariant reference; not independent human ground truth
+Strong decomposed LLM baseline,v6,COMPLETE,Strong_Qwen_7B: accuracy=0.4444; FSCR=0.6964,Baseline against generated reference; not a scientific adjudicator
+Strong decomposed LLM baseline,v6,COMPLETE,Strong_Mistral_7B: accuracy=0.3833; FSCR=0.6964,Baseline against generated reference; not a scientific adjudicator
+Frozen verifier vs controlled reference,v3/v6 comparison,COMPLETE,SciGeoGuard_X: accuracy=1.0000; FSCR=0.0000,Consistency against generated scientific-invariant reference; not independent human ground truth
+Live EO counterfactual,v8.1,COMPLETE,Sentinel-2 median regional MAE=0.0977,Real-input spectral-role stress test
+Live EO counterfactual,v8.1,COMPLETE,WorldCover median invalid bilinear class fraction=0.1299,Real-input categorical-resampling stress test
+Live EO counterfactual,v8.1,COMPLETE,CopDEM 3x/axis -> 9.0x cells; derived fraction=0.8889; median regional p95 round-trip error=1.3998 m,Real-input unsupported-resolution-claim stress test
+Live EO counterfactual,v8.2/v9,COMPLETE,IMERG rainy recovery in 4/4 regions; raw-sum factor=2.0x; mean-rate fraction=0.041667,Real-input temporal quantity-semantics stress test
+Independent blinded human review,v7,PENDING,Reviewer package exists; completed A/B verdicts not present,Do not claim human-validated system accuracy

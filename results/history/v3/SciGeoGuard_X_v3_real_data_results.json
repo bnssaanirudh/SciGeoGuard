@@ -1,0 +1,100 @@
+{
+  "sentinel2": {
+    "mode": "live_real_sentinel2",
+    "item_id": "S2C_MSIL2A_20251208T051221_R019_T43PGQ_20251208T081319",
+    "cloud_cover_percent": 5.7e-05,
+    "window_valid_fraction_before_scl": 1.0,
+    "valid_fraction_after_scl": 1.0,
+    "ndvi_min": -0.17262399196624756,
+    "ndvi_median": 0.11118802428245544,
+    "ndvi_max": 0.6284040808677673,
+    "wrong_index_median": 0.15598435699939728,
+    "mean_absolute_ndvi_vs_wrong_difference": 0.05892869830131531,
+    "analysis_bounds": [
+      774730.0,
+      1435070.0,
+      779850.0,
+      1440190.0
+    ],
+    "crs": "EPSG:32643"
+  },
+  "worldcover": {
+    "mode": "live_real_worldcover",
+    "item_id": "ESA_WorldCover_10m_2021_v200_N12E075",
+    "asset_key": "map",
+    "source_valid_fraction": 1.0,
+    "source_class_diversity": 8,
+    "source_classes": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      80,
+      90
+    ],
+    "nearest_valid_fraction": 1.0,
+    "bilinear_invalid_fraction": 0.11552244074247435,
+    "bilinear_invalid_examples": [
+      10.001999855041504,
+      10.005999565124512,
+      10.005999565124512,
+      10.010000228881836,
+      10.01200008392334,
+      10.012999534606934,
+      10.015000343322754,
+      10.015000343322754,
+      10.015999794006348,
+      10.017000198364258,
+      10.017000198364258,
+      10.017999649047852,
+      10.019000053405762,
+      10.020000457763672,
+      10.022000312805176,
+      10.022000312805176,
+      10.02299976348877,
+      10.02299976348877,
+      10.02400016784668,
+      10.02400016784668,
+      10.026000022888184,
+      10.026000022888184,
+      10.027000427246094,
+      10.027999877929688,
+      10.029000282287598
+    ],
+    "source_shape": [
+      768,
+      768
+    ],
+    "output_shape": [
+      361,
+      361
+    ]
+  },
+  "imerg": {
+    "mode": "live_real_imerg",
+    "rows": 77,
+    "grid_cells": 6,
+    "mean_daily_accumulation_mm": 1.463353473,
+    "min_daily_accumulation_mm": 0.714996333,
+    "max_daily_accumulation_mm": 1.910003662,
+    "naive_rate_mean_mm_per_h": 0.22805508670129865,
+    "precipitation_column": "precipitation"
+  },
+  "copernicus_dem": {
+    "mode": "live_real_copdem",
+    "tile": "Copernicus_DSM_COG_10_N12_00_E077_00_DEM",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0002777777777777778,
+      0.0002777777777777778
+    ],
+    "valid_pixels": 65536,
+    "min_elevation_m": 622.444091796875,
+    "median_elevation_m": 719.2648010253906,
+    "max_elevation_m": 1048.912109375,
+    "surface_model": "DSM",
+    "vertical_datum": "EGM2008 / EPSG:3855"
+  }
+}

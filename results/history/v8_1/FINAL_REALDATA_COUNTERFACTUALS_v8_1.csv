@@ -1,0 +1,45 @@
+region,source,replicate,data_mode,variant,operation,rule_label,effect_metric,effect_value
+Bengaluru_India,Sentinel-2 L2A,2024-01-01/2024-03-31,live,valid,NDVI using B08 NIR and B04 red,PROVEN,mean_absolute_difference_vs_invalid_variant,0.0694971233606338
+Bengaluru_India,Sentinel-2 L2A,2024-01-01/2024-03-31,live,invalid,Substitute B11 SWIR for B08 while labeling output NDVI,REFUTED,sign_flip_fraction,0.012434248481352
+Bengaluru_India,Sentinel-2 L2A,2024-08-01/2024-10-31,live,valid,NDVI using B08 NIR and B04 red,PROVEN,mean_absolute_difference_vs_invalid_variant,0.0769102573394775
+Bengaluru_India,Sentinel-2 L2A,2024-08-01/2024-10-31,live,invalid,Substitute B11 SWIR for B08 while labeling output NDVI,REFUTED,sign_flip_fraction,0.0631843679493283
+Rotterdam_Netherlands,Sentinel-2 L2A,2024-04-01/2024-06-30,live,valid,NDVI using B08 NIR and B04 red,PROVEN,mean_absolute_difference_vs_invalid_variant,0.1101336330175399
+Rotterdam_Netherlands,Sentinel-2 L2A,2024-04-01/2024-06-30,live,invalid,Substitute B11 SWIR for B08 while labeling output NDVI,REFUTED,sign_flip_fraction,0.0247631791676149
+Rotterdam_Netherlands,Sentinel-2 L2A,2024-09-01/2024-11-30,live,valid,NDVI using B08 NIR and B04 red,PROVEN,mean_absolute_difference_vs_invalid_variant,0.091552697122097
+Rotterdam_Netherlands,Sentinel-2 L2A,2024-09-01/2024-11-30,live,invalid,Substitute B11 SWIR for B08 while labeling output NDVI,REFUTED,sign_flip_fraction,0.0273620077847774
+CentralValley_USA,Sentinel-2 L2A,2024-03-01/2024-05-31,live,valid,NDVI using B08 NIR and B04 red,PROVEN,mean_absolute_difference_vs_invalid_variant,0.1344529390335083
+CentralValley_USA,Sentinel-2 L2A,2024-03-01/2024-05-31,live,invalid,Substitute B11 SWIR for B08 while labeling output NDVI,REFUTED,sign_flip_fraction,0.0081774930519572
+CentralValley_USA,Sentinel-2 L2A,2024-08-01/2024-10-31,live,valid,NDVI using B08 NIR and B04 red,PROVEN,mean_absolute_difference_vs_invalid_variant,0.1139992475509643
+CentralValley_USA,Sentinel-2 L2A,2024-08-01/2024-10-31,live,invalid,Substitute B11 SWIR for B08 while labeling output NDVI,REFUTED,sign_flip_fraction,0.007780768904567
+Manaus_Brazil,Sentinel-2 L2A,2024-01-01/2024-03-31,live,valid,NDVI using B08 NIR and B04 red,PROVEN,mean_absolute_difference_vs_invalid_variant,0.0975771471858024
+Manaus_Brazil,Sentinel-2 L2A,2024-01-01/2024-03-31,live,invalid,Substitute B11 SWIR for B08 while labeling output NDVI,REFUTED,sign_flip_fraction,0.184068177828212
+Manaus_Brazil,Sentinel-2 L2A,2024-07-01/2024-09-30,live,valid,NDVI using B08 NIR and B04 red,PROVEN,mean_absolute_difference_vs_invalid_variant,0.0915370136499404
+Manaus_Brazil,Sentinel-2 L2A,2024-07-01/2024-09-30,live,invalid,Substitute B11 SWIR for B08 while labeling output NDVI,REFUTED,sign_flip_fraction,0.0560676484704574
+Bengaluru_India,ESA WorldCover,2021,live,valid,Nearest-neighbour categorical resampling,PROVEN,valid_class_fraction,1.0
+Bengaluru_India,ESA WorldCover,2021,live,invalid,Bilinear interpolation of nominal class codes,REFUTED,invalid_class_fraction,0.1459895833333333
+Rotterdam_Netherlands,ESA WorldCover,2021,live,valid,Nearest-neighbour categorical resampling,PROVEN,valid_class_fraction,1.0
+Rotterdam_Netherlands,ESA WorldCover,2021,live,invalid,Bilinear interpolation of nominal class codes,REFUTED,invalid_class_fraction,0.190625
+CentralValley_USA,ESA WorldCover,2021,live,valid,Nearest-neighbour categorical resampling,PROVEN,valid_class_fraction,1.0
+CentralValley_USA,ESA WorldCover,2021,live,invalid,Bilinear interpolation of nominal class codes,REFUTED,invalid_class_fraction,0.11390625
+Manaus_Brazil,ESA WorldCover,2021,live,valid,Nearest-neighbour categorical resampling,PROVEN,valid_class_fraction,1.0
+Manaus_Brazil,ESA WorldCover,2021,live,invalid,Bilinear interpolation of nominal class codes,REFUTED,invalid_class_fraction,0.07486328125
+Bengaluru_India,GPM IMERG Final V07,2024-09-15,live,valid,Integrate rate over each 0.5 h interval,PROVEN,mean_daily_accumulation_mm,0.0
+Bengaluru_India,GPM IMERG Final V07,2024-09-15,live,invalid,Sum MM/Hr values without multiplying by 0.5 h and label result accumulation,REFUTED,numeric_overstatement_factor,
+Bengaluru_India,GPM IMERG Final V07,2024-09-15,live,invalid,Take full-day mean MM/Hr and label numeric value daily accumulation,REFUTED,fraction_of_true_accumulation,
+Rotterdam_Netherlands,GPM IMERG Final V07,2024-02-22,live,valid,Integrate rate over each 0.5 h interval,PROVEN,mean_daily_accumulation_mm,0.0
+Rotterdam_Netherlands,GPM IMERG Final V07,2024-02-22,live,invalid,Sum MM/Hr values without multiplying by 0.5 h and label result accumulation,REFUTED,numeric_overstatement_factor,
+Rotterdam_Netherlands,GPM IMERG Final V07,2024-02-22,live,invalid,Take full-day mean MM/Hr and label numeric value daily accumulation,REFUTED,fraction_of_true_accumulation,
+Manaus_Brazil,GPM IMERG Final V07,2024-03-15,live,valid,Integrate rate over each 0.5 h interval,PROVEN,mean_daily_accumulation_mm,10.996653272444446
+Manaus_Brazil,GPM IMERG Final V07,2024-03-15,live,invalid,Sum MM/Hr values without multiplying by 0.5 h and label result accumulation,REFUTED,numeric_overstatement_factor,2.0
+Manaus_Brazil,GPM IMERG Final V07,2024-03-15,live,invalid,Take full-day mean MM/Hr and label numeric value daily accumulation,REFUTED,fraction_of_true_accumulation,0.041666666666666664
+Manaus_Brazil,GPM IMERG Final V07,2024-08-18,live,valid,Integrate rate over each 0.5 h interval,PROVEN,mean_daily_accumulation_mm,0.04833306166666667
+Manaus_Brazil,GPM IMERG Final V07,2024-08-18,live,invalid,Sum MM/Hr values without multiplying by 0.5 h and label result accumulation,REFUTED,numeric_overstatement_factor,2.0
+Manaus_Brazil,GPM IMERG Final V07,2024-08-18,live,invalid,Take full-day mean MM/Hr and label numeric value daily accumulation,REFUTED,fraction_of_true_accumulation,0.04166666666666667
+Bengaluru_India,Copernicus DEM GLO-30,DSM patch,live,valid,Interpolate onto finer grid while retaining GLO-30 source provenance,PROVEN,pixel_count_inflation_factor,9.0
+Bengaluru_India,Copernicus DEM GLO-30,DSM patch,live,invalid,Claim the interpolated fine grid contains native fine-resolution source information,REFUTED,fraction_without_distinct_source_samples,0.8888888888888888
+Rotterdam_Netherlands,Copernicus DEM GLO-30,DSM patch,live,valid,Interpolate onto finer grid while retaining GLO-30 source provenance,PROVEN,pixel_count_inflation_factor,9.0
+Rotterdam_Netherlands,Copernicus DEM GLO-30,DSM patch,live,invalid,Claim the interpolated fine grid contains native fine-resolution source information,REFUTED,fraction_without_distinct_source_samples,0.8888888888888888
+CentralValley_USA,Copernicus DEM GLO-30,DSM patch,live,valid,Interpolate onto finer grid while retaining GLO-30 source provenance,PROVEN,pixel_count_inflation_factor,9.0
+CentralValley_USA,Copernicus DEM GLO-30,DSM patch,live,invalid,Claim the interpolated fine grid contains native fine-resolution source information,REFUTED,fraction_without_distinct_source_samples,0.8888888888888888
+Manaus_Brazil,Copernicus DEM GLO-30,DSM patch,live,valid,Interpolate onto finer grid while retaining GLO-30 source provenance,PROVEN,pixel_count_inflation_factor,9.0
+Manaus_Brazil,Copernicus DEM GLO-30,DSM patch,live,invalid,Claim the interpolated fine grid contains native fine-resolution source information,REFUTED,fraction_without_distinct_source_samples,0.8888888888888888

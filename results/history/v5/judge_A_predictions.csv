@@ -1,0 +1,1621 @@
+case_id,judge,model_id,load_mode,verdict,error_class,severity,confidence,reason,raw_output
+SGX3_BLIND_eo_ml_validation_022,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not contain any information about units, which is crucial for understanding the scale and resolution of the data.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not contain any information about units, which is crucial for understanding the scale and resolution of the data.""
+}
+```"
+SGX3_DEVELOPMENT_spatial_split_leakage_006,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in the dataset.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in the dataset.""
+}
+```"
+SGX3_HELDOUT-FAMILY_temporal_split_overlap_002,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,INVALID_DATA,HIGH,4,The provided artifacts do not match the required quantity of 'time_series' as specified in the goal. The artifact named 'records' has no time series information.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""INVALID_DATA"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not match the required quantity of 'time_series' as specified in the goal. The artifact named 'records' has no time series information.""
+}
+```"
+SGX3_BLIND_flood_remote_sensing_011,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONVERSION,MEDIUM,3,"The provided artifacts do not match the required units (binary vs. continuous) and resolutions (20m vs. 10m). The flood mask artifact requires binary values while the S1 and S2 reflectance artifacts require continuous values. Additionally, the resolution of the flood mask artifact (20m) is significantly higher than the other artifacts (10m), which may affect the accuracy of the area calculation.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONVERSION"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 3,
+  ""reason"": ""The provided artifacts do not match the required units (binary vs. continuous) and resolutions (20m vs. 10m). The flood mask artifact requires binary values while the S1 and S2 reflectance artifacts require continuous values. Additionally, the resolution of the flood mask artifact (20m) is significantly higher than the other artifacts (10m), which may affect the accuracy of the area calculation.""
+}
+```"
+SGX3_DEVELOPMENT_spectral_role_000,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not include units for reflectance values, which is essential for performing spectral indices like the red-edge (NIR) index.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include units for reflectance values, which is essential for performing spectral indices like the red-edge (NIR) index.""
+}
+```"
+SGX3_BLIND_landslide_forecast_000,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not include any rainfall data (unit 'mm'), which is required by the scientific goal of landslide forecasting.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include any rainfall data (unit 'mm'), which is required by the scientific goal of landslide forecasting.""
+}
+```"
+SGX3_HELDOUT-FAMILY_uncertainty_missing_011,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_SCALE_MISMATCH,HIGH,4,"The provided hazard probability has a scale of 'continuous', which is incompatible with the requirement for a resolution of 10 meters (m). Continuous data typically do not have a fixed resolution.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_SCALE_MISMATCH"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided hazard probability has a scale of 'continuous', which is incompatible with the requirement for a resolution of 10 meters (m). Continuous data typically do not have a fixed resolution.""
+}
+```"
+SGX3_DEVELOPMENT_unsupported_resolution_gain_000,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_RESOLUTION,HIGH,4,"The provided workflow aims to achieve 'unsupported resolution gain', which implies increasing the resolution of a raster dataset without loss of information. However, the current artifact has a resolution of 20 meters, while the target resolution specified in the workflow is 60 meters. This mismatch indicates that the workflow cannot fulfill the intended purpose as described.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_RESOLUTION"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided workflow aims to achieve 'unsupported resolution gain', which implies increasing the resolution of a raster dataset without loss of information. However, the current artifact has a resolution of 20 meters, while the target resolution specified in the workflow is 60 meters. This mismatch indicates that the workflow cannot fulfill the intended purpose as described.""
+}
+```"
+SGX3_HELDOUT-FAMILY_scene_overlap_leakage_012,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not include any unit information, which is essential for defining the scale of the imagery.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include any unit information, which is essential for defining the scale of the imagery.""
+}
+```"
+SGX3_DEVELOPMENT_DSM_as_DTM_000,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_TYPE_MISMATCH,HIGH,4,"The provided elevation data (e.g., terrain) is in a continuous scale, which typically represents height above sea level. However, DSM (Digital Surface Model) and DTM (Digital Terrain Model) require discrete values representing elevations at specific points on the ground. Continuous elevation data cannot directly convert into these discrete models without additional steps such as interpolation or sampling.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_TYPE_MISMATCH"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided elevation data (e.g., terrain) is in a continuous scale, which typically represents height above sea level. However, DSM (Digital Surface Model) and DTM (Digital Terrain Model) require discrete values representing elevations at specific points on the ground. Continuous elevation data cannot directly convert into these discrete models without additional steps such as interpolation or sampling.""
+}
+```"
+SGX3_HELDOUT-FAMILY_physical_range_violation_009,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_RANGE_MISMATCH,HIGH,4,"The provided artifact has a value range of [-0.7538676247869512, 0.873246829799791] which falls outside the required value range (-1, 1). This mismatch indicates a potential issue in the data validation process.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_RANGE_MISMATCH"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifact has a value range of [-0.7538676247869512, 0.873246829799791] which falls outside the required value range (-1, 1). This mismatch indicates a potential issue in the data validation process.""
+}
+```"
+SGX3_BLIND_eo_ml_validation_040,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not contain any information about units, which is crucial for understanding the scale and resolution of the data.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not contain any information about units, which is crucial for understanding the scale and resolution of the data.""
+}
+```"
+SGX3_DEVELOPMENT_processing_level_003,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifact has no unit associated with it, which is required for consistent measurement and comparison.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifact has no unit associated with it, which is required for consistent measurement and comparison.""
+}
+```"
+SGX3_DEVELOPMENT_band_grid_mismatch_000,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not contain unit information, which is essential for performing spectral index calculations.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not contain unit information, which is essential for performing spectral index calculations.""
+}
+```"
+SGX3_DEVELOPMENT_angular_area_002,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,The provided unit 'km2' (square kilometers) is unsupported by the given artifacts which do not specify any area measurement.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided unit 'km2' (square kilometers) is unsupported by the given artifacts which do not specify any area measurement.""
+}
+```"
+SGX3_BLIND_eo_ml_validation_036,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not contain any information about units, which is crucial for understanding the scale of measurements in EO samples.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not contain any information about units, which is crucial for understanding the scale of measurements in EO samples.""
+}
+```"
+SGX3_HELDOUT-FAMILY_multisensor_time_mismatch_010,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONFLICT,HIGH,4,"The provided artifacts do not match the required quantity 'backscatter' for sensor S1, which is specified as 'reflectance'. Additionally, the temporal resolution of S2 (3 hours) is inconsistent with the requirement of having a maximum temporal tolerance of 12 hours.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONFLICT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not match the required quantity 'backscatter' for sensor S1, which is specified as 'reflectance'. Additionally, the temporal resolution of S2 (3 hours) is inconsistent with the requirement of having a maximum temporal tolerance of 12 hours.""
+}
+```"
+SGX3_DEVELOPMENT_band_grid_mismatch_001,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not contain unit information, which is essential for performing spectral index calculations.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not contain unit information, which is essential for performing spectral index calculations.""
+}
+```"
+SGX3_DEVELOPMENT_spatial_split_leakage_009,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in the dataset.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in the dataset.""
+}
+```"
+SGX3_DEVELOPMENT_unsupported_resolution_gain_001,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_RESOLUTION,HIGH,4,"The provided workflow aims to achieve 'unsupported resolution gain', which implies increasing the resolution of a raster dataset without loss of information. However, the current artifact has a resolution of 50 meters, while the target resolution specified in the workflow is 12.5 meters. This discrepancy indicates that the workflow cannot achieve the intended unsupported resolution gain as described.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_RESOLUTION"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided workflow aims to achieve 'unsupported resolution gain', which implies increasing the resolution of a raster dataset without loss of information. However, the current artifact has a resolution of 50 meters, while the target resolution specified in the workflow is 12.5 meters. This discrepancy indicates that the workflow cannot achieve the intended unsupported resolution gain as described.""
+}
+```"
+SGX3_HELDOUT-FAMILY_scene_overlap_leakage_010,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not include any unit information, which is essential for defining the scale of the imagery.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include any unit information, which is essential for defining the scale of the imagery.""
+}
+```"
+SGX3_BLIND_flood_depth_033,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT_CONVERSION,HIGH,4,"The workflow attempts to combine two artifacts (elevation and water surface) using a unit conversion operation ('convert_unit'), which is unsupported because elevation units (meters) cannot be directly converted to water-level units without additional context.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT_CONVERSION"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The workflow attempts to combine two artifacts (elevation and water surface) using a unit conversion operation ('convert_unit'), which is unsupported because elevation units (meters) cannot be directly converted to water-level units without additional context.""
+}
+```"
+SGX3_DEVELOPMENT_rate_mean_as_accumulation_004,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_METHOD,HIGH,4,"The provided workflow attempts to aggregate precipitation rate (mm/h) into accumulation using temporal aggregation, which is unsupported by the given artifacts. The IMERG product provides continuous precipitation rates at a resolution of 1 km x 1 km, while accumulation requires discrete time steps.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_METHOD"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided workflow attempts to aggregate precipitation rate (mm/h) into accumulation using temporal aggregation, which is unsupported by the given artifacts. The IMERG product provides continuous precipitation rates at a resolution of 1 km x 1 km, while accumulation requires discrete time steps.""
+}
+```"
+SGX3_HELDOUT-FAMILY_multisensor_time_mismatch_013,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONFLICT,HIGH,4,"The provided artifacts do not match the required quantity 'backscatter' for sensor S1, which is specified as 'reflectance'. Additionally, the temporal resolution of both sensors is inconsistent (S1 at 10 minutes, S2 at 1 hour). This mismatch in quantity and temporal resolution violates the requirement for multisensor time alignment.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONFLICT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not match the required quantity 'backscatter' for sensor S1, which is specified as 'reflectance'. Additionally, the temporal resolution of both sensors is inconsistent (S1 at 10 minutes, S2 at 1 hour). This mismatch in quantity and temporal resolution violates the requirement for multisensor time alignment.""
+}
+```"
+SGX3_BLIND_landcover_change_042,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_METHOD,HIGH,4,The provided method 'cubic' for resampling categorical land cover data at a resolution of 30 meters is unsupported for categorical data.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_METHOD"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided method 'cubic' for resampling categorical land cover data at a resolution of 30 meters is unsupported for categorical data.""
+}
+```"
+SGX3_BLIND_flood_remote_sensing_031,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONVERSION,MEDIUM,3,The provided artifacts do not match the required units (binary vs. continuous) and resolutions (30m vs. 10m). The comparison of sensors requires consistent unit scales.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONVERSION"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 3,
+  ""reason"": ""The provided artifacts do not match the required units (binary vs. continuous) and resolutions (30m vs. 10m). The comparison of sensors requires consistent unit scales.""
+}
+```"
+SGX3_HELDOUT-FAMILY_temporal_split_overlap_006,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,INVALID_DATA,HIGH,4,The provided artifacts do not match the required quantity of 'time_series' as specified in the goal. The artifact named 'records' has no time series information.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""INVALID_DATA"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not match the required quantity of 'time_series' as specified in the goal. The artifact named 'records' has no time series information.""
+}
+```"
+SGX3_HELDOUT-FAMILY_missing_provenance_000,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,NONE,HIGH,5,"The provided artifacts do not contain any information about the input dataset's provenance, which is essential for establishing the scientific goal of 'missing_provenance'. The absence of such details makes it impossible to evaluate whether the workflow aligns with the stated requirement.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 5,
+  ""reason"": ""The provided artifacts do not contain any information about the input dataset's provenance, which is essential for establishing the scientific goal of 'missing_provenance'. The absence of such details makes it impossible to evaluate whether the workflow aligns with the stated requirement.""
+}
+```"
+SGX3_HELDOUT-FAMILY_vertical_datum_unknown_001,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,NONE,MEDIUM,3,"The provided artifacts do not contain any information about a vertical datum, which is essential for defining the reference point of elevation measurements. The 'EGM2008' used in both terrain and water artifacts suggests it could be related to a known vertical datum, but without explicit mention of a specific vertical datum (like WGS84), the workflow cannot proceed as intended.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 3,
+  ""reason"": ""The provided artifacts do not contain any information about a vertical datum, which is essential for defining the reference point of elevation measurements. The 'EGM2008' used in both terrain and water artifacts suggests it could be related to a known vertical datum, but without explicit mention of a specific vertical datum (like WGS84), the workflow cannot proceed as intended.""
+}
+```"
+SGX3_HELDOUT-FAMILY_temporal_split_overlap_011,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,INVALID_DATA,HIGH,4,The provided artifacts do not match the required quantity of 'time_series' as specified in the goal. The artifact named 'records' has no time series information.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""INVALID_DATA"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not match the required quantity of 'time_series' as specified in the goal. The artifact named 'records' has no time series information.""
+}
+```"
+SGX3_BLIND_flood_depth_020,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT_CONVERSION,HIGH,4,The conversion of elevation (m) to water level (km) is unsupported because elevation units do not directly convert to surface-level measurements without additional context such as water depth.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT_CONVERSION"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The conversion of elevation (m) to water level (km) is unsupported because elevation units do not directly convert to surface-level measurements without additional context such as water depth.""
+}
+```"
+SGX3_DEVELOPMENT_unsupported_resolution_gain_015,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_RESOLUTION_GAIN,HIGH,4,"The provided workflow aims to achieve 'unsupported resolution gain', which implies increasing the resolution of a raster dataset without loss of information. However, the current artifact has a resolution of 50 meters, while the target resolution specified in the operation is 150 meters. This mismatch indicates that the workflow cannot directly achieve the intended unsupported resolution gain as described.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_RESOLUTION_GAIN"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided workflow aims to achieve 'unsupported resolution gain', which implies increasing the resolution of a raster dataset without loss of information. However, the current artifact has a resolution of 50 meters, while the target resolution specified in the operation is 150 meters. This mismatch indicates that the workflow cannot directly achieve the intended unsupported resolution gain as described.""
+}
+```"
+SGX3_BLIND_landslide_forecast_025,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The IMERG feature (rainfall) has a unit of 'mm', which is categorical data. The terrain-60 elevation (continuous data) cannot be directly used as input for rainfall prediction without converting it into a categorical format.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The IMERG feature (rainfall) has a unit of 'mm', which is categorical data. The terrain-60 elevation (continuous data) cannot be directly used as input for rainfall prediction without converting it into a categorical format.""
+}
+```"
+SGX3_BLIND_flood_remote_sensing_003,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONVERSION,MEDIUM,3,The provided artifacts do not match the required units (binary vs. continuous) and resolutions (30m vs. 10m). The comparison of sensors in area requires consistent unit scales.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONVERSION"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 3,
+  ""reason"": ""The provided artifacts do not match the required units (binary vs. continuous) and resolutions (30m vs. 10m). The comparison of sensors in area requires consistent unit scales.""
+}
+```"
+SGX3_BLIND_flood_remote_sensing_017,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONVERSION,MEDIUM,3,"The provided artifacts do not match the required units (binary vs. continuous) and resolutions (20m vs. 10m). The flood mask artifact has no unit specified, while the S1 and S2 reflectance artifacts specify 'continuous' scale.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONVERSION"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 3,
+  ""reason"": ""The provided artifacts do not match the required units (binary vs. continuous) and resolutions (20m vs. 10m). The flood mask artifact has no unit specified, while the S1 and S2 reflectance artifacts specify 'continuous' scale.""
+}
+```"
+SGX3_BLIND_eo_ml_validation_015,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not include any information about units, which is crucial for understanding the scale and resolution of the data.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include any information about units, which is crucial for understanding the scale and resolution of the data.""
+}
+```"
+SGX3_BLIND_flood_depth_034,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT_CONVERSION,HIGH,4,The conversion of units between elevation (m) and water level (cm) is unsupported because they represent fundamentally different quantities.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT_CONVERSION"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The conversion of units between elevation (m) and water level (cm) is unsupported because they represent fundamentally different quantities.""
+}
+```"
+SGX3_HELDOUT-FAMILY_physical_range_violation_007,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_RANGE_MISMATCH,HIGH,4,"The provided artifact's value range (-0.03460813962175069 to 0.8258539476197895) does not match the required value range of [-1, 1] as specified in the goal.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_RANGE_MISMATCH"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifact's value range (-0.03460813962175069 to 0.8258539476197895) does not match the required value range of [-1, 1] as specified in the goal.""
+}
+```"
+SGX3_HELDOUT-FAMILY_temporal_split_overlap_000,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,INVALID_DATA,HIGH,4,The provided artifacts do not match the required quantity of 'time_series' as specified in the goal. The artifact named 'records' has no time series information.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""INVALID_DATA"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not match the required quantity of 'time_series' as specified in the goal. The artifact named 'records' has no time series information.""
+}
+```"
+SGX3_BLIND_landslide_forecast_034,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,The provided artifacts do not include units for the required quantities (rainfall and elevation). The scientific goal requires specific unit information which is missing.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include units for the required quantities (rainfall and elevation). The scientific goal requires specific unit information which is missing.""
+}
+```"
+SGX3_BLIND_flood_depth_041,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT_CONVERSION,HIGH,4,The conversion of units between elevation (m) and water level (m) is unsupported because they represent fundamentally different quantities in hydrology.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT_CONVERSION"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The conversion of units between elevation (m) and water level (m) is unsupported because they represent fundamentally different quantities in hydrology.""
+}
+```"
+SGX3_BLIND_flood_remote_sensing_000,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONVERSION,MEDIUM,3,The provided artifacts do not match the required units (binary vs. continuous) and resolutions (30m vs. 10m). The comparison of sensors requires consistent unit scales.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONVERSION"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 3,
+  ""reason"": ""The provided artifacts do not match the required units (binary vs. continuous) and resolutions (30m vs. 10m). The comparison of sensors requires consistent unit scales.""
+}
+```"
+SGX3_BLIND_landslide_forecast_021,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The IMERG feature (rainfall) has a unit of 'mm', which is categorical data. The terrain-90 elevation (continuous data) cannot be directly used as input for rainfall prediction without converting it into a categorical format.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The IMERG feature (rainfall) has a unit of 'mm', which is categorical data. The terrain-90 elevation (continuous data) cannot be directly used as input for rainfall prediction without converting it into a categorical format.""
+}
+```"
+SGX3_BLIND_landcover_change_007,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_METHOD,HIGH,4,The provided method 'lanczos' for resampling categorical land cover data is unsupported for categorical data.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_METHOD"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided method 'lanczos' for resampling categorical land cover data is unsupported for categorical data.""
+}
+```"
+SGX3_BLIND_eo_ml_validation_039,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not contain any information about units, which is crucial for understanding the scale and resolution of the data.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not contain any information about units, which is crucial for understanding the scale and resolution of the data.""
+}
+```"
+SGX3_DEVELOPMENT_unsupported_resolution_gain_013,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_RESOLUTION,HIGH,4,"The provided workflow aims to achieve 'unsupported resolution gain', which implies increasing the resolution of a raster dataset without loss of information. However, the current artifact has a resolution of 30 meters (m), while the target resolution specified in the operation is 7.5 meters (m). This mismatch indicates that the requested resolution increase cannot be achieved using the given artifact.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_RESOLUTION"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided workflow aims to achieve 'unsupported resolution gain', which implies increasing the resolution of a raster dataset without loss of information. However, the current artifact has a resolution of 30 meters (m), while the target resolution specified in the operation is 7.5 meters (m). This mismatch indicates that the requested resolution increase cannot be achieved using the given artifact.""
+}
+```"
+SGX3_HELDOUT-FAMILY_multisensor_time_mismatch_004,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONFLICT,HIGH,4,"The provided artifacts do not match the required units (backscatter vs reflectance) and resolutions (10m vs 10m). Additionally, the temporal resolution of S1 is not specified, which is crucial for comparing sensors.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONFLICT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not match the required units (backscatter vs reflectance) and resolutions (10m vs 10m). Additionally, the temporal resolution of S1 is not specified, which is crucial for comparing sensors.""
+}
+```"
+SGX3_BLIND_flood_remote_sensing_007,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONVERSION,MEDIUM,3,The provided artifacts do not match the required units (binary vs. continuous) and resolutions (10m vs. 10m). The comparison of sensors requires consistent unit types and resolutions.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONVERSION"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 3,
+  ""reason"": ""The provided artifacts do not match the required units (binary vs. continuous) and resolutions (10m vs. 10m). The comparison of sensors requires consistent unit types and resolutions.""
+}
+```"
+SGX3_DEVELOPMENT_unsupported_resolution_gain_012,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_RESOLUTION_GAIN,HIGH,4,"The provided workflow aims to achieve 'unsupported resolution gain', which implies increasing the resolution of a raster dataset without loss of information. However, the current artifact has a resolution of 50 meters, while the target resolution specified in the workflow is 100 meters. This mismatch indicates that the workflow cannot fulfill the intended goal as described.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_RESOLUTION_GAIN"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided workflow aims to achieve 'unsupported resolution gain', which implies increasing the resolution of a raster dataset without loss of information. However, the current artifact has a resolution of 50 meters, while the target resolution specified in the workflow is 100 meters. This mismatch indicates that the workflow cannot fulfill the intended goal as described.""
+}
+```"
+SGX3_BLIND_flood_depth_012,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT_CONVERSION,HIGH,4,The conversion of elevation (m) to water surface (m) is unsupported because elevation and water surface units do not directly convert.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT_CONVERSION"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The conversion of elevation (m) to water surface (m) is unsupported because elevation and water surface units do not directly convert.""
+}
+```"
+SGX3_BLIND_flood_depth_002,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT_CONVERSION,HIGH,4,The conversion of units between elevation (m) and water level (cm) is unsupported because they represent fundamentally different quantities.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT_CONVERSION"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The conversion of units between elevation (m) and water level (cm) is unsupported because they represent fundamentally different quantities.""
+}
+```"
+SGX3_DEVELOPMENT_categorical_interpolation_010,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_METHOD,HIGH,4,"The provided workflow uses resampling (operation 'resample') which is not supported by the given artifacts. The artifacts describe categorical land cover data at a resolution of 20 meters, while resampling typically requires continuous or gridded data.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_METHOD"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided workflow uses resampling (operation 'resample') which is not supported by the given artifacts. The artifacts describe categorical land cover data at a resolution of 20 meters, while resampling typically requires continuous or gridded data.""
+}
+```"
+SGX3_DEVELOPMENT_future_information_004,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in the context of flood forecasting.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in the context of flood forecasting.""
+}
+```"
+SGX3_BLIND_flood_remote_sensing_046,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONVERSION,MEDIUM,3,The provided artifacts do not match the required units (binary vs. continuous) and resolutions (20m vs. 10m). The comparison of sensors requires consistent unit scales.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONVERSION"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 3,
+  ""reason"": ""The provided artifacts do not match the required units (binary vs. continuous) and resolutions (20m vs. 10m). The comparison of sensors requires consistent unit scales.""
+}
+```"
+SGX3_BLIND_flood_depth_029,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT_CONVERSION,HIGH,4,The conversion of units between elevation (m) and water level (m) is unsupported because they represent fundamentally different quantities in hydrology.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT_CONVERSION"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The conversion of units between elevation (m) and water level (m) is unsupported because they represent fundamentally different quantities in hydrology.""
+}
+```"
+SGX3_DEVELOPMENT_processing_level_002,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifact has no unit associated with it, which is required for consistent measurement interpretation.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifact has no unit associated with it, which is required for consistent measurement interpretation.""
+}
+```"
+SGX3_BLIND_landcover_change_028,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in land cover change analysis.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in land cover change analysis.""
+}
+```"
+SGX3_BLIND_flood_remote_sensing_014,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONVERSION,MEDIUM,3,The provided artifacts do not match the required units (binary vs. continuous) and resolutions (10m vs. 10m). The comparison of sensors requires consistent unit scales.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONVERSION"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 3,
+  ""reason"": ""The provided artifacts do not match the required units (binary vs. continuous) and resolutions (10m vs. 10m). The comparison of sensors requires consistent unit scales.""
+}
+```"
+SGX3_HELDOUT-FAMILY_scene_overlap_leakage_006,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not include any unit information, which is essential for defining the scale of the imagery.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include any unit information, which is essential for defining the scale of the imagery.""
+}
+```"
+SGX3_BLIND_flood_depth_021,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT_CONVERSION,HIGH,4,"The conversion of elevation units (m) to kilometers (km) is unsupported because elevation typically refers to height above sea level, which cannot be directly converted to distance in kilometers without additional context.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT_CONVERSION"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The conversion of elevation units (m) to kilometers (km) is unsupported because elevation typically refers to height above sea level, which cannot be directly converted to distance in kilometers without additional context.""
+}
+```"
+SGX3_BLIND_flood_depth_043,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT_CONVERSION,HIGH,4,The conversion of units between elevation (m) and water level (cm) is unsupported because they represent fundamentally different quantities.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT_CONVERSION"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The conversion of units between elevation (m) and water level (cm) is unsupported because they represent fundamentally different quantities.""
+}
+```"
+SGX3_BLIND_flood_remote_sensing_049,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONVERSION,MEDIUM,3,"The provided artifacts do not match the required units (binary vs. continuous) and resolutions (20m vs. 10m). The flood mask artifact requires binary values while the S1 and S2 reflectance artifacts require continuous values. Additionally, the resolution of the flood mask artifact (20m) is significantly higher than the other artifacts (10m), which may affect the accuracy of the area calculation.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONVERSION"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 3,
+  ""reason"": ""The provided artifacts do not match the required units (binary vs. continuous) and resolutions (20m vs. 10m). The flood mask artifact requires binary values while the S1 and S2 reflectance artifacts require continuous values. Additionally, the resolution of the flood mask artifact (20m) is significantly higher than the other artifacts (10m), which may affect the accuracy of the area calculation.""
+}
+```"
+SGX3_HELDOUT-FAMILY_uncertainty_missing_009,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_SCALE_MISMATCH,HIGH,4,"The provided hazard probability data has a scale of 'continuous', which is incompatible with the requirement for operational decisions where discrete values (e.g., binary outcomes) are typically used.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_SCALE_MISMATCH"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided hazard probability data has a scale of 'continuous', which is incompatible with the requirement for operational decisions where discrete values (e.g., binary outcomes) are typically used.""
+}
+```"
+SGX3_BLIND_landcover_change_025,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in land cover change analysis.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in land cover change analysis.""
+}
+```"
+SGX3_HELDOUT-FAMILY_rate_sum_without_duration_002,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_METHOD,HIGH,4,The provided method 'sum' of temporal aggregation is unsupported by the given artifact's properties.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_METHOD"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided method 'sum' of temporal aggregation is unsupported by the given artifact's properties.""
+}
+```"
+SGX3_DEVELOPMENT_unsupported_resolution_gain_010,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_RESOLUTION_GAIN,HIGH,4,"The provided workflow aims to achieve 'unsupported resolution gain', which implies increasing the resolution of a raster dataset without loss of information. However, the current artifact has a resolution of 100 meters, and the proposed resampling method (bilinear) will reduce it further to 50 meters. This contradicts the intended goal of achieving higher resolution.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_RESOLUTION_GAIN"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided workflow aims to achieve 'unsupported resolution gain', which implies increasing the resolution of a raster dataset without loss of information. However, the current artifact has a resolution of 100 meters, and the proposed resampling method (bilinear) will reduce it further to 50 meters. This contradicts the intended goal of achieving higher resolution.""
+}
+```"
+SGX3_BLIND_flood_remote_sensing_041,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONVERSION,MEDIUM,3,"The provided artifacts do not match the required units (binary vs. continuous) and resolutions (10m vs. unspecified). The comparison of sensors requires specific sensor types and their respective units, which are not present in the artifacts.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONVERSION"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 3,
+  ""reason"": ""The provided artifacts do not match the required units (binary vs. continuous) and resolutions (10m vs. unspecified). The comparison of sensors requires specific sensor types and their respective units, which are not present in the artifacts.""
+}
+```"
+SGX3_BLIND_flood_depth_014,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT_CONVERSION,HIGH,4,The conversion of 'water_level' (unit km) to 'K' (Kelvin) is unsupported because water levels do not have a unit in Kelvin.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT_CONVERSION"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The conversion of 'water_level' (unit km) to 'K' (Kelvin) is unsupported because water levels do not have a unit in Kelvin.""
+}
+```"
+SGX3_BLIND_landcover_change_041,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in land cover change analysis.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in land cover change analysis.""
+}
+```"
+SGX3_HELDOUT-FAMILY_quality_metadata_loss_001,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONVERSION,HIGH,4,The provided workflow involves dropping quality metadata from reflectance data without specifying how the resulting dataset will be used or what downstream processes it will undergo. This lack of context makes it impossible to determine if the loss of metadata is intentional or unintentional.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONVERSION"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided workflow involves dropping quality metadata from reflectance data without specifying how the resulting dataset will be used or what downstream processes it will undergo. This lack of context makes it impossible to determine if the loss of metadata is intentional or unintentional.""
+}
+```"
+SGX3_DEVELOPMENT_future_information_006,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in the context of flood forecasting.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in the context of flood forecasting.""
+}
+```"
+SGX3_BLIND_landcover_change_018,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_METHOD,HIGH,4,The provided method 'lanczos' for resampling categorical land cover data is unsupported for categorical data.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_METHOD"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided method 'lanczos' for resampling categorical land cover data is unsupported for categorical data.""
+}
+```"
+SGX3_BLIND_landslide_forecast_010,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,The provided artifacts do not include units for the required quantities (rainfall and elevation). The scientific goal requires specific unit information which is missing.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include units for the required quantities (rainfall and elevation). The scientific goal requires specific unit information which is missing.""
+}
+```"
+SGX3_DEVELOPMENT_categorical_interpolation_012,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_METHOD,HIGH,4,The provided method 'nearest' for resampling categorical data is unsupported for categorical interpolation tasks.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_METHOD"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided method 'nearest' for resampling categorical data is unsupported for categorical interpolation tasks.""
+}
+```"
+SGX3_DEVELOPMENT_categorical_interpolation_002,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_METHOD,HIGH,4,"The provided method 'mode' of resampling is unsupported by the given artifacts. The artifacts represent categorical land cover data, which cannot be meaningfully interpolated using mode resampling.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_METHOD"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided method 'mode' of resampling is unsupported by the given artifacts. The artifacts represent categorical land cover data, which cannot be meaningfully interpolated using mode resampling.""
+}
+```"
+SGX3_HELDOUT-FAMILY_uncertainty_missing_014,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_SCALE_MISMATCH,HIGH,4,"The provided hazard probability data has a scale of 'continuous', which is incompatible with the requirement for operational decisions where discrete values (e.g., binary) are typically used.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_SCALE_MISMATCH"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided hazard probability data has a scale of 'continuous', which is incompatible with the requirement for operational decisions where discrete values (e.g., binary) are typically used.""
+}
+```"
+SGX3_BLIND_flood_remote_sensing_020,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONVERSION,MEDIUM,3,The provided artifacts do not match the required units (binary vs. continuous) and resolutions (20m vs. 10m). The comparison of sensors requires consistent unit scales.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONVERSION"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 3,
+  ""reason"": ""The provided artifacts do not match the required units (binary vs. continuous) and resolutions (20m vs. 10m). The comparison of sensors requires consistent unit scales.""
+}
+```"
+SGX3_BLIND_landslide_forecast_006,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,The provided artifacts do not include units for the required quantities (rainfall and elevation). The scientific goal requires specific unit information which is missing.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include units for the required quantities (rainfall and elevation). The scientific goal requires specific unit information which is missing.""
+}
+```"
+SGX3_BLIND_landslide_forecast_022,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,The provided artifacts do not include units for the required quantities (rainfall and elevation). The scientific goal requires specific unit information which is missing.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include units for the required quantities (rainfall and elevation). The scientific goal requires specific unit information which is missing.""
+}
+```"
+SGX3_BLIND_eo_ml_validation_031,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not contain any information about units, which is crucial for understanding the scale and resolution of the data.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not contain any information about units, which is crucial for understanding the scale and resolution of the data.""
+}
+```"
+SGX3_DEVELOPMENT_unsupported_resolution_gain_014,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_RESOLUTION_GAIN,HIGH,4,"The provided workflow aims to achieve 'unsupported resolution gain', which implies increasing the resolution of a raster dataset without loss of information. However, the current artifact has a resolution of 20 meters (m), while the target resolution specified in the operation is 10 meters (m). This mismatch directly contradicts the intended outcome of achieving higher resolution.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_RESOLUTION_GAIN"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided workflow aims to achieve 'unsupported resolution gain', which implies increasing the resolution of a raster dataset without loss of information. However, the current artifact has a resolution of 20 meters (m), while the target resolution specified in the operation is 10 meters (m). This mismatch directly contradicts the intended outcome of achieving higher resolution.""
+}
+```"
+SGX3_BLIND_flood_remote_sensing_005,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONVERSION,MEDIUM,3,The provided artifacts do not match the required units (binary vs. continuous) and resolutions (10m vs. 10m). The comparison of sensors requires consistent unit types and resolutions.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONVERSION"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 3,
+  ""reason"": ""The provided artifacts do not match the required units (binary vs. continuous) and resolutions (10m vs. 10m). The comparison of sensors requires consistent unit types and resolutions.""
+}
+```"
+SGX3_BLIND_eo_ml_validation_043,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONVERSION,HIGH,4,The provided artifacts do not contain any information about how the EO samples will be converted into a format suitable for ML validation. The conversion process is crucial as it must ensure compatibility with the required input formats and scales.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONVERSION"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not contain any information about how the EO samples will be converted into a format suitable for ML validation. The conversion process is crucial as it must ensure compatibility with the required input formats and scales.""
+}
+```"
+SGX3_DEVELOPMENT_future_information_009,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in the context of flood forecasting.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in the context of flood forecasting.""
+}
+```"
+SGX3_DEVELOPMENT_spectral_role_001,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not include units for the red and other bands, which is required for spectral analysis.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include units for the red and other bands, which is required for spectral analysis.""
+}
+```"
+SGX3_DEVELOPMENT_angular_area_007,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,The provided unit 'km2' (square kilometers) is unsupported by the given artifacts which do not specify any area measurement.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided unit 'km2' (square kilometers) is unsupported by the given artifacts which do not specify any area measurement.""
+}
+```"
+SGX3_BLIND_flood_remote_sensing_018,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONVERSION,MEDIUM,3,The provided artifacts do not match the required units (binary vs. continuous) and resolutions (30m vs. 10m). The comparison of sensors requires consistent unit scales.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONVERSION"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 3,
+  ""reason"": ""The provided artifacts do not match the required units (binary vs. continuous) and resolutions (30m vs. 10m). The comparison of sensors requires consistent unit scales.""
+}
+```"
+SGX3_BLIND_landslide_forecast_016,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The IMERG feature (rainfall) has a unit of 'mm', which is categorical data. The terrain-60 elevation (continuous data) cannot be directly used as input for rainfall prediction without converting it into a categorical format.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The IMERG feature (rainfall) has a unit of 'mm', which is categorical data. The terrain-60 elevation (continuous data) cannot be directly used as input for rainfall prediction without converting it into a categorical format.""
+}
+```"
+SGX3_BLIND_eo_ml_validation_010,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The artifacts do not contain any unit information, which is crucial for understanding the scale of measurements.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The artifacts do not contain any unit information, which is crucial for understanding the scale of measurements.""
+}
+```"
+SGX3_DEVELOPMENT_spatial_split_leakage_002,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in the dataset.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in the dataset.""
+}
+```"
+SGX3_HELDOUT-FAMILY_unit_dimension_mismatch_002,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNIT_DIMENSION_MISMATCH,HIGH,4,"The provided artifact has a unit of 'm' (metres), which is incompatible with the required unit of 'cm' (centimetres) as specified in the scientific goal.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNIT_DIMENSION_MISMATCH"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifact has a unit of 'm' (metres), which is incompatible with the required unit of 'cm' (centimetres) as specified in the scientific goal.""
+}
+```"
+SGX3_BLIND_landcover_change_005,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_METHOD,HIGH,4,The provided method 'bilinear' is unsupported by the given artifacts. The artifacts do not contain any raster data suitable for resampling.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_METHOD"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided method 'bilinear' is unsupported by the given artifacts. The artifacts do not contain any raster data suitable for resampling.""
+}
+```"
+SGX3_HELDOUT-FAMILY_scene_overlap_leakage_004,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not include any unit information, which is essential for defining the scale of the imagery.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include any unit information, which is essential for defining the scale of the imagery.""
+}
+```"
+SGX3_BLIND_eo_ml_validation_047,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONVERSION,HIGH,4,The provided artifacts do not contain any information about how the EO samples will be converted into a format suitable for ML validation. The conversion process is crucial as it must ensure compatibility with the required input formats and scales.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONVERSION"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not contain any information about how the EO samples will be converted into a format suitable for ML validation. The conversion process is crucial as it must ensure compatibility with the required input formats and scales.""
+}
+```"
+SGX3_HELDOUT-FAMILY_scene_overlap_leakage_011,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not include any unit information, which is essential for defining the scale of the imagery.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include any unit information, which is essential for defining the scale of the imagery.""
+}
+```"
+SGX3_DEVELOPMENT_categorical_interpolation_006,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_METHOD,HIGH,4,"The provided workflow uses resampling (operation 'resample') which is not supported by the given artifacts. The artifacts describe categorical land cover data at a resolution of 10 meters, while resampling typically requires continuous or gridded data.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_METHOD"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided workflow uses resampling (operation 'resample') which is not supported by the given artifacts. The artifacts describe categorical land cover data at a resolution of 10 meters, while resampling typically requires continuous or gridded data.""
+}
+```"
+SGX3_DEVELOPMENT_unsupported_resolution_gain_004,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_RESOLUTION_GAIN,HIGH,4,"The provided workflow aims to achieve 'unsupported resolution gain', which implies increasing the resolution of a raster dataset without loss of information. However, the current artifact has a resolution of 100 meters, which is already at the highest possible resolution (assuming no further resampling). Resampling methods like bilinear interpolation do not increase resolution; they interpolate between existing pixels. Therefore, achieving unsupported resolution gain in this context would require additional steps beyond what is currently specified.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_RESOLUTION_GAIN"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided workflow aims to achieve 'unsupported resolution gain', which implies increasing the resolution of a raster dataset without loss of information. However, the current artifact has a resolution of 100 meters, which is already at the highest possible resolution (assuming no further resampling). Resampling methods like bilinear interpolation do not increase resolution; they interpolate between existing pixels. Therefore, achieving unsupported resolution gain in this context would require additional steps beyond what is currently specified.""
+}
+```"
+SGX3_BLIND_eo_ml_validation_013,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The artifacts do not provide any information about units, which is crucial for understanding the scale of measurements in EO samples.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The artifacts do not provide any information about units, which is crucial for understanding the scale of measurements in EO samples.""
+}
+```"
+SGX3_BLIND_eo_ml_validation_049,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONVERSION,HIGH,4,The provided artifacts do not contain any information about how the EO samples will be converted into a format suitable for ML validation. The conversion process is crucial as it must ensure compatibility with the required input formats and scales.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONVERSION"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not contain any information about how the EO samples will be converted into a format suitable for ML validation. The conversion process is crucial as it must ensure compatibility with the required input formats and scales.""
+}
+```"
+SGX3_DEVELOPMENT_nodata_zero_000,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_VALIDITY,HIGH,4,"The provided artifact 'rain' has no nodata value defined (i.e., it uses 'missing' as nodata semantics), which contradicts the requirement of having a specific nodata value (-9999 in this case). This invalidates the entire workflow.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_VALIDITY"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifact 'rain' has no nodata value defined (i.e., it uses 'missing' as nodata semantics), which contradicts the requirement of having a specific nodata value (-9999 in this case). This invalidates the entire workflow.""
+}
+```"
+SGX3_BLIND_landslide_forecast_003,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,The provided artifacts do not include units for the required quantities (rainfall and elevation). The scientific goal requires specific unit information which is missing.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include units for the required quantities (rainfall and elevation). The scientific goal requires specific unit information which is missing.""
+}
+```"
+SGX3_BLIND_flood_depth_024,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT_CONVERSION,HIGH,4,The conversion of unit from 'm' (meter) to 'K' (Kelvin) is unsupported as Kelvin is not a supported unit in the given context.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT_CONVERSION"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The conversion of unit from 'm' (meter) to 'K' (Kelvin) is unsupported as Kelvin is not a supported unit in the given context.""
+}
+```"
+SGX3_DEVELOPMENT_future_information_000,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in the context of flood forecasting.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in the context of flood forecasting.""
+}
+```"
+SGX3_HELDOUT-FAMILY_uncertainty_missing_003,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_SCALE_MISMATCH,HIGH,4,"The provided hazard probability data has a scale of 'continuous', which is incompatible with the requirement for operational decisions where discrete values (e.g., binary) are typically used.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_SCALE_MISMATCH"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided hazard probability data has a scale of 'continuous', which is incompatible with the requirement for operational decisions where discrete values (e.g., binary) are typically used.""
+}
+```"
+SGX3_BLIND_flood_depth_006,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT_CONVERSION,HIGH,4,The conversion of unit from cm (water-level) to km (terrain elevation) is unsupported as they represent fundamentally different scales and units.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT_CONVERSION"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The conversion of unit from cm (water-level) to km (terrain elevation) is unsupported as they represent fundamentally different scales and units.""
+}
+```"
+SGX3_DEVELOPMENT_processing_level_001,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifact has no unit associated with it, which is required for consistent measurement interpretation.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifact has no unit associated with it, which is required for consistent measurement interpretation.""
+}
+```"
+SGX3_DEVELOPMENT_unsupported_resolution_gain_009,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_RESOLUTION,HIGH,4,"The provided workflow aims to achieve 'unsupported resolution gain', which implies increasing the resolution of a raster dataset without loss of information. However, the current artifact has a resolution of 30 meters (m), while the target resolution specified in the workflow is 60 meters (m). This mismatch indicates that the workflow cannot fulfill the intended goal as described.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_RESOLUTION"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided workflow aims to achieve 'unsupported resolution gain', which implies increasing the resolution of a raster dataset without loss of information. However, the current artifact has a resolution of 30 meters (m), while the target resolution specified in the workflow is 60 meters (m). This mismatch indicates that the workflow cannot fulfill the intended goal as described.""
+}
+```"
+SGX3_BLIND_eo_ml_validation_032,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not contain any information about units, which is crucial for understanding the scale and resolution of the data.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not contain any information about units, which is crucial for understanding the scale and resolution of the data.""
+}
+```"
+SGX3_HELDOUT-FAMILY_physical_range_violation_013,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_RANGE_MISMATCH,HIGH,4,"The provided artifact's observed range (-0.36860274517733194 to 0.7109580910108333) does not match the required value range of [-1, 1]. This mismatch indicates a potential issue in the data validation process.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_RANGE_MISMATCH"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifact's observed range (-0.36860274517733194 to 0.7109580910108333) does not match the required value range of [-1, 1]. This mismatch indicates a potential issue in the data validation process.""
+}
+```"
+SGX3_BLIND_flood_depth_045,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT_CONVERSION,HIGH,4,"The workflow attempts to combine two artifacts (elevation and water surface) using a unit conversion operation ('convert_unit'), which is unsupported because elevation units (meters) cannot be directly converted to water-level units without additional context.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT_CONVERSION"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The workflow attempts to combine two artifacts (elevation and water surface) using a unit conversion operation ('convert_unit'), which is unsupported because elevation units (meters) cannot be directly converted to water-level units without additional context.""
+}
+```"
+SGX3_BLIND_eo_ml_validation_030,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not contain any information about units, which is crucial for understanding the scale and resolution of the data.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not contain any information about units, which is crucial for understanding the scale and resolution of the data.""
+}
+```"
+SGX3_HELDOUT-FAMILY_categorical_mean_aggregation_002,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,PROVEN,NONE,LOW,5,"The provided information aligns with the scientific goal of categorical mean aggregation as described in the goal section. The artifact 'landcover' meets all required criteria (categorical scale, EPSG:32643 CRS, resolution of 10 meters) without any conflicting assumptions or invalid choices.","```json
+{
+  ""verdict"": ""PROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The provided information aligns with the scientific goal of categorical mean aggregation as described in the goal section. The artifact 'landcover' meets all required criteria (categorical scale, EPSG:32643 CRS, resolution of 10 meters) without any conflicting assumptions or invalid choices.""
+}
+```"
+SGX3_BLIND_landcover_change_012,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_METHOD,HIGH,4,The provided method 'lanczos' for resampling categorical land cover data is unsupported for categorical data.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_METHOD"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided method 'lanczos' for resampling categorical land cover data is unsupported for categorical data.""
+}
+```"
+SGX3_BLIND_flood_depth_007,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT_CONVERSION,HIGH,4,The conversion of 'water_level' (unit km) to meters ('m') is unsupported because water levels typically do not use meters as their unit.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT_CONVERSION"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The conversion of 'water_level' (unit km) to meters ('m') is unsupported because water levels typically do not use meters as their unit.""
+}
+```"
+SGX3_DEVELOPMENT_future_information_002,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in the context of flood forecasting.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in the context of flood forecasting.""
+}
+```"
+SGX3_DEVELOPMENT_unsupported_resolution_gain_008,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_RESOLUTION_GAIN,HIGH,4,"The provided workflow aims to achieve 'unsupported resolution gain', which implies increasing the resolution of a raster dataset without loss of information. However, the current artifact has a resolution of 20 meters, while the target resolution specified in the operation is 6.666666666666667 meters (approximately 6.7 meters). This discrepancy indicates that the requested resolution increase cannot be achieved using the given method.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_RESOLUTION_GAIN"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided workflow aims to achieve 'unsupported resolution gain', which implies increasing the resolution of a raster dataset without loss of information. However, the current artifact has a resolution of 20 meters, while the target resolution specified in the operation is 6.666666666666667 meters (approximately 6.7 meters). This discrepancy indicates that the requested resolution increase cannot be achieved using the given method.""
+}
+```"
+SGX3_DEVELOPMENT_band_grid_mismatch_002,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not contain unit information, which is essential for performing spectral index calculations.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not contain unit information, which is essential for performing spectral index calculations.""
+}
+```"
+SGX3_HELDOUT-FAMILY_uncertainty_missing_008,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_SCALE_MISMATCH,HIGH,4,"The provided hazard probability data has a scale of 'continuous', which is incompatible with the requirement for operational decisions where discrete values (e.g., binary) may be more appropriate.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_SCALE_MISMATCH"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided hazard probability data has a scale of 'continuous', which is incompatible with the requirement for operational decisions where discrete values (e.g., binary) may be more appropriate.""
+}
+```"
+SGX3_HELDOUT-FAMILY_scene_overlap_leakage_001,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not include any unit information, which is essential for defining the scale of the imagery.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include any unit information, which is essential for defining the scale of the imagery.""
+}
+```"
+SGX3_HELDOUT-FAMILY_multisensor_time_mismatch_014,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONFLICT,HIGH,4,"The provided artifacts do not match the required quantity 'backscatter' for sensor S1, which is specified as 'reflectance'. Additionally, the temporal resolution of S2 (22 hours) is inconsistent with the requirement of having a maximum temporal tolerance of 24 hours.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONFLICT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not match the required quantity 'backscatter' for sensor S1, which is specified as 'reflectance'. Additionally, the temporal resolution of S2 (22 hours) is inconsistent with the requirement of having a maximum temporal tolerance of 24 hours.""
+}
+```"
+SGX3_HELDOUT-FAMILY_scene_overlap_leakage_005,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not include any unit information, which is essential for defining the scale of the imagery.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include any unit information, which is essential for defining the scale of the imagery.""
+}
+```"
+SGX3_BLIND_flood_depth_039,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT_CONVERSION,HIGH,4,The conversion of unit from 'm' (meter) to 'K' (Kelvin) is unsupported as Kelvin is not a supported unit in the given context.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT_CONVERSION"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The conversion of unit from 'm' (meter) to 'K' (Kelvin) is unsupported as Kelvin is not a supported unit in the given context.""
+}
+```"
+SGX3_BLIND_flood_remote_sensing_040,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONVERSION,MEDIUM,3,The provided artifacts do not match the required units (binary vs. continuous) and resolutions (10m vs. 10m). The comparison of sensors requires consistent unit types and resolutions.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONVERSION"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 3,
+  ""reason"": ""The provided artifacts do not match the required units (binary vs. continuous) and resolutions (10m vs. 10m). The comparison of sensors requires consistent unit types and resolutions.""
+}
+```"
+SGX3_HELDOUT-FAMILY_temporal_split_overlap_003,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,INVALID_DATA,HIGH,4,The provided artifacts do not match the required quantity of 'time_series' as specified in the goal. The artifact named 'records' has no time series information.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""INVALID_DATA"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not match the required quantity of 'time_series' as specified in the goal. The artifact named 'records' has no time series information.""
+}
+```"
+SGX3_BLIND_landcover_change_043,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_METHOD,HIGH,4,The provided method 'cubic' for resampling categorical land cover data is unsupported for categorical data.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_METHOD"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided method 'cubic' for resampling categorical land cover data is unsupported for categorical data.""
+}
+```"
+SGX3_BLIND_landslide_forecast_030,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The IMERG feature (rainfall) has a unit of 'mm', which is categorical data. The terrain-60 elevation (continuous data) cannot be directly used as input for rainfall prediction without converting it into a categorical format.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The IMERG feature (rainfall) has a unit of 'mm', which is categorical data. The terrain-60 elevation (continuous data) cannot be directly used as input for rainfall prediction without converting it into a categorical format.""
+}
+```"
+SGX3_BLIND_flood_remote_sensing_035,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONVERSION,MEDIUM,3,The provided artifacts do not match the required units (binary vs. continuous) and resolutions (20m vs. 10m). The comparison of sensors requires consistent unit scales.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONVERSION"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 3,
+  ""reason"": ""The provided artifacts do not match the required units (binary vs. continuous) and resolutions (20m vs. 10m). The comparison of sensors requires consistent unit scales.""
+}
+```"
+SGX3_DEVELOPMENT_angular_area_005,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,The provided unit 'km2' (square kilometers) is unsupported by the given artifacts which do not specify any area measurement.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided unit 'km2' (square kilometers) is unsupported by the given artifacts which do not specify any area measurement.""
+}
+```"
+SGX3_DEVELOPMENT_spatial_split_leakage_000,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in the dataset.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in the dataset.""
+}
+```"
+SGX3_HELDOUT-FAMILY_multisensor_time_mismatch_008,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONFLICT,HIGH,4,"The provided artifacts do not match the required quantity 'backscatter' for sensor S1, which is specified as 'reflectance'. Additionally, the temporal resolution of S2 (6 hours) is inconsistent with the requirement of having at least a 6-hour tolerance.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONFLICT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not match the required quantity 'backscatter' for sensor S1, which is specified as 'reflectance'. Additionally, the temporal resolution of S2 (6 hours) is inconsistent with the requirement of having at least a 6-hour tolerance.""
+}
+```"
+SGX3_BLIND_flood_depth_032,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT_CONVERSION,HIGH,4,The conversion of elevation (m) to water surface (m) is unsupported because elevation and water surface units do not directly convert.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT_CONVERSION"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The conversion of elevation (m) to water surface (m) is unsupported because elevation and water surface units do not directly convert.""
+}
+```"
+SGX3_BLIND_flood_depth_011,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT_CONVERSION,HIGH,4,"The elevation data (from terrain-90) has a unit of meters (m), while the water-level data (from water-surface) has a unit of centimeters (cm). The conversion operation attempts to convert units between these two incompatible scales without specifying how to handle the scale difference.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT_CONVERSION"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The elevation data (from terrain-90) has a unit of meters (m), while the water-level data (from water-surface) has a unit of centimeters (cm). The conversion operation attempts to convert units between these two incompatible scales without specifying how to handle the scale difference.""
+}
+```"
+SGX3_BLIND_flood_remote_sensing_022,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONVERSION,MEDIUM,3,"The provided artifacts do not match the required units (binary vs. continuous) and resolutions (30m vs. 10m). The flood mask artifact requires binary values while the S1 and S2 reflectance artifacts require continuous values. Additionally, the resolution of the flood mask artifact (30m) is significantly higher than the other artifacts (10m), which may affect the accuracy of the area calculation.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONVERSION"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 3,
+  ""reason"": ""The provided artifacts do not match the required units (binary vs. continuous) and resolutions (30m vs. 10m). The flood mask artifact requires binary values while the S1 and S2 reflectance artifacts require continuous values. Additionally, the resolution of the flood mask artifact (30m) is significantly higher than the other artifacts (10m), which may affect the accuracy of the area calculation.""
+}
+```"
+SGX3_BLIND_landcover_change_001,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_METHOD,HIGH,4,The provided method 'nearest' for resampling categorical data (land cover) at a resolution of 60 meters is unsupported for categorical data.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_METHOD"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided method 'nearest' for resampling categorical data (land cover) at a resolution of 60 meters is unsupported for categorical data.""
+}
+```"
+SGX3_HELDOUT-FAMILY_uncertainty_missing_001,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_SCALE_MISMATCH,HIGH,4,"The provided hazard probability data has a scale of 'continuous', which is incompatible with the requirement for operational decisions where discrete values (e.g., binary) are typically used.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_SCALE_MISMATCH"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided hazard probability data has a scale of 'continuous', which is incompatible with the requirement for operational decisions where discrete values (e.g., binary) are typically used.""
+}
+```"
+SGX3_BLIND_landslide_forecast_028,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The IMERG feature (rainfall) has a unit of 'mm', which is categorical data. The terrain-90 elevation (continuous data) cannot be directly used as input for rainfall prediction without converting it into a categorical format.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The IMERG feature (rainfall) has a unit of 'mm', which is categorical data. The terrain-90 elevation (continuous data) cannot be directly used as input for rainfall prediction without converting it into a categorical format.""
+}
+```"
+SGX3_HELDOUT-FAMILY_physical_range_violation_002,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_RANGE_MISMATCH,HIGH,4,"The provided artifact has a value range of [-2, 2] while the required value range for 'physical_range_violation' is typically between -1 and 1.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_RANGE_MISMATCH"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifact has a value range of [-2, 2] while the required value range for 'physical_range_violation' is typically between -1 and 1.""
+}
+```"
+SGX3_DEVELOPMENT_future_information_008,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in the context of flood forecasting.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in the context of flood forecasting.""
+}
+```"
+SGX3_DEVELOPMENT_spectral_role_002,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not include units for the red and other bands, which is required for spectral analysis.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include units for the red and other bands, which is required for spectral analysis.""
+}
+```"
+SGX3_HELDOUT-FAMILY_scene_overlap_leakage_009,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not include any unit information, which is essential for defining the scale of the imagery.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include any unit information, which is essential for defining the scale of the imagery.""
+}
+```"
+SGX3_BLIND_eo_ml_validation_014,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The artifacts do not contain any unit information, which is crucial for understanding the scale of measurements.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The artifacts do not contain any unit information, which is crucial for understanding the scale of measurements.""
+}
+```"
+SGX3_BLIND_eo_ml_validation_021,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONVERSION,HIGH,4,The provided artifacts do not contain any information about how the EO samples will be converted into a format suitable for ML validation. The conversion process is crucial as it must ensure compatibility with the required input formats and scales.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONVERSION"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not contain any information about how the EO samples will be converted into a format suitable for ML validation. The conversion process is crucial as it must ensure compatibility with the required input formats and scales.""
+}
+```"
+SGX3_HELDOUT-FAMILY_uncertainty_missing_012,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_SCALE_MISMATCH,HIGH,4,"The provided hazard probability has a scale of 'continuous', which is incompatible with the requirement for a resolution of 10 meters (m). Continuous data typically do not have a fixed resolution.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_SCALE_MISMATCH"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided hazard probability has a scale of 'continuous', which is incompatible with the requirement for a resolution of 10 meters (m). Continuous data typically do not have a fixed resolution.""
+}
+```"
+SGX3_BLIND_eo_ml_validation_018,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONVERSION,HIGH,4,The provided artifacts do not contain any information about how the EO samples will be converted into a format suitable for ML validation. The conversion process is crucial as it must ensure compatibility with the required input formats and scales.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONVERSION"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not contain any information about how the EO samples will be converted into a format suitable for ML validation. The conversion process is crucial as it must ensure compatibility with the required input formats and scales.""
+}
+```"
+SGX3_BLIND_landcover_change_011,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_METHOD,HIGH,4,The provided method 'lanczos' for resampling categorical land cover data is unsupported for categorical data.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_METHOD"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided method 'lanczos' for resampling categorical land cover data is unsupported for categorical data.""
+}
+```"
+SGX3_HELDOUT-FAMILY_rate_sum_without_duration_005,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_METHOD,HIGH,4,"The provided method 'integrate' is unsupported by the given artifacts. The artifacts represent precipitation rate (mm/h), which typically requires aggregation over time periods rather than integration.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_METHOD"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided method 'integrate' is unsupported by the given artifacts. The artifacts represent precipitation rate (mm/h), which typically requires aggregation over time periods rather than integration.""
+}
+```"
+SGX3_HELDOUT-FAMILY_vertical_datum_mismatch_000,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONFLICT,HIGH,4,"The provided artifacts do not match the required vertical datum ('EGM2008' vs 'EGM96'). The combination of these datasets would result in inconsistent vertical datums, which violates the requirement for a consistent vertical datum.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONFLICT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not match the required vertical datum ('EGM2008' vs 'EGM96'). The combination of these datasets would result in inconsistent vertical datums, which violates the requirement for a consistent vertical datum.""
+}
+```"
+SGX3_DEVELOPMENT_angular_area_009,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,The provided unit 'km2' (square kilometers) is unsupported by the given artifacts which do not specify any area measurement.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided unit 'km2' (square kilometers) is unsupported by the given artifacts which do not specify any area measurement.""
+}
+```"
+SGX3_BLIND_flood_depth_027,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT_CONVERSION,HIGH,4,The conversion of units between elevation (m) and water level (cm) is unsupported because they represent fundamentally different quantities.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT_CONVERSION"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The conversion of units between elevation (m) and water level (cm) is unsupported because they represent fundamentally different quantities.""
+}
+```"
+SGX3_BLIND_landcover_change_037,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_METHOD,HIGH,4,The provided method 'bilinear' is not supported by the artifacts. The artifacts do not contain any raster data suitable for resampling.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_METHOD"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided method 'bilinear' is not supported by the artifacts. The artifacts do not contain any raster data suitable for resampling.""
+}
+```"
+SGX3_BLIND_landcover_change_032,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_METHOD,HIGH,4,The provided method 'lanczos' for resampling categorical land cover data is unsupported for categorical data.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_METHOD"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided method 'lanczos' for resampling categorical land cover data is unsupported for categorical data.""
+}
+```"
+SGX3_HELDOUT-FAMILY_physical_range_violation_000,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_RANGE_MISMATCH,HIGH,4,"The provided artifact has a value range of [-0.8, 1.3] which exceeds the required min (-1) and max (1). The 'assert_value_range' operation in the workflow expects values within these bounds.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_RANGE_MISMATCH"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifact has a value range of [-0.8, 1.3] which exceeds the required min (-1) and max (1). The 'assert_value_range' operation in the workflow expects values within these bounds.""
+}
+```"
+SGX3_HELDOUT-FAMILY_missing_provenance_001,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,NONE,HIGH,5,"The provided artifacts do not contain any information about the source of the elevation data, which is essential for establishing a provenance chain.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 5,
+  ""reason"": ""The provided artifacts do not contain any information about the source of the elevation data, which is essential for establishing a provenance chain.""
+}
+```"
+SGX3_DEVELOPMENT_cloud_mask_missing_001,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONVERSION,HIGH,4,The provided artifacts do not include cloud mask information required by the 'cloud_mask_missing' goal.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONVERSION"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include cloud mask information required by the 'cloud_mask_missing' goal.""
+}
+```"
+SGX3_BLIND_landcover_change_022,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_METHOD,HIGH,4,The provided method 'lanczos' for resampling categorical land cover data is unsupported for categorical data.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_METHOD"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided method 'lanczos' for resampling categorical land cover data is unsupported for categorical data.""
+}
+```"
+SGX3_DEVELOPMENT_categorical_interpolation_004,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_METHOD,HIGH,4,The provided method 'nearest' for resampling categorical data (land cover) is unsupported for categorical interpolation tasks.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_METHOD"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided method 'nearest' for resampling categorical data (land cover) is unsupported for categorical interpolation tasks.""
+}
+```"
+SGX3_HELDOUT-FAMILY_temporal_split_overlap_015,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,INVALID_DATA,HIGH,4,The provided artifacts do not match the required quantity of 'time_series' as specified in the goal. The artifact named 'records' has no time series information.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""INVALID_DATA"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not match the required quantity of 'time_series' as specified in the goal. The artifact named 'records' has no time series information.""
+}
+```"
+SGX3_BLIND_landcover_change_017,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in land cover change analysis.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in land cover change analysis.""
+}
+```"
+SGX3_BLIND_landcover_change_047,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in land cover change analysis.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in land cover change analysis.""
+}
+```"
+SGX3_BLIND_flood_remote_sensing_002,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONVERSION,MEDIUM,3,The provided artifacts do not match the required units (binary vs. continuous) and resolutions (20m vs. 10m). The comparison of sensors requires consistent unit scales.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONVERSION"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 3,
+  ""reason"": ""The provided artifacts do not match the required units (binary vs. continuous) and resolutions (20m vs. 10m). The comparison of sensors requires consistent unit scales.""
+}
+```"
+SGX3_HELDOUT-FAMILY_vertical_datum_mismatch_002,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONFLICT,HIGH,4,"The provided artifacts do not match the required vertical datum ('EGM2008' vs 'WGS84_ellipsoid'). The combination of these datasets would result in inconsistent vertical datums, which violates the requirement for a consistent vertical datum.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONFLICT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not match the required vertical datum ('EGM2008' vs 'WGS84_ellipsoid'). The combination of these datasets would result in inconsistent vertical datums, which violates the requirement for a consistent vertical datum.""
+}
+```"
+SGX3_DEVELOPMENT_rate_mean_as_accumulation_003,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,PROVEN,NONE,LOW,4,The provided workflow aligns with the scientific goal of calculating accumulation from precipitation rate data using the mean aggregation method over a specified time interval.,"```json
+{
+  ""verdict"": ""PROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 4,
+  ""reason"": ""The provided workflow aligns with the scientific goal of calculating accumulation from precipitation rate data using the mean aggregation method over a specified time interval.""
+}
+```"
+SGX3_DEVELOPMENT_future_information_007,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in the context of flood forecasting.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not include any information about units, which is crucial for understanding the scale of measurements in the context of flood forecasting.""
+}
+```"
+SGX3_BLIND_flood_depth_026,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT_CONVERSION,HIGH,4,The conversion of elevation (m) to water level (km) is unsupported because elevation units do not directly convert to surface models like water-level models.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT_CONVERSION"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The conversion of elevation (m) to water level (km) is unsupported because elevation units do not directly convert to surface models like water-level models.""
+}
+```"
+SGX3_BLIND_flood_remote_sensing_012,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONVERSION,MEDIUM,3,The provided artifacts do not match the required units (binary vs. continuous) and resolutions (10m vs. 10m). The comparison of sensors requires consistent unit scales.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONVERSION"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 3,
+  ""reason"": ""The provided artifacts do not match the required units (binary vs. continuous) and resolutions (10m vs. 10m). The comparison of sensors requires consistent unit scales.""
+}
+```"
+SGX3_BLIND_landcover_change_013,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_METHOD,HIGH,4,The provided method 'bilinear' is unsupported by the given artifacts. The artifacts do not contain any raster data suitable for resampling.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_METHOD"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided method 'bilinear' is unsupported by the given artifacts. The artifacts do not contain any raster data suitable for resampling.""
+}
+```"
+SGX3_BLIND_eo_ml_validation_017,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not contain any information about units, which is crucial for understanding the scale and resolution of the data.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not contain any information about units, which is crucial for understanding the scale and resolution of the data.""
+}
+```"
+SGX3_BLIND_flood_remote_sensing_025,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONVERSION,MEDIUM,3,The provided artifacts do not match the required units (binary vs. continuous) and resolutions (10m vs. 10m). The comparison of sensors requires consistent unit types and resolutions.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONVERSION"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 3,
+  ""reason"": ""The provided artifacts do not match the required units (binary vs. continuous) and resolutions (10m vs. 10m). The comparison of sensors requires consistent unit types and resolutions.""
+}
+```"
+SGX3_BLIND_landcover_change_044,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_METHOD,HIGH,4,"The provided method 'mode' of resampling is unsupported by the given artifacts. The artifacts represent categorical land cover data, which cannot be meaningfully resampled using mode without losing information.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_METHOD"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided method 'mode' of resampling is unsupported by the given artifacts. The artifacts represent categorical land cover data, which cannot be meaningfully resampled using mode without losing information.""
+}
+```"
+SGX3_BLIND_eo_ml_validation_004,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONVERSION,HIGH,4,The provided artifacts do not contain any information about how the EO samples will be converted into a format suitable for ML validation. The conversion process is crucial as it must ensure compatibility with the required input formats and scales.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONVERSION"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not contain any information about how the EO samples will be converted into a format suitable for ML validation. The conversion process is crucial as it must ensure compatibility with the required input formats and scales.""
+}
+```"
+SGX3_HELDOUT-FAMILY_temporal_split_overlap_005,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,INVALID_DATA,HIGH,4,The provided artifacts do not match the required quantity of 'time_series' as specified in the goal. The artifact named 'records' has no time series information.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""INVALID_DATA"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not match the required quantity of 'time_series' as specified in the goal. The artifact named 'records' has no time series information.""
+}
+```"
+SGX3_HELDOUT-FAMILY_physical_range_violation_010,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_RANGE_MISMATCH,HIGH,4,"The provided artifact's observed value range (-0.8227485767917194 to 0.7593046373274954) does not match the required value range of [-1, 1] as specified in the goal.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_RANGE_MISMATCH"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifact's observed value range (-0.8227485767917194 to 0.7593046373274954) does not match the required value range of [-1, 1] as specified in the goal.""
+}
+```"
+SGX3_DEVELOPMENT_nodata_zero_001,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_VALIDITY,HIGH,4,"The provided artifact 'rain' has no nodata value defined, which is required by the goal of 'nodata_zero'. The artifact's unit (mm) and scale (continuous) do not affect the requirement for a specific nodata value.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_VALIDITY"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifact 'rain' has no nodata value defined, which is required by the goal of 'nodata_zero'. The artifact's unit (mm) and scale (continuous) do not affect the requirement for a specific nodata value.""
+}
+```"
+SGX3_BLIND_landslide_forecast_045,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The IMERG feature (rainfall) has a unit of 'mm', which is categorical data. The terrain-30 elevation (continuous data) cannot be directly used as input for rainfall prediction without converting it into a categorical format.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The IMERG feature (rainfall) has a unit of 'mm', which is categorical data. The terrain-30 elevation (continuous data) cannot be directly used as input for rainfall prediction without converting it into a categorical format.""
+}
+```"
+SGX3_BLIND_flood_remote_sensing_045,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_CONVERSION,MEDIUM,3,The provided artifacts do not match the required units (binary vs. continuous) and resolutions (30m vs. 10m). The comparison of sensors requires consistent unit scales.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_CONVERSION"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 3,
+  ""reason"": ""The provided artifacts do not match the required units (binary vs. continuous) and resolutions (30m vs. 10m). The comparison of sensors requires consistent unit scales.""
+}
+```"
+SGX3_HELDOUT-FAMILY_unit_dimension_mismatch_003,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNIT_DIMENSION_MISMATCH,HIGH,4,"The provided artifact has a unit of 'm' (metres), which is incompatible with the required unit of 'km' (kilometres) as specified in the scientific goal.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNIT_DIMENSION_MISMATCH"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifact has a unit of 'm' (metres), which is incompatible with the required unit of 'km' (kilometres) as specified in the scientific goal.""
+}
+```"
+SGX3_BLIND_landslide_forecast_036,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The IMERG feature (rainfall) has a unit of 'mm', which is categorical data. The terrain-30 elevation (continuous data) cannot be directly used as input for rainfall prediction without converting it into a categorical format.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The IMERG feature (rainfall) has a unit of 'mm', which is categorical data. The terrain-30 elevation (continuous data) cannot be directly used as input for rainfall prediction without converting it into a categorical format.""
+}
+```"
+SGX3_BLIND_eo_ml_validation_027,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_UNIT,HIGH,4,"The provided artifacts do not contain any information about units, which is crucial for understanding the scale and resolution of the data.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_UNIT"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided artifacts do not contain any information about units, which is crucial for understanding the scale and resolution of the data.""
+}
+```"
+SGX3_DEVELOPMENT_categorical_interpolation_003,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,UNSUPPORTED_METHOD,HIGH,4,The provided method 'nearest' for resampling categorical data is unsupported for interpolation purposes.,"```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""UNSUPPORTED_METHOD"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided method 'nearest' for resampling categorical data is unsupported for interpolation purposes.""
+}
+```"
+SGX3_HELDOUT-FAMILY_uncertainty_missing_000,judge_A,Qwen/Qwen2.5-1.5B-Instruct,fp16,REFUTED,DATA_TYPE_MISMATCH,HIGH,4,"The provided hazard probability data has no associated scale (scale) information, which is crucial for defining how it should be resampled or interpreted in the context of operational decision-making.","```json
+{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""DATA_TYPE_MISMATCH"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 4,
+  ""reason"": ""The provided hazard probability data has no associated scale (scale) information, which is crucial for defining how it should be resampled or interpreted in the context of operational decision-making.""
+}
+```"

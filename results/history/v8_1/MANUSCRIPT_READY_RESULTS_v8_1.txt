@@ -1,0 +1,20 @@
+SciGeoGuard-X v8.1 real-data counterfactual replication
+=======================================================
+
+Status:
+PROVISIONAL: one or more v8.1 publication gates failed; inspect the gate table before using these numbers.
+
+Sentinel-2:
+Across four regions and two seasonal windows per region, replacing the NIR B08 role with SWIR B11 in an NDVI-labelled computation produced a region-cluster median mean absolute index difference of 0.0977 (95% bootstrap CI 0.0732–0.1242). The corresponding region-cluster median sign-flip fraction was 3.19%.
+
+ESA WorldCover:
+Bilinear interpolation of nominal WorldCover codes produced a median invalid-class fraction of 12.99% across four regions (95% bootstrap CI 7.49%–19.06%), whereas nearest-neighbour resampling retained a median valid-class fraction of 100.00%.
+
+GPM IMERG V07:
+After verifying the 48-point half-hourly source time axis and reconstructing zero-rain slots under the ERDDAP 0.0 missing/fill serialization convention, summing rate samples without the required 0.5 h duration yielded a median numeric overstatement factor of 2.0000×. Treating the full-day mean precipitation rate as daily accumulation yielded 0.041667 of the true accumulation for rainy cells (the theoretical value is 1/24 = 0.041667).
+
+Copernicus DEM:
+Threefold interpolation along each raster axis increased grid-cell count ninefold, so 88.89% of fine-grid positions did not correspond to distinct source samples. With geospatially aligned rasterio reprojection and a core-area comparison, the region-median p95 native→fine→native round-trip interpolation error was 1.3998 m. This numerical smoothness does not constitute new native fine-resolution source information.
+
+Interpretation:
+These results are paired real-input counterfactual stress tests. They demonstrate measurable consequences of scientifically invalid but computationally executable processing choices. They are not independent human ground truth.

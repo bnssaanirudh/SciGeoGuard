@@ -1,0 +1,14 @@
+{
+  "judge_A": {
+    "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+    "revision_sha": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306"
+  },
+  "judge_B": {
+    "model_id": "microsoft/Phi-3.5-mini-instruct",
+    "revision_sha": "2fe192450127e6a83f7441aef6e3ca586c338b77"
+  },
+  "judge_C": {
+    "model_id": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "revision_sha": "31b70e2e869a7173562077fd711b654946d38674"
+  }
+}

@@ -1,0 +1,7 @@
+check,passed
+blind_input_has_no_generated_truth,True
+blind_input_has_no_scigeoguard_output,True
+blind_input_has_no_family,True
+calibration_is_separate_from_test,True
+consensus_requires_two_eligible_judges,True
+human_file_hides_machine_predictions,True

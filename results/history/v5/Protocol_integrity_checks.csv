@@ -1,0 +1,8 @@
+check,passed
+180_or_fewer_cases,True
+unique_case_ids,True
+model_input_has_no_generated_expected,True
+model_input_has_no_scigeoguard_prediction,True
+model_input_has_no_family,True
+judge_C_not_given_A_B_answers,True
+human_audit_hides_machine_labels,True

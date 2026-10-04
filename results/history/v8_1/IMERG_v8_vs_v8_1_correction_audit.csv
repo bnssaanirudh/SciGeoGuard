@@ -1,0 +1,9 @@
+region,date,v8_status,v8_rows_per_cell_misinterpreted_as_completeness,v8_raw_sum_factor,v8_mean_fraction,v81_status,source_time_axis_count,source_time_axis_complete,returned_nonzero_or_unmasked_records,zero_reconstructed_fraction,v81_raw_sum_factor,v81_mean_fraction
+Bengaluru_India,2024-05-20,SUCCESS,18.625,2.0,0.1026315789473684,FAILED,,,,,,
+Bengaluru_India,2024-09-15,FAILED,,,,SUCCESS,48.0,True,0.0,1.0,,
+CentralValley_USA,2024-02-05,SUCCESS,6.071428571428571,2.0,0.4,FAILED,,,,,,
+CentralValley_USA,2024-11-20,SUCCESS,33.5625,2.0,0.0606060606060606,FAILED,,,,,,
+Manaus_Brazil,2024-03-15,SUCCESS,19.05,2.0,0.1055555555555555,SUCCESS,48.0,True,169.0,0.6087962962962963,2.0,0.041666666666666664
+Manaus_Brazil,2024-08-18,SUCCESS,1.0,2.0,2.0,SUCCESS,48.0,True,2.0,0.9953703703703703,2.0,0.04166666666666667
+Rotterdam_Netherlands,2024-02-22,SUCCESS,13.9,2.0,0.1538461538461538,SUCCESS,48.0,True,0.0,1.0,,
+Rotterdam_Netherlands,2024-10-15,SUCCESS,2.8421052631578947,2.0,0.6666666666666667,FAILED,,,,,,

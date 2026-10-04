@@ -1,0 +1,8 @@
+experiment,metric,region_n,median,ci95_low,ci95_high
+Sentinel spectral-role mismatch,Mean absolute NDVI-like index difference,4,0.09770012274384492,0.07320369035005564,0.1242260932922363
+Sentinel spectral sign flips,Sign-flip fraction,4,0.03193595084576815,0.0079791309782621,0.1200679131493347
+WorldCover bilinear categorical corruption,Invalid categorical-code fraction,4,0.12994791666666666,0.07486328125,0.190625
+IMERG raw rate sum mislabeled accumulation,Numeric overstatement factor,1,2.0,2.0,2.0
+IMERG full-day mean rate mislabeled accumulation,Fraction of true daily accumulation,1,0.04166666666666667,0.04166666666666667,0.04166666666666667
+CopDEM 30m-to-fine-grid unsupported information claim,Fine-grid fraction without distinct source samples,4,0.8888888888888888,0.8888888888888888,0.8888888888888888
+CopDEM aligned round-trip interpolation,Core p95 round-trip absolute error (m),4,1.3998422026634216,0.37526169419288635,1.7323122024536133

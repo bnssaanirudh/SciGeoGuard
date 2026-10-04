@@ -1,0 +1,6 @@
+-r core.txt
+transformers>=4.53,<5
+accelerate>=1.0
+bitsandbytes>=0.45
+huggingface_hub>=0.26
+sentencepiece

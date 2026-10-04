@@ -1,0 +1,9 @@
+dimension,value
+n_cases,60
+n_families,26
+BLIND,21
+DEVELOPMENT,17
+HELDOUT-FAMILY,22
+reference_PROVEN,21
+reference_REFUTED,35
+reference_UNPROVEN,4

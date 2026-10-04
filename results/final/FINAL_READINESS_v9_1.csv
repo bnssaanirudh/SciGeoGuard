@@ -1,0 +1,4 @@
+dimension,ready,blocking_submission,detail
+Core scientific evidence,True,True,v3 + v6 + Sentinel + WorldCover + CopDEM + successful 4-region IMERG
+Independent v7 human validation,False,False,Optional strengthening; do not claim human-validated accuracy while pending
+GitHub/public release,False,True,Administrative: license + placeholders + repository hygiene

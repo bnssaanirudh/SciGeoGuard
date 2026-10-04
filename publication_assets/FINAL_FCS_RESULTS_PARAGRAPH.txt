@@ -1,0 +1,27 @@
+A frozen SciGeoGuard-X verifier was evaluated on 445 controlled
+SilentGeoBench workflows (145 PROVEN,
+278 REFUTED, and 22 UNPROVEN).
+These generated reference labels test consistency with encoded scientific invariants and are
+not independent human ground truth. Against the same generated reference, the decomposed
+Qwen2.5-7B baseline achieved 44.44% accuracy with an FSCR of 69.64%,
+while Mistral-7B achieved 38.33% accuracy with an FSCR of 69.64%.
+
+Live-data counterfactuals were then evaluated in Bengaluru, Rotterdam, California's Central
+Valley, and Manaus. Replacing Sentinel-2 B08 NIR with B11 SWIR in an NDVI-labelled
+calculation produced a regional median mean absolute index difference of
+0.0977 (95% region-bootstrap CI 0.0732–0.1242). Bilinear interpolation of
+ESA WorldCover nominal classes produced a median
+12.99% invalid class values
+across regions (95% CI 7.49%–19.06%), whereas nearest-neighbour resampling preserved valid class codes in
+100% of evaluated outputs.
+For Copernicus DEM GLO-30, threefold interpolation along each raster axis generated
+9 times as many grid cells, so
+88.89% of fine-grid positions did not correspond
+to distinct source samples; the corrected region-median core p95 native-to-fine-to-native
+round-trip error was 1.3998 m.
+Finally, live rainy GPM IMERG V07 cases were recovered in all
+4 study regions. Omitting the 0.5 h duration when integrating
+half-hourly precipitation rates yielded the expected
+2.0× numeric overstatement, while treating the
+full-day mean rate as daily accumulation yielded
+0.041667 (=1/24) of the correct accumulation.

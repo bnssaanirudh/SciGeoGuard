@@ -1,0 +1,1255 @@
+case_id,judge,model_id,load_mode,verdict,error_class,severity,confidence,reason,raw_output
+SGX3_BLIND_eo_ml_validation_022,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation 'split' does not require any specific unit or resolution, and the provided artifact metadata does not contain all necessary details (e.g., scene overlap fraction) to fully validate the operation.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' does not require any specific unit or resolution, and the provided artifact metadata does not contain all necessary details (e.g., scene overlap fraction) to fully validate the operation.""
+}"
+SGX3_DEVELOPMENT_spatial_split_leakage_006,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation 'split' requires spatial separation and does not depend on any specific unit or provenance, but the artifacts provided do not specify a band role or allowed values which are necessary for the split operation.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' requires spatial separation and does not depend on any specific unit or provenance, but the artifacts provided do not specify a band role or allowed values which are necessary for the split operation.""
+}"
+SGX3_HELDOUT-FAMILY_temporal_split_overlap_002,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,MEDIUM,5,"The workflow operation 'split' requires temporal boundaries, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' requires temporal boundaries, which are not provided in the artifacts.""
+}"
+SGX3_BLIND_flood_remote_sensing_011,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The operations require cloud mask information and sensor comparison, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The operations require cloud mask information and sensor comparison, which are not provided in the artifacts.""
+}"
+SGX3_DEVELOPMENT_spectral_role_000,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation requires a specific band role ('nir') for the 'other' reflectance, which is not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation requires a specific band role ('nir') for the 'other' reflectance, which is not provided in the artifacts.""
+}"
+SGX3_BLIND_landslide_forecast_000,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,MEDIUM,5,"The workflow requires 'requires_bare_earth' to be true, which is not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires 'requires_bare_earth' to be true, which is not provided in the artifacts.""
+}"
+SGX3_HELDOUT-FAMILY_uncertainty_missing_011,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow contains no operations, and thus no evidence can be established.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow contains no operations, and thus no evidence can be established.""
+}"
+SGX3_DEVELOPMENT_unsupported_resolution_gain_000,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,none,LOW,5,The workflow operation resamples the raster to a higher resolution (60m) without any explicit requirement or constraint provided in the scientific intent or artifact metadata.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""none"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation resamples the raster to a higher resolution (60m) without any explicit requirement or constraint provided in the scientific intent or artifact metadata.""
+}"
+SGX3_HELDOUT-FAMILY_scene_overlap_leakage_012,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation 'split' does not require any specific unit or provenance, but the artifacts provided do not specify a unit for 'image_samples'. This makes the operation unproven due to the missing unit requirement.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' does not require any specific unit or provenance, but the artifacts provided do not specify a unit for 'image_samples'. This makes the operation unproven due to the missing unit requirement.""
+}"
+SGX3_DEVELOPMENT_DSM_as_DTM_000,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation 'require_bare_earth' is not applicable as the artifact's surface model is already 'DTM', which does not require bare earth.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'require_bare_earth' is not applicable as the artifact's surface model is already 'DTM', which does not require bare earth.""
+}"
+SGX3_HELDOUT-FAMILY_physical_range_violation_009,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,REFUTED,required_value_range,HIGH,5,"The workflow operation 'assert_value_range' requires that the value range of the NDVI index be within [-1, 1], which is not satisfied by the observed min (-0.7538676247869512) and max (0.873246829799791).","{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""required_value_range"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'assert_value_range' requires that the value range of the NDVI index be within [-1, 1], which is not satisfied by the observed min (-0.7538676247869512) and max (0.873246829799791).""
+}"
+SGX3_BLIND_eo_ml_validation_040,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation 'split' does not require any specific unit or resolution, and the provided artifact metadata does not contain all necessary details (e.g., scene overlap fraction) to fully validate the operation.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' does not require any specific unit or resolution, and the provided artifact metadata does not contain all necessary details (e.g., scene overlap fraction) to fully validate the operation.""
+}"
+SGX3_DEVELOPMENT_processing_level_003,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation requires surface reflectance, which is implied by the 'reflectance' quantity in the artifact metadata without explicit declaration.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation requires surface reflectance, which is implied by the 'reflectance' quantity in the artifact metadata without explicit declaration.""
+}"
+SGX3_DEVELOPMENT_band_grid_mismatch_000,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,band_grid_mismatch,MEDIUM,5,The artifacts have different spatial resolutions (10m vs 20m) which is incompatible with the spectral index operation.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""band_grid_mismatch"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 5,
+  ""reason"": ""The artifacts have different spatial resolutions (10m vs 20m) which is incompatible with the spectral index operation.""
+}"
+SGX3_DEVELOPMENT_angular_area_002,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires a unit for the quantity 'flood_extent', which is not provided in the artifact metadata.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires a unit for the quantity 'flood_extent', which is not provided in the artifact metadata.""
+}"
+SGX3_BLIND_eo_ml_validation_036,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation 'split' requires spatial separation and dependence range, which are not provided in the artifact metadata.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' requires spatial separation and dependence range, which are not provided in the artifact metadata.""
+}"
+SGX3_HELDOUT-FAMILY_multisensor_time_mismatch_010,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires temporal alignment between sensors S1 and S2, which is not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires temporal alignment between sensors S1 and S2, which is not provided in the artifacts.""
+}"
+SGX3_DEVELOPMENT_band_grid_mismatch_001,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,none,LOW,5,"The workflow operation 'spectral_index' requires that the 'other' band's role be explicitly aligned with 'nir', which is not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""none"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'spectral_index' requires that the 'other' band's role be explicitly aligned with 'nir', which is not provided in the artifacts.""
+}"
+SGX3_DEVELOPMENT_spatial_split_leakage_009,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation 'split' requires spatial separation and does not depend on any specific unit or provenance, but the artifacts provided do not specify a minimum resolution or a clear separation range in meters.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' requires spatial separation and does not depend on any specific unit or provenance, but the artifacts provided do not specify a minimum resolution or a clear separation range in meters.""
+}"
+SGX3_DEVELOPMENT_unsupported_resolution_gain_001,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,none,LOW,5,The workflow operation resamples the raster to a higher resolution (12.5m) without any explicit requirement or constraint provided in the scientific intent or artifact metadata.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""none"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation resamples the raster to a higher resolution (12.5m) without any explicit requirement or constraint provided in the scientific intent or artifact metadata.""
+}"
+SGX3_HELDOUT-FAMILY_scene_overlap_leakage_010,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,The workflow operation 'split' requires scene overlap fraction but the artifacts do not provide any temporal or spatial overlap information.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' requires scene overlap fraction but the artifacts do not provide any temporal or spatial overlap information.""
+}"
+SGX3_BLIND_flood_depth_033,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires unit conversion and vertical combination, which are not directly provable from the provided metadata without further assumptions.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires unit conversion and vertical combination, which are not directly provable from the provided metadata without further assumptions.""
+}"
+SGX3_DEVELOPMENT_rate_mean_as_accumulation_004,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires temporal_aggregate with 'integrate' method, which implies accumulation of precipitation rates over a duration. The artifact IMERG has a unit of mm/h and scale of continuous, but the declared quantity in the operation is 'accumulation'. This requires the unit to be consistent with accumulation (mm), which is not provided in the artifact metadata.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires temporal_aggregate with 'integrate' method, which implies accumulation of precipitation rates over a duration. The artifact IMERG has a unit of mm/h and scale of continuous, but the declared quantity in the operation is 'accumulation'. This requires the unit to be consistent with accumulation (mm), which is not provided in the artifact metadata.""
+}"
+SGX3_HELDOUT-FAMILY_multisensor_time_mismatch_013,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires comparison between two sensors with specific temporal resolution, but the temporal resolution of both artifacts is not provided.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires comparison between two sensors with specific temporal resolution, but the temporal resolution of both artifacts is not provided.""
+}"
+SGX3_BLIND_landcover_change_042,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires resampling with a target resolution of 30 meters, which is not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires resampling with a target resolution of 30 meters, which is not provided in the artifacts.""
+}"
+SGX3_BLIND_flood_remote_sensing_031,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The operations require cloud mask application and sensor comparison, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The operations require cloud mask application and sensor comparison, which are not provided in the artifacts.""
+}"
+SGX3_HELDOUT-FAMILY_temporal_split_overlap_006,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,MEDIUM,5,"The workflow requires temporal splitting, but the artifacts do not specify temporal resolution or acquisition times, which are necessary for temporal splitting.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires temporal splitting, but the artifacts do not specify temporal resolution or acquisition times, which are necessary for temporal splitting.""
+}"
+SGX3_HELDOUT-FAMILY_missing_provenance_000,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,provenance,MEDIUM,5,"The artifact 'unknown-input' lacks provenance information, which is necessary for scientific validation.","{""verdict"":""UNPROVEN"",""error_class"":""provenance"",""severity"":""MEDIUM"",""confidence"":5,""reason"":""The artifact 'unknown-input' lacks provenance information, which is necessary for scientific validation.""}"
+SGX3_HELDOUT-FAMILY_vertical_datum_unknown_001,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires vertical datum information, which is not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires vertical datum information, which is not provided in the artifacts.""
+}"
+SGX3_HELDOUT-FAMILY_temporal_split_overlap_011,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,MEDIUM,5,"The workflow requires temporal splitting, but the artifacts do not specify temporal resolution or acquisition times, which are necessary for temporal splitting.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires temporal splitting, but the artifacts do not specify temporal resolution or acquisition times, which are necessary for temporal splitting.""
+}"
+SGX3_BLIND_flood_depth_020,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires unit conversion from 'km' to 'km2', which is not supported by the provided artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires unit conversion from 'km' to 'km2', which is not supported by the provided artifacts.""
+}"
+SGX3_DEVELOPMENT_unsupported_resolution_gain_015,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,none,LOW,5,The workflow operation resamples the raster to a higher resolution (150m) without any explicit requirement or constraint provided in the scientific intent or artifact metadata.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""none"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation resamples the raster to a higher resolution (150m) without any explicit requirement or constraint provided in the scientific intent or artifact metadata.""
+}"
+SGX3_BLIND_landslide_forecast_025,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,MEDIUM,5,"The workflow requires 'requires_bare_earth' to be true, which is not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires 'requires_bare_earth' to be true, which is not provided in the artifacts.""
+}"
+SGX3_BLIND_flood_remote_sensing_003,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The operations require cloud mask and sensor comparison, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The operations require cloud mask and sensor comparison, which are not provided in the artifacts.""
+}"
+SGX3_BLIND_flood_remote_sensing_017,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The operations require cloud mask and sensor comparison, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The operations require cloud mask and sensor comparison, which are not provided in the artifacts.""
+}"
+SGX3_BLIND_eo_ml_validation_015,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation 'split' does not require any specific unit or resolution, and the provided artifact metadata does not contain all necessary details (e.g., scene overlap fraction) to fully validate the operation.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' does not require any specific unit or resolution, and the provided artifact metadata does not contain all necessary details (e.g., scene overlap fraction) to fully validate the operation.""
+}"
+SGX3_BLIND_flood_depth_034,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires vertical datum compatibility and unit conversion, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires vertical datum compatibility and unit conversion, which are not provided in the artifacts.""
+}"
+SGX3_HELDOUT-FAMILY_physical_range_violation_007,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,REFUTED,required_value_range,CRITICAL,5,"The workflow operation 'assert_value_range' requires that the value range of the NDVI index be within [-1, 1], but the observed min and max values are outside this range.","{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""required_value_range"",
+  ""severity"": ""CRITICAL"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'assert_value_range' requires that the value range of the NDVI index be within [-1, 1], but the observed min and max values are outside this range.""
+}"
+SGX3_HELDOUT-FAMILY_temporal_split_overlap_000,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,MEDIUM,5,"The workflow operation 'split' requires temporal boundaries, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' requires temporal boundaries, which are not provided in the artifacts.""
+}"
+SGX3_BLIND_landslide_forecast_034,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,MEDIUM,5,"The workflow requires 'requires_bare_earth' to be true, which is not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires 'requires_bare_earth' to be true, which is not provided in the artifacts.""
+}"
+SGX3_BLIND_flood_depth_041,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires unit conversion from 'm' to 'K', which is not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires unit conversion from 'm' to 'K', which is not provided in the artifacts.""
+}"
+SGX3_BLIND_flood_remote_sensing_000,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The operations require cloud mask application and sensor comparison, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The operations require cloud mask application and sensor comparison, which are not provided in the artifacts.""
+}"
+SGX3_BLIND_landslide_forecast_021,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,MEDIUM,5,"The workflow requires 'requires_bare_earth' to be true, which is not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires 'requires_bare_earth' to be true, which is not provided in the artifacts.""
+}"
+SGX3_BLIND_landcover_change_007,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires resampling with a target resolution of 40 meters, which is not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires resampling with a target resolution of 40 meters, which is not provided in the artifacts.""
+}"
+SGX3_BLIND_eo_ml_validation_039,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation 'split' does not require any specific unit or resolution, and the provided artifact metadata does not contain all necessary details (e.g., scene overlap fraction) to fully validate the operation.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' does not require any specific unit or resolution, and the provided artifact metadata does not contain all necessary details (e.g., scene overlap fraction) to fully validate the operation.""
+}"
+SGX3_DEVELOPMENT_unsupported_resolution_gain_013,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,none,LOW,5,The workflow operation resamples the raster to a higher resolution (7.5m) without any explicit requirement or constraint provided in the scientific intent or artifact metadata.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""none"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation resamples the raster to a higher resolution (7.5m) without any explicit requirement or constraint provided in the scientific intent or artifact metadata.""
+}"
+SGX3_HELDOUT-FAMILY_multisensor_time_mismatch_004,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires comparison between two sensors with specific temporal resolution, but the temporal resolution of both artifacts is not provided.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires comparison between two sensors with specific temporal resolution, but the temporal resolution of both artifacts is not provided.""
+}"
+SGX3_BLIND_flood_remote_sensing_007,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The operations require cloud mask application and sensor comparison, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The operations require cloud mask application and sensor comparison, which are not provided in the artifacts.""
+}"
+SGX3_DEVELOPMENT_unsupported_resolution_gain_012,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,none,LOW,5,The workflow operation resamples the raster to a higher resolution (100m) without any explicit requirement or constraint provided in the scientific intent or artifact metadata.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""none"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation resamples the raster to a higher resolution (100m) without any explicit requirement or constraint provided in the scientific intent or artifact metadata.""
+}"
+SGX3_BLIND_flood_depth_012,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires vertical datum and unit conversions, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires vertical datum and unit conversions, which are not provided in the artifacts.""
+}"
+SGX3_BLIND_flood_depth_002,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires vertical datum compatibility and unit conversion, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires vertical datum compatibility and unit conversion, which are not provided in the artifacts.""
+}"
+SGX3_DEVELOPMENT_categorical_interpolation_010,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,The workflow requires resampling with a new resolution (60m) which is not supported by the original 20m resolution artifact without additional evidence.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires resampling with a new resolution (60m) which is not supported by the original 20m resolution artifact without additional evidence.""
+}"
+SGX3_DEVELOPMENT_future_information_004,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires a temporal resolution for the rainfall feature, which is not provided in the artifact metadata.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires a temporal resolution for the rainfall feature, which is not provided in the artifact metadata.""
+}"
+SGX3_BLIND_flood_remote_sensing_046,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The operations require cloud mask and sensor comparison, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The operations require cloud mask and sensor comparison, which are not provided in the artifacts.""
+}"
+SGX3_BLIND_flood_depth_029,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires unit conversion from 'm' to 'K', which is not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires unit conversion from 'm' to 'K', which is not provided in the artifacts.""
+}"
+SGX3_DEVELOPMENT_processing_level_002,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation 'require_surface_reflectance' requires surface reflectance, which is implied by the artifact's scale being 'continuous'. However, the required unit is not provided, making it unproven.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'require_surface_reflectance' requires surface reflectance, which is implied by the artifact's scale being 'continuous'. However, the required unit is not provided, making it unproven.""
+}"
+SGX3_BLIND_landcover_change_028,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires resampling with a target resolution of 60 meters, which is not possible with the current 20-meter resolution due to missing provenance.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires resampling with a target resolution of 60 meters, which is not possible with the current 20-meter resolution due to missing provenance.""
+}"
+SGX3_BLIND_flood_remote_sensing_014,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The operations require cloud mask and sensor comparison, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The operations require cloud mask and sensor comparison, which are not provided in the artifacts.""
+}"
+SGX3_HELDOUT-FAMILY_scene_overlap_leakage_006,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,The workflow operation 'split' requires scene overlap fraction but the artifacts do not provide any temporal or spatial overlap information.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' requires scene overlap fraction but the artifacts do not provide any temporal or spatial overlap information.""
+}"
+SGX3_BLIND_flood_depth_021,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires vertical datum compatibility and unit conversion, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires vertical datum compatibility and unit conversion, which are not provided in the artifacts.""
+}"
+SGX3_BLIND_flood_depth_043,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires vertical datum compatibility and unit conversion, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires vertical datum compatibility and unit conversion, which are not provided in the artifacts.""
+}"
+SGX3_BLIND_flood_remote_sensing_049,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The operations require cloud mask application and sensor comparison, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The operations require cloud mask application and sensor comparison, which are not provided in the artifacts.""
+}"
+SGX3_HELDOUT-FAMILY_uncertainty_missing_009,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow contains no operations, and thus no evidence can be established.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow contains no operations, and thus no evidence can be established.""
+}"
+SGX3_BLIND_landcover_change_025,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires resampling with a target resolution of 30 meters, which is not possible with the current 20-meter resolution artifact without additional metadata.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires resampling with a target resolution of 30 meters, which is not possible with the current 20-meter resolution artifact without additional metadata.""
+}"
+SGX3_HELDOUT-FAMILY_rate_sum_without_duration_002,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires temporal aggregation with a specified sample duration, but the artifact's temporal resolution does not match this requirement.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires temporal aggregation with a specified sample duration, but the artifact's temporal resolution does not match this requirement.""
+}"
+SGX3_DEVELOPMENT_unsupported_resolution_gain_010,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,none,LOW,5,"The workflow operation resamples the raster without any explicit requirement for a specific unit or quantity, and the provided metadata does not contain a required_value_range constraint.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""none"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation resamples the raster without any explicit requirement for a specific unit or quantity, and the provided metadata does not contain a required_value_range constraint.""
+}"
+SGX3_BLIND_flood_remote_sensing_041,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The operations require cloud mask application and sensor comparison, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The operations require cloud mask application and sensor comparison, which are not provided in the artifacts.""
+}"
+SGX3_BLIND_flood_depth_014,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires unit conversion from 'km' to 'K', which is not a valid unit for elevation data.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires unit conversion from 'km' to 'K', which is not a valid unit for elevation data.""
+}"
+SGX3_BLIND_landcover_change_041,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires resampling with a target resolution of 60 meters, which is not possible with the current 20-meter resolution due to missing provenance.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires resampling with a target resolution of 60 meters, which is not possible with the current 20-meter resolution due to missing provenance.""
+}"
+SGX3_HELDOUT-FAMILY_quality_metadata_loss_001,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,PROVEN,NONE,LOW,5,"The workflow operation drops quality metadata without requiring it, and no other required evidence is missing.","{
+  ""verdict"": ""PROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation drops quality metadata without requiring it, and no other required evidence is missing.""
+}"
+SGX3_DEVELOPMENT_future_information_006,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires a temporal resolution for the rainfall feature, which is not provided in the artifact metadata.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires a temporal resolution for the rainfall feature, which is not provided in the artifact metadata.""
+}"
+SGX3_BLIND_landcover_change_018,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires resampling, which necessitates a resolution change, but the original resolution (10m) is not provided in the artifact metadata.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires resampling, which necessitates a resolution change, but the original resolution (10m) is not provided in the artifact metadata.""
+}"
+SGX3_BLIND_landslide_forecast_010,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,MEDIUM,5,"The workflow requires 'requires_bare_earth' to be true, which is not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires 'requires_bare_earth' to be true, which is not provided in the artifacts.""
+}"
+SGX3_DEVELOPMENT_categorical_interpolation_012,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,The workflow requires resampling with a new resolution (35m) which is not supported by the current artifact's resolution (20m). The required evidence for this operation cannot be established from the provided metadata.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires resampling with a new resolution (35m) which is not supported by the current artifact's resolution (20m). The required evidence for this operation cannot be established from the provided metadata.""
+}"
+SGX3_DEVELOPMENT_categorical_interpolation_002,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The resampling operation requires categorical interpolation, which is not directly provided by the artifact metadata. The required value range and unit are also missing.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The resampling operation requires categorical interpolation, which is not directly provided by the artifact metadata. The required value range and unit are also missing.""
+}"
+SGX3_HELDOUT-FAMILY_uncertainty_missing_014,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow contains no operations, and thus no evidence can be established.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow contains no operations, and thus no evidence can be established.""
+}"
+SGX3_BLIND_flood_remote_sensing_020,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The operations require cloud mask and sensor comparison, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The operations require cloud mask and sensor comparison, which are not provided in the artifacts.""
+}"
+SGX3_BLIND_landslide_forecast_006,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,MEDIUM,5,"The workflow requires 'requires_bare_earth' to be true, which is not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires 'requires_bare_earth' to be true, which is not provided in the artifacts.""
+}"
+SGX3_BLIND_landslide_forecast_022,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,MEDIUM,5,The required 'requires_bare_earth' flag is not provided in the artifact metadata.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 5,
+  ""reason"": ""The required 'requires_bare_earth' flag is not provided in the artifact metadata.""
+}"
+SGX3_BLIND_eo_ml_validation_031,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation 'split' does not require any specific unit or resolution, and the provided artifact metadata does not contain all necessary details (e.g., scene overlap fraction) to fully validate the operation.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' does not require any specific unit or resolution, and the provided artifact metadata does not contain all necessary details (e.g., scene overlap fraction) to fully validate the operation.""
+}"
+SGX3_DEVELOPMENT_unsupported_resolution_gain_014,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,none,LOW,5,"The workflow operation resamples the raster without any explicit requirement for a specific unit or resolution gain, but the target resolution is smaller than the original, which could be problematic depending on the application.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""none"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation resamples the raster without any explicit requirement for a specific unit or resolution gain, but the target resolution is smaller than the original, which could be problematic depending on the application.""
+}"
+SGX3_BLIND_flood_remote_sensing_005,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The operations require cloud mask application and sensor comparison, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The operations require cloud mask application and sensor comparison, which are not provided in the artifacts.""
+}"
+SGX3_BLIND_eo_ml_validation_043,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation 'split' requires temporal boundaries, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' requires temporal boundaries, which are not provided in the artifacts.""
+}"
+SGX3_DEVELOPMENT_future_information_009,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires a temporal resolution for the rainfall feature, which is not provided in the artifact metadata.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires a temporal resolution for the rainfall feature, which is not provided in the artifact metadata.""
+}"
+SGX3_DEVELOPMENT_spectral_role_001,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation requires a specific band role ('nir') for the 'other' reflectance, which is not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation requires a specific band role ('nir') for the 'other' reflectance, which is not provided in the artifacts.""
+}"
+SGX3_DEVELOPMENT_angular_area_007,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires a unit for the quantity 'flood_extent', which is not provided in the artifact metadata.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires a unit for the quantity 'flood_extent', which is not provided in the artifact metadata.""
+}"
+SGX3_BLIND_flood_remote_sensing_018,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The operations require cloud mask application and sensor comparison, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The operations require cloud mask application and sensor comparison, which are not provided in the artifacts.""
+}"
+SGX3_BLIND_landslide_forecast_016,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,MEDIUM,5,"The workflow requires 'requires_bare_earth' to be true, which is not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires 'requires_bare_earth' to be true, which is not provided in the artifacts.""
+}"
+SGX3_BLIND_eo_ml_validation_010,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation 'split' requires spatial separation and dependence range, which are not provided in the artifact metadata.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' requires spatial separation and dependence range, which are not provided in the artifact metadata.""
+}"
+SGX3_DEVELOPMENT_spatial_split_leakage_002,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation 'split' requires spatial separation and does not inherently violate any scientific principles. However, the artifacts provided do not contain specific metadata (like nodata_semantics, allowed_values) that are necessary for the operation to proceed without contradictions.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' requires spatial separation and does not inherently violate any scientific principles. However, the artifacts provided do not contain specific metadata (like nodata_semantics, allowed_values) that are necessary for the operation to proceed without contradictions.""
+}"
+SGX3_HELDOUT-FAMILY_unit_dimension_mismatch_002,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,unit_dimension_mismatch,MEDIUM,5,"The workflow attempts to convert the unit from meters (m) to centimeters (cm), which is dimensionally inconsistent.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""unit_dimension_mismatch"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow attempts to convert the unit from meters (m) to centimeters (cm), which is dimensionally inconsistent.""
+}"
+SGX3_BLIND_landcover_change_005,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires resampling with a target resolution of 40 meters, which is not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires resampling with a target resolution of 40 meters, which is not provided in the artifacts.""
+}"
+SGX3_HELDOUT-FAMILY_scene_overlap_leakage_004,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation 'split' does not require any specific unit or provenance, but the artifacts provided do not specify a unit for 'image_samples'. This makes the operation unproven due to the missing unit requirement.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' does not require any specific unit or provenance, but the artifacts provided do not specify a unit for 'image_samples'. This makes the operation unproven due to the missing unit requirement.""
+}"
+SGX3_BLIND_eo_ml_validation_047,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation 'split' requires temporal boundaries, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' requires temporal boundaries, which are not provided in the artifacts.""
+}"
+SGX3_HELDOUT-FAMILY_scene_overlap_leakage_011,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,The workflow operation 'split' requires scene overlap fraction but no specific unit or value range is provided.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' requires scene overlap fraction but no specific unit or value range is provided.""
+}"
+SGX3_DEVELOPMENT_categorical_interpolation_006,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires resampling with a target resolution of 25 meters, which is not provided in the artifact metadata.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires resampling with a target resolution of 25 meters, which is not provided in the artifact metadata.""
+}"
+SGX3_DEVELOPMENT_unsupported_resolution_gain_004,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,none,LOW,5,"The workflow operation resamples the raster with the same resolution (100m), so no new information is created.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""none"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation resamples the raster with the same resolution (100m), so no new information is created.""
+}"
+SGX3_BLIND_eo_ml_validation_013,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation 'split' requires spatial separation and dependence range, which are not provided in the artifact metadata.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' requires spatial separation and dependence range, which are not provided in the artifact metadata.""
+}"
+SGX3_BLIND_eo_ml_validation_049,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation 'split' requires temporal resolution, which is not provided in the artifact metadata.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' requires temporal resolution, which is not provided in the artifact metadata.""
+}"
+SGX3_DEVELOPMENT_nodata_zero_000,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,PROVEN,NONE,LOW,5,The workflow operation 'fill_nodata' uses a value (-9999) that is consistent with the nodata_semantics 'missing' and does not require any additional scientific validation.,"{
+  ""verdict"": ""PROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'fill_nodata' uses a value (-9999) that is consistent with the nodata_semantics 'missing' and does not require any additional scientific validation.""
+}"
+SGX3_BLIND_landslide_forecast_003,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,MEDIUM,5,"The workflow requires 'requires_bare_earth' to be true, which is not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires 'requires_bare_earth' to be true, which is not provided in the artifacts.""
+}"
+SGX3_BLIND_flood_depth_024,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires unit conversion from meters to kilometers, which is not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires unit conversion from meters to kilometers, which is not provided in the artifacts.""
+}"
+SGX3_DEVELOPMENT_future_information_000,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires a temporal resolution for the rainfall feature, which is not provided in the artifact metadata.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires a temporal resolution for the rainfall feature, which is not provided in the artifact metadata.""
+}"
+SGX3_HELDOUT-FAMILY_uncertainty_missing_003,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow contains no operations, and thus no evidence can be established.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow contains no operations, and thus no evidence can be established.""
+}"
+SGX3_BLIND_flood_depth_006,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,The workflow requires vertical datum information which is not provided in the artifacts.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires vertical datum information which is not provided in the artifacts.""
+}"
+SGX3_DEVELOPMENT_processing_level_001,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires processing a surface reflectance, which implies the unit and scale should be consistent with the reflectance quantity. The unit is null in the artifact metadata, which is a requirement for the operation.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires processing a surface reflectance, which implies the unit and scale should be consistent with the reflectance quantity. The unit is null in the artifact metadata, which is a requirement for the operation.""
+}"
+SGX3_DEVELOPMENT_unsupported_resolution_gain_009,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,none,LOW,5,The workflow operation resamples the raster to a higher resolution (60m) without any explicit requirement or constraint provided in the scientific intent or artifact metadata.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""none"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation resamples the raster to a higher resolution (60m) without any explicit requirement or constraint provided in the scientific intent or artifact metadata.""
+}"
+SGX3_BLIND_eo_ml_validation_032,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation 'split' does not require any specific unit or resolution, and the provided artifact metadata does not contain all necessary details (e.g., scene overlap fraction) to fully validate the operation.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' does not require any specific unit or resolution, and the provided artifact metadata does not contain all necessary details (e.g., scene overlap fraction) to fully validate the operation.""
+}"
+SGX3_HELDOUT-FAMILY_physical_range_violation_013,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,REFUTED,required_value_range,CRITICAL,5,"The workflow operation 'assert_value_range' requires that the value range of the NDVI index be within [-1, 1], but the observed min and max values are -0.3686 and 0.7109 respectively, which violate this requirement.","{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""required_value_range"",
+  ""severity"": ""CRITICAL"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'assert_value_range' requires that the value range of the NDVI index be within [-1, 1], but the observed min and max values are -0.3686 and 0.7109 respectively, which violate this requirement.""
+}"
+SGX3_BLIND_flood_depth_045,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires unit conversion and vertical combination, which are not directly provable from the provided metadata without further assumptions.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires unit conversion and vertical combination, which are not directly provable from the provided metadata without further assumptions.""
+}"
+SGX3_BLIND_eo_ml_validation_030,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation 'split' does not require any specific unit or resolution, and the provided artifact metadata does not contain all necessary details (e.g., scene overlap fraction) to fully validate the operation.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' does not require any specific unit or resolution, and the provided artifact metadata does not contain all necessary details (e.g., scene overlap fraction) to fully validate the operation.""
+}"
+SGX3_HELDOUT-FAMILY_categorical_mean_aggregation_002,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,PROVEN,NONE,LOW,5,The median aggregation method is valid for categorical data without requiring any additional constraints.,"{
+  ""verdict"": ""PROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The median aggregation method is valid for categorical data without requiring any additional constraints.""
+}"
+SGX3_BLIND_landcover_change_012,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires resampling with a target resolution of 40 meters, which is not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires resampling with a target resolution of 40 meters, which is not provided in the artifacts.""
+}"
+SGX3_BLIND_flood_depth_007,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires unit conversion from 'km' to 'm', which is not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires unit conversion from 'km' to 'm', which is not provided in the artifacts.""
+}"
+SGX3_DEVELOPMENT_future_information_002,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires a temporal resolution for the rainfall feature, which is not provided in the artifact metadata.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires a temporal resolution for the rainfall feature, which is not provided in the artifact metadata.""
+}"
+SGX3_DEVELOPMENT_unsupported_resolution_gain_008,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,none,LOW,5,The workflow requires a resampling operation with a target resolution that is not compatible with the original resolution of 20 meters without additional scientific justification.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""none"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires a resampling operation with a target resolution that is not compatible with the original resolution of 20 meters without additional scientific justification.""
+}"
+SGX3_DEVELOPMENT_band_grid_mismatch_002,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,band_grid_mismatch,MEDIUM,5,The artifacts have different spatial resolutions (10m vs 60m) which is incompatible with the spectral index operation.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""band_grid_mismatch"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 5,
+  ""reason"": ""The artifacts have different spatial resolutions (10m vs 60m) which is incompatible with the spectral index operation.""
+}"
+SGX3_HELDOUT-FAMILY_uncertainty_missing_008,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow contains no operations, and thus no evidence can be established.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow contains no operations, and thus no evidence can be established.""
+}"
+SGX3_HELDOUT-FAMILY_scene_overlap_leakage_001,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation 'split' does not require any specific unit or quantity constraints, and the artifacts provided do not contain required unit or quantity information.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' does not require any specific unit or quantity constraints, and the artifacts provided do not contain required unit or quantity information.""
+}"
+SGX3_HELDOUT-FAMILY_multisensor_time_mismatch_014,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires comparison between two sensors with matching acquisition times, but the artifacts' acquisition times are different.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires comparison between two sensors with matching acquisition times, but the artifacts' acquisition times are different.""
+}"
+SGX3_HELDOUT-FAMILY_scene_overlap_leakage_005,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,The workflow operation 'split' requires scene overlap fraction but the artifacts do not provide any temporal or spatial overlap information.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' requires scene overlap fraction but the artifacts do not provide any temporal or spatial overlap information.""
+}"
+SGX3_BLIND_flood_depth_039,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires vertical datum and unit conversion, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires vertical datum and unit conversion, which are not provided in the artifacts.""
+}"
+SGX3_BLIND_flood_remote_sensing_040,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The operations require cloud mask application and sensor comparison, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The operations require cloud mask application and sensor comparison, which are not provided in the artifacts.""
+}"
+SGX3_HELDOUT-FAMILY_temporal_split_overlap_003,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,MEDIUM,5,"The workflow operation 'split' requires temporal boundaries, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' requires temporal boundaries, which are not provided in the artifacts.""
+}"
+SGX3_BLIND_landcover_change_043,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires resampling with a target resolution of 30 meters, which is not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires resampling with a target resolution of 30 meters, which is not provided in the artifacts.""
+}"
+SGX3_BLIND_landslide_forecast_030,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,MEDIUM,5,"The workflow requires 'requires_bare_earth' to be true, which is not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires 'requires_bare_earth' to be true, which is not provided in the artifacts.""
+}"
+SGX3_BLIND_flood_remote_sensing_035,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The operations require cloud mask information and sensor comparison, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The operations require cloud mask information and sensor comparison, which are not provided in the artifacts.""
+}"
+SGX3_DEVELOPMENT_angular_area_005,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires a unit for the quantity 'flood_extent', which is not provided in the artifact metadata.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires a unit for the quantity 'flood_extent', which is not provided in the artifact metadata.""
+}"
+SGX3_DEVELOPMENT_spatial_split_leakage_000,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation 'split' requires spatial separation and does not depend on any specific unit, resolution, or provenance details provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' requires spatial separation and does not depend on any specific unit, resolution, or provenance details provided in the artifacts.""
+}"
+SGX3_HELDOUT-FAMILY_multisensor_time_mismatch_008,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires temporal resolution and acquisition times to compare sensors, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires temporal resolution and acquisition times to compare sensors, which are not provided in the artifacts.""
+}"
+SGX3_BLIND_flood_depth_032,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires vertical datum compatibility and unit conversion, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires vertical datum compatibility and unit conversion, which are not provided in the artifacts.""
+}"
+SGX3_BLIND_flood_depth_011,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires unit conversion from cm to m, which is not directly provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires unit conversion from cm to m, which is not directly provided in the artifacts.""
+}"
+SGX3_BLIND_flood_remote_sensing_022,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The operations require cloud mask and sensor comparison, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The operations require cloud mask and sensor comparison, which are not provided in the artifacts.""
+}"
+SGX3_BLIND_landcover_change_001,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires resampling with a target resolution of 60 meters, which is not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires resampling with a target resolution of 60 meters, which is not provided in the artifacts.""
+}"
+SGX3_HELDOUT-FAMILY_uncertainty_missing_001,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow contains no operations, and thus no evidence can be established.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow contains no operations, and thus no evidence can be established.""
+}"
+SGX3_BLIND_landslide_forecast_028,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,MEDIUM,5,"The workflow requires 'requires_bare_earth' to be true, which is not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires 'requires_bare_earth' to be true, which is not provided in the artifacts.""
+}"
+SGX3_HELDOUT-FAMILY_physical_range_violation_002,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,none,LOW,5,"The workflow operation 'assert_value_range' requires a value range (-1 to 1) on the NDVI data, but the allowed_values attribute is not provided in the artifact metadata.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""none"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'assert_value_range' requires a value range (-1 to 1) on the NDVI data, but the allowed_values attribute is not provided in the artifact metadata.""
+}"
+SGX3_DEVELOPMENT_future_information_008,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires a temporal resolution for the rainfall feature, which is not provided in the artifact metadata.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires a temporal resolution for the rainfall feature, which is not provided in the artifact metadata.""
+}"
+SGX3_DEVELOPMENT_spectral_role_002,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation requires explicit alignment of band roles, which is not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation requires explicit alignment of band roles, which is not provided in the artifacts.""
+}"
+SGX3_HELDOUT-FAMILY_scene_overlap_leakage_009,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation 'split' does not require any specific unit or provenance, but the artifacts provided do not specify a unit for 'image_samples'. This makes the operation unproven due to the missing unit requirement.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' does not require any specific unit or provenance, but the artifacts provided do not specify a unit for 'image_samples'. This makes the operation unproven due to the missing unit requirement.""
+}"
+SGX3_BLIND_eo_ml_validation_014,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation 'split' requires spatial separation and dependence range, which are not provided in the artifact metadata.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' requires spatial separation and dependence range, which are not provided in the artifact metadata.""
+}"
+SGX3_BLIND_eo_ml_validation_021,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation 'split' requires temporal boundaries, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' requires temporal boundaries, which are not provided in the artifacts.""
+}"
+SGX3_HELDOUT-FAMILY_uncertainty_missing_012,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow contains no operations, and thus no evidence can be established.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow contains no operations, and thus no evidence can be established.""
+}"
+SGX3_BLIND_eo_ml_validation_018,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation 'split' requires temporal boundaries, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' requires temporal boundaries, which are not provided in the artifacts.""
+}"
+SGX3_BLIND_landcover_change_011,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires resampling with a target resolution of 60 meters, which is not aligned with the original 10-meter resolution of the artifact. The required unit and quantity are also not specified.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires resampling with a target resolution of 60 meters, which is not aligned with the original 10-meter resolution of the artifact. The required unit and quantity are also not specified.""
+}"
+SGX3_HELDOUT-FAMILY_rate_sum_without_duration_005,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires temporal aggregation with a sample duration of 0.1 hours, which is not possible with the provided temporal resolution of 0.1 hours. The artifact's temporal resolution does not meet the requirement for the operation.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires temporal aggregation with a sample duration of 0.1 hours, which is not possible with the provided temporal resolution of 0.1 hours. The artifact's temporal resolution does not meet the requirement for the operation.""
+}"
+SGX3_HELDOUT-FAMILY_vertical_datum_mismatch_000,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,vertical_datum,HIGH,5,"The workflow attempts to combine elevation data from two sources with different vertical datums (EGM2008 and EGM96), which is scientifically incompatible.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""vertical_datum"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow attempts to combine elevation data from two sources with different vertical datums (EGM2008 and EGM96), which is scientifically incompatible.""
+}"
+SGX3_DEVELOPMENT_angular_area_009,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires a unit for the quantity 'flood_extent', which is not provided in the artifact metadata.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires a unit for the quantity 'flood_extent', which is not provided in the artifact metadata.""
+}"
+SGX3_BLIND_flood_depth_027,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires vertical datum compatibility and unit conversion, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires vertical datum compatibility and unit conversion, which are not provided in the artifacts.""
+}"
+SGX3_BLIND_landcover_change_037,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires resampling with a target resolution of 20 meters, which is not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires resampling with a target resolution of 20 meters, which is not provided in the artifacts.""
+}"
+SGX3_BLIND_landcover_change_032,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires resampling with a target resolution of 50 meters, which is not supported by the provided artifact's resolution of 20 meters.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires resampling with a target resolution of 50 meters, which is not supported by the provided artifact's resolution of 20 meters.""
+}"
+SGX3_HELDOUT-FAMILY_physical_range_violation_000,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,required_value_range,MEDIUM,5,"The workflow operation 'assert_value_range' requires a value range constraint, which is not provided in the artifact metadata.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""required_value_range"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'assert_value_range' requires a value range constraint, which is not provided in the artifact metadata.""
+}"
+SGX3_HELDOUT-FAMILY_missing_provenance_001,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,provenance,MEDIUM,5,"The artifact 'unknown-input' lacks provenance information, which is required for scientific validation.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""provenance"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 5,
+  ""reason"": ""The artifact 'unknown-input' lacks provenance information, which is required for scientific validation.""
+}"
+SGX3_DEVELOPMENT_cloud_mask_missing_001,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,none,LOW,5,"The 'require_cloud_mask' operation is requested, but the artifact does not contain a cloud mask.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""none"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The 'require_cloud_mask' operation is requested, but the artifact does not contain a cloud mask.""
+}"
+SGX3_BLIND_landcover_change_022,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires resampling with a target resolution of 30 meters, which is not possible with the current 20-meter resolution due to the lack of provenance for the original data.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires resampling with a target resolution of 30 meters, which is not possible with the current 20-meter resolution due to the lack of provenance for the original data.""
+}"
+SGX3_DEVELOPMENT_categorical_interpolation_004,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires resampling with a target resolution of 90 meters, which is not aligned with the original 10-meter resolution. The required unit and quantity constraints are not provided, and the workflow operation itself requires these details.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires resampling with a target resolution of 90 meters, which is not aligned with the original 10-meter resolution. The required unit and quantity constraints are not provided, and the workflow operation itself requires these details.""
+}"
+SGX3_HELDOUT-FAMILY_temporal_split_overlap_015,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,MEDIUM,5,"The workflow requires temporal splitting, but the artifacts do not specify temporal resolution or acquisition times, which are necessary for temporal splitting.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires temporal splitting, but the artifacts do not specify temporal resolution or acquisition times, which are necessary for temporal splitting.""
+}"
+SGX3_BLIND_landcover_change_017,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires resampling with a target resolution of 60 meters, which is not possible with the current 10-meter resolution due to missing provenance.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires resampling with a target resolution of 60 meters, which is not possible with the current 10-meter resolution due to missing provenance.""
+}"
+SGX3_BLIND_landcover_change_047,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires resampling with a target resolution of 40 meters, which is not possible with the current 20-meter resolution due to missing provenance.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires resampling with a target resolution of 40 meters, which is not possible with the current 20-meter resolution due to missing provenance.""
+}"
+SGX3_BLIND_flood_remote_sensing_002,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The operations require cloud mask and sensor comparison, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The operations require cloud mask and sensor comparison, which are not provided in the artifacts.""
+}"
+SGX3_HELDOUT-FAMILY_vertical_datum_mismatch_002,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,vertical_datum,HIGH,5,"The workflow attempts to combine elevation data from two sources with different vertical datums (EGM2008 and WGS84_ellipsoid), which is scientifically incompatible.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""vertical_datum"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow attempts to combine elevation data from two sources with different vertical datums (EGM2008 and WGS84_ellipsoid), which is scientifically incompatible.""
+}"
+SGX3_DEVELOPMENT_rate_mean_as_accumulation_003,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires temporal aggregation of precipitation rates to accumulation, which is not directly supported by the IMERG artifact's scale and unit. The IMERG data is in mm/h and continuous, while the desired output is an accumulation (mm). This requires additional processing steps that are not provided in the given workflow.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires temporal aggregation of precipitation rates to accumulation, which is not directly supported by the IMERG artifact's scale and unit. The IMERG data is in mm/h and continuous, while the desired output is an accumulation (mm). This requires additional processing steps that are not provided in the given workflow.""
+}"
+SGX3_DEVELOPMENT_future_information_007,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires a temporal resolution for the rainfall feature, which is not provided in the artifact metadata.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires a temporal resolution for the rainfall feature, which is not provided in the artifact metadata.""
+}"
+SGX3_BLIND_flood_depth_026,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires unit conversion from 'km' to 'km2', which is not supported by the provided artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires unit conversion from 'km' to 'km2', which is not supported by the provided artifacts.""
+}"
+SGX3_BLIND_flood_remote_sensing_012,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The operations require cloud mask application and sensor comparison, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The operations require cloud mask application and sensor comparison, which are not provided in the artifacts.""
+}"
+SGX3_BLIND_landcover_change_013,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires resampling with a target resolution of 60 meters, which is not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires resampling with a target resolution of 60 meters, which is not provided in the artifacts.""
+}"
+SGX3_BLIND_eo_ml_validation_017,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation 'split' does not require any specific unit or resolution, and the provided artifact metadata does not contain all necessary details (e.g., scene overlap fraction) to fully validate the operation.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' does not require any specific unit or resolution, and the provided artifact metadata does not contain all necessary details (e.g., scene overlap fraction) to fully validate the operation.""
+}"
+SGX3_BLIND_flood_remote_sensing_025,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The operations require cloud mask application and sensor comparison, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The operations require cloud mask application and sensor comparison, which are not provided in the artifacts.""
+}"
+SGX3_BLIND_landcover_change_044,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The resampling operation requires a target resolution of 20 meters, which is not provided in the artifact metadata.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The resampling operation requires a target resolution of 20 meters, which is not provided in the artifact metadata.""
+}"
+SGX3_BLIND_eo_ml_validation_004,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation 'split' requires temporal boundaries, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' requires temporal boundaries, which are not provided in the artifacts.""
+}"
+SGX3_HELDOUT-FAMILY_temporal_split_overlap_005,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,MEDIUM,5,"The workflow requires temporal splitting, but the artifacts do not specify temporal resolution or acquisition times, which are necessary for temporal splitting.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires temporal splitting, but the artifacts do not specify temporal resolution or acquisition times, which are necessary for temporal splitting.""
+}"
+SGX3_HELDOUT-FAMILY_physical_range_violation_010,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,REFUTED,required_value_range,HIGH,5,"The workflow operation 'assert_value_range' requires that the value range of the NDVI index be within [-1, 1], which is not satisfied by the observed min (-0.8227485767917194) and max (0.7593046373274954).","{
+  ""verdict"": ""REFUTED"",
+  ""error_class"": ""required_value_range"",
+  ""severity"": ""HIGH"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'assert_value_range' requires that the value range of the NDVI index be within [-1, 1], which is not satisfied by the observed min (-0.8227485767917194) and max (0.7593046373274954).""
+}"
+SGX3_DEVELOPMENT_nodata_zero_001,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,PROVEN,NONE,LOW,5,"The workflow operation 'fill_nodata' uses a value of 0 for nodata, which is consistent with the 'missing' nodata semantics provided in the artifact metadata.","{
+  ""verdict"": ""PROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'fill_nodata' uses a value of 0 for nodata, which is consistent with the 'missing' nodata semantics provided in the artifact metadata.""
+}"
+SGX3_BLIND_landslide_forecast_045,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,MEDIUM,5,"The workflow requires 'requires_bare_earth' to be true, which is not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires 'requires_bare_earth' to be true, which is not provided in the artifacts.""
+}"
+SGX3_BLIND_flood_remote_sensing_045,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The operations require cloud mask application and sensor comparison, which are not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The operations require cloud mask application and sensor comparison, which are not provided in the artifacts.""
+}"
+SGX3_HELDOUT-FAMILY_unit_dimension_mismatch_003,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation 'convert_unit' requires a unit change from meters (m) to kilometers (km), which is scientifically valid given the artifact's unit is in meters.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'convert_unit' requires a unit change from meters (m) to kilometers (km), which is scientifically valid given the artifact's unit is in meters.""
+}"
+SGX3_BLIND_landslide_forecast_036,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,MEDIUM,5,"The workflow requires 'requires_bare_earth' to be true, which is not provided in the artifacts.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires 'requires_bare_earth' to be true, which is not provided in the artifacts.""
+}"
+SGX3_BLIND_eo_ml_validation_027,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow operation 'split' does not require any specific unit or resolution, and the provided artifact metadata does not contain all necessary details (e.g., scene overlap fraction) to fully validate the operation.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow operation 'split' does not require any specific unit or resolution, and the provided artifact metadata does not contain all necessary details (e.g., scene overlap fraction) to fully validate the operation.""
+}"
+SGX3_DEVELOPMENT_categorical_interpolation_003,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow requires resampling with a new resolution, which necessitates a target resolution in meters.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow requires resampling with a new resolution, which necessitates a target resolution in meters.""
+}"
+SGX3_HELDOUT-FAMILY_uncertainty_missing_000,judge_A,Qwen/Qwen2.5-3B-Instruct,fp16_native,UNPROVEN,NONE,LOW,5,"The workflow contains no operations, and thus no evidence can be established.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 5,
+  ""reason"": ""The workflow contains no operations, and thus no evidence can be established.""
+}"

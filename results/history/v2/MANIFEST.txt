@@ -1,0 +1,15 @@
+SciGeoGuard-X Result Bundle
+========================================
+
+Included files:
+
+SciGeoGuard_X_Publication_Experiments_v2_current.ipynb	144.08 KB
+SciGeoGuard_X_v2_family_performance.csv	0.61 KB
+SciGeoGuard_X_v2_metrics.csv	0.52 KB
+SciGeoGuard_X_v2_results.csv	71.00 KB
+SciGeoGuard_X_v2_sources.json	2.43 KB
+SilentGeoBench_v2_expert_review_template.csv	40.65 KB
+SilentGeoBench_v2_generated.csv	458.51 KB
+
+NOTE:
+Generated SilentGeoBench v2 cases are machine-generated stress-test cases and are NOT yet claimed to be expert-reviewed.

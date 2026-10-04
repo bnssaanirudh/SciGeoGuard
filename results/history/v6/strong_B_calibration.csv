@@ -1,0 +1,163 @@
+cal_id,truth,model_name,model_id,verdict,obligation_parse_rate,confidence,obligations_json,summary,raw_output
+P1,PROVEN,strong_B,mistralai/Mistral-7B-Instruct-v0.3,PROVEN,1.0,5,"{""provenance"": {""status"": ""PASS"", ""reason"": ""authoritative source is supplied""}, ""categorical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""spatial_support_resolution"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""units_quantity"": {""status"": ""PASS"", ""reason"": ""metric unit is provided""}, ""crs_geometry_area"": {""status"": ""PASS"", ""reason"": ""planar area is supported in the provided CRS""}, ""spectral_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""processing_quality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""vertical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""temporal_causality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""evaluation_independence"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""nodata_physical_domain"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""uncertainty_fitness"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}}",planar area calculation from binary mask,"{
+  ""obligations"": {
+    ""provenance"": {""status"":""PASS"",""reason"":""authoritative source is supplied""},
+    ""categorical_semantics"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""spatial_support_resolution"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""units_quantity"": {""status"":""PASS"",""reason"":""metric unit is provided""},
+    ""crs_geometry_area"": {""status"":""PASS"",""reason"":""planar area is supported in the provided CRS""},
+    ""spectral_semantics"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""processing_quality"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""vertical_semantics"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""temporal_causality"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""evaluation_independence"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""nodata_physical_domain"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""uncertainty_fitness"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""}
+  },
+  ""summary"":""planar area calculation from binary mask"",
+  ""confidence"":5
+}"
+P2,PROVEN,strong_B,mistralai/Mistral-7B-Instruct-v0.3,PROVEN,1.0,5,"{""provenance"": {""status"": ""PASS"", ""reason"": ""both artifacts have provenance""}, ""categorical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""no categorical data is involved""}, ""spatial_support_resolution"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""no spatial operation is involved""}, ""units_quantity"": {""status"": ""PASS"", ""reason"": ""both quantities are in the same unit and vertical datum""}, ""crs_geometry_area"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""spectral_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""processing_quality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""vertical_semantics"": {""status"": ""PASS"", ""reason"": ""both quantities are vertical and have the same vertical datum""}, ""temporal_causality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""evaluation_independence"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""nodata_physical_domain"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""uncertainty_fitness"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}}",combining vertical quantities with the same vertical datum,"{
+  ""obligations"": {
+    ""provenance"": {""status"":""PASS"",""reason"":""both artifacts have provenance""},
+    ""categorical_semantics"": {""status"":""NOT_APPLICABLE"",""reason"":""no categorical data is involved""},
+    ""spatial_support_resolution"": {""status"":""NOT_APPLICABLE"",""reason"":""no spatial operation is involved""},
+    ""units_quantity"": {""status"":""PASS"",""reason"":""both quantities are in the same unit and vertical datum""},
+    ""crs_geometry_area"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""spectral_semantics"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""processing_quality"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""vertical_semantics"": {""status"":""PASS"",""reason"":""both quantities are vertical and have the same vertical datum""},
+    ""temporal_causality"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""evaluation_independence"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""nodata_physical_domain"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""uncertainty_fitness"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""}
+  },
+  ""summary"":""combining vertical quantities with the same vertical datum"",
+  ""confidence"":5
+}"
+P3,PROVEN,strong_B,mistralai/Mistral-7B-Instruct-v0.3,PROVEN,1.0,5,"{""provenance"": {""status"": ""PASS"", ""reason"": ""source is supplied""}, ""categorical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""spatial_support_resolution"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""units_quantity"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""crs_geometry_area"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""spectral_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""processing_quality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""vertical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""temporal_causality"": {""status"": ""PASS"", ""reason"": ""temporal split is declared""}, ""evaluation_independence"": {""status"": ""PASS"", ""reason"": ""temporal split is declared""}, ""nodata_physical_domain"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""uncertainty_fitness"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}}",temporal evaluation split declared,"{
+  ""obligations"": {
+    ""provenance"": {""status"":""PASS"",""reason"":""source is supplied""},
+    ""categorical_semantics"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""spatial_support_resolution"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""units_quantity"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""crs_geometry_area"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""spectral_semantics"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""processing_quality"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""vertical_semantics"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""temporal_causality"": {""status"":""PASS"",""reason"":""temporal split is declared""},
+    ""evaluation_independence"": {""status"":""PASS"",""reason"":""temporal split is declared""},
+    ""nodata_physical_domain"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""uncertainty_fitness"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""}
+  },
+  ""summary"":""temporal evaluation split declared"",
+  ""confidence"":5
+}"
+R1,REFUTED,strong_B,mistralai/Mistral-7B-Instruct-v0.3,PROVEN,1.0,5,"{""provenance"": {""status"": ""PASS"", ""reason"": ""authoritative source is supplied""}, ""categorical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""spatial_support_resolution"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""units_quantity"": {""status"": ""PASS"", ""reason"": ""metric unit is consistent with the declared quantity""}, ""crs_geometry_area"": {""status"": ""PASS"", ""reason"": ""planar area is consistent with the CRS""}, ""spectral_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""processing_quality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""vertical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""temporal_causality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""evaluation_independence"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""nodata_physical_domain"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""uncertainty_fitness"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}}",binary mask is used to calculate planar area,"{
+  ""obligations"": {
+    ""provenance"": {""status"":""PASS"",""reason"":""authoritative source is supplied""},
+    ""categorical_semantics"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""spatial_support_resolution"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""units_quantity"": {""status"":""PASS"",""reason"":""metric unit is consistent with the declared quantity""},
+    ""crs_geometry_area"": {""status"":""PASS"",""reason"":""planar area is consistent with the CRS""},
+    ""spectral_semantics"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""processing_quality"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""vertical_semantics"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""temporal_causality"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""evaluation_independence"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""nodata_physical_domain"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""uncertainty_fitness"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""}
+  },
+  ""summary"":""binary mask is used to calculate planar area"",
+  ""confidence"":5
+}"
+R2,REFUTED,strong_B,mistralai/Mistral-7B-Instruct-v0.3,PROVEN,1.0,5,"{""provenance"": {""status"": ""PASS"", ""reason"": ""authoritative source is supplied""}, ""categorical_semantics"": {""status"": ""PASS"", ""reason"": ""label-preserving resampling""}, ""spatial_support_resolution"": {""status"": ""PASS"", ""reason"": ""coarsening does not claim new spatial information""}, ""units_quantity"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""crs_geometry_area"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""spectral_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""processing_quality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""vertical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""temporal_causality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""evaluation_independence"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""nodata_physical_domain"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""uncertainty_fitness"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}}",label-preserving categorical resampling,"{
+  ""obligations"": {
+    ""provenance"": {""status"":""PASS"",""reason"":""authoritative source is supplied""},
+    ""categorical_semantics"": {""status"":""PASS"",""reason"":""label-preserving resampling""},
+    ""spatial_support_resolution"": {""status"":""PASS"",""reason"":""coarsening does not claim new spatial information""},
+    ""units_quantity"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""crs_geometry_area"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""spectral_semantics"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""processing_quality"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""vertical_semantics"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""temporal_causality"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""evaluation_independence"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""nodata_physical_domain"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""uncertainty_fitness"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""}
+  },
+  ""summary"":""label-preserving categorical resampling"",
+  ""confidence"":5
+}"
+R3,REFUTED,strong_B,mistralai/Mistral-7B-Instruct-v0.3,PROVEN,1.0,5,"{""provenance"": {""status"": ""PASS"", ""reason"": ""source is supplied""}, ""categorical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""spatial_support_resolution"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""units_quantity"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""crs_geometry_area"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""spectral_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""processing_quality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""vertical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""temporal_causality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""evaluation_independence"": {""status"": ""PASS"", ""reason"": ""evaluation split is present""}, ""nodata_physical_domain"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""uncertainty_fitness"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}}",spatial split for independent evaluation,"{
+  ""obligations"": {
+    ""provenance"": {""status"":""PASS"",""reason"":""source is supplied""},
+    ""categorical_semantics"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""spatial_support_resolution"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""units_quantity"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""crs_geometry_area"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""spectral_semantics"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""processing_quality"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""vertical_semantics"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""temporal_causality"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""evaluation_independence"": {""status"":""PASS"",""reason"":""evaluation split is present""},
+    ""nodata_physical_domain"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""uncertainty_fitness"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""}
+  },
+  ""summary"":""spatial split for independent evaluation"",
+  ""confidence"":5
+}"
+U1,UNPROVEN,strong_B,mistralai/Mistral-7B-Instruct-v0.3,UNPROVEN,1.0,5,"{""provenance"": {""status"": ""MISSING_EVIDENCE"", ""reason"": ""required for scientific certification""}, ""categorical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""no categorical operation is involved""}, ""spatial_support_resolution"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""units_quantity"": {""status"": ""PASS"", ""reason"": ""dimensional consistency is satisfied""}, ""crs_geometry_area"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""spectral_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""processing_quality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""vertical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""temporal_causality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""evaluation_independence"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""nodata_physical_domain"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""uncertainty_fitness"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}}",elevation source lacks provenance for scientific certification,"{
+  ""obligations"": {
+    ""provenance"": {""status"":""MISSING_EVIDENCE"",""reason"":""required for scientific certification""},
+    ""categorical_semantics"": {""status"":""NOT_APPLICABLE"",""reason"":""no categorical operation is involved""},
+    ""spatial_support_resolution"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""units_quantity"": {""status"":""PASS"",""reason"":""dimensional consistency is satisfied""},
+    ""crs_geometry_area"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""spectral_semantics"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""processing_quality"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""vertical_semantics"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""temporal_causality"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""evaluation_independence"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""nodata_physical_domain"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""uncertainty_fitness"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""}
+  },
+  ""summary"":""elevation source lacks provenance for scientific certification"",
+  ""confidence"":5
+}"
+U2,UNPROVEN,strong_B,mistralai/Mistral-7B-Instruct-v0.3,REFUTED,1.0,5,"{""provenance"": {""status"": ""PASS"", ""reason"": ""source is supplied""}, ""categorical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""no categorical operation is involved""}, ""spatial_support_resolution"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""units_quantity"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""crs_geometry_area"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""spectral_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""processing_quality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""vertical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""temporal_causality"": {""status"": ""FAIL"", ""reason"": ""feature is available after decision time""}, ""evaluation_independence"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""nodata_physical_domain"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""uncertainty_fitness"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}}",future information leakage,"{
+  ""obligations"": {
+    ""provenance"": {""status"":""PASS"",""reason"":""source is supplied""},
+    ""categorical_semantics"": {""status"":""NOT_APPLICABLE"",""reason"":""no categorical operation is involved""},
+    ""spatial_support_resolution"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""units_quantity"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""crs_geometry_area"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""spectral_semantics"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""processing_quality"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""vertical_semantics"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""temporal_causality"": {""status"":""FAIL"",""reason"":""feature is available after decision time""},
+    ""evaluation_independence"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""nodata_physical_domain"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""uncertainty_fitness"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""}
+  },
+  ""summary"":""future information leakage"",
+  ""confidence"":5
+}"
+U3,UNPROVEN,strong_B,mistralai/Mistral-7B-Instruct-v0.3,UNPROVEN,1.0,5,"{""provenance"": {""status"": ""PASS"", ""reason"": ""source is supplied""}, ""categorical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""spatial_support_resolution"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""units_quantity"": {""status"": ""PASS"", ""reason"": ""consistent with elevation""}, ""crs_geometry_area"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""spectral_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""processing_quality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""vertical_semantics"": {""status"": ""MISSING_EVIDENCE"", ""reason"": ""bare-earth operation requires a surface model""}, ""temporal_causality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""evaluation_independence"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""nodata_physical_domain"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""uncertainty_fitness"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}}",bare-earth operation requires a surface model,"{
+  ""obligations"": {
+    ""provenance"": {""status"":""PASS"",""reason"":""source is supplied""},
+    ""categorical_semantics"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""spatial_support_resolution"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""units_quantity"": {""status"":""PASS"",""reason"":""consistent with elevation""},
+    ""crs_geometry_area"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""spectral_semantics"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""processing_quality"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""vertical_semantics"": {""status"":""MISSING_EVIDENCE"",""reason"":""bare-earth operation requires a surface model""},
+    ""temporal_causality"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""evaluation_independence"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""nodata_physical_domain"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""},
+    ""uncertainty_fitness"": {""status"":""NOT_APPLICABLE"",""reason"":""not required""}
+  },
+  ""summary"":""bare-earth operation requires a surface model"",
+  ""confidence"":5
+}"

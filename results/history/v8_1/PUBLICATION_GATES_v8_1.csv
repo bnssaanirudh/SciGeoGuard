@@ -1,0 +1,10 @@
+gate,passed
+all_8_imerg_dates_success,False
+all_imerg_time_axes_have_48_half_hours,False
+imerg_raw_sum_factor_matches_physics,True
+imerg_mean_fraction_matches_physics,True
+all_4_copdem_regions_success,True
+copdem_corrected_errors_finite,True
+sentinel_v8_all_live_success,True
+worldcover_v8_all_live_success,True
+no_offline_fixture_in_publication_run,True

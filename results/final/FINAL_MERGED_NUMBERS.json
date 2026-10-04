@@ -1,0 +1,20 @@
+{
+  "v3_cases": 445,
+  "v3_proven": 145,
+  "v3_refuted": 278,
+  "v3_unproven": 22,
+  "sentinel_region_median_mae": 0.09770012274384492,
+  "sentinel_region_median_sign_flip": 0.03193595084576815,
+  "worldcover_region_median_invalid_fraction": 0.12994791666666666,
+  "worldcover_nearest_valid_fraction": 1.0,
+  "copdem_region_median_p95_error_m": 1.3998422026634216,
+  "copdem_derived_fraction": 0.8888888888888888,
+  "copdem_pixel_inflation": 9.0,
+  "imerg_regions": 4,
+  "imerg_raw_sum_factor": 2.0,
+  "imerg_mean_fraction": 0.0416666666666666,
+  "sentinel_ci_low": 0.0732036903500556,
+  "sentinel_ci_high": 0.1242260932922363,
+  "worldcover_ci_low": 0.07486328125,
+  "worldcover_ci_high": 0.190625
+}

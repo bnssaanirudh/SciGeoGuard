@@ -1,0 +1,7 @@
+gate,passed,detail
+v3 controlled benchmark available,True,"445 cases; {'REFUTED': 278, 'PROVEN': 145, 'UNPROVEN': 22}"
+v6 strong LLM baseline metrics available,True,"Strong_Qwen_7B, Strong_Mistral_7B, SciGeoGuard_X"
+Sentinel live multi-region replication,True,8 successful live replicates; 4 regions
+WorldCover live multi-region replication,True,4 live regions
+CopDEM corrected live multi-region replication,True,4 live regions
+IMERG v8.2 four-region rainy recovery,True,4 regions; raw factor=2; mean fraction=1/24

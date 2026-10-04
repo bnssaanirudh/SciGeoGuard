@@ -1,0 +1,13 @@
+obligation,n,exact_status_agreement
+categorical_semantics,180,1.0
+crs_geometry_area,180,0.3111111111111111
+evaluation_independence,180,0.8888888888888888
+nodata_physical_domain,180,0.9555555555555556
+processing_quality,180,0.9722222222222222
+provenance,180,0.9055555555555556
+spatial_support_resolution,180,0.8111111111111111
+spectral_semantics,180,0.9888888888888889
+temporal_causality,180,0.8055555555555556
+uncertainty_fitness,180,0.9944444444444445
+units_quantity,180,0.7666666666666667
+vertical_semantics,180,0.8666666666666667

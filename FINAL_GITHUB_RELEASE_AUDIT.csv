@@ -1,0 +1,9 @@
+gate,passed,detail
+Science gates all passed,True,
+README present,True,
+Apache-2.0 LICENSE present,True,Confirm institutional/IP compatibility before public release.
+CITATION.cff present,True,
+No files >100 MB,True,
+No likely secrets,True,
+No unresolved release placeholders outside audit-code notebooks,True,
+v7 correctly marked pending,True,No generated/empty final human metrics published as evidence.

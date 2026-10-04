@@ -1,0 +1,8 @@
+check,passed
+blind_inputs_hide_generated_reference,True
+blind_inputs_hide_scigeoguard,True
+blind_inputs_hide_previous_llm_outputs,True
+fewshot_disjoint_from_blind_ids,True
+calibration_disjoint_from_blind_ids,True
+human_audit_hides_machine_labels,True
+llms_not_called_ground_truth,True

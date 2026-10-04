@@ -1,0 +1,7 @@
+gate,passed,detail
+README present,True,
+CITATION.cff present,True,
+Explicit software license present,False,LICENSE_STATUS.md is not a license
+No >100 MB files,True,
+No likely secrets,True,
+No submission placeholders,False,paper/FCS_Code_and_Data_in_Earth_Science/main.tex :: REPLACE-BEFORE-SUBMISSION; paper/FCS_Code_and_Data_in_Earth_Science/main.tex :: REPLACE-WITH-CORRESPONDING-EMAIL

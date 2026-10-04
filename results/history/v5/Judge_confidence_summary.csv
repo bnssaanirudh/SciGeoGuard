@@ -1,0 +1,4 @@
+judge,mean_confidence,median_confidence,n_confidence_scores
+Judge_A,3.9,4.0,180
+Judge_B,,,0
+Judge_C,1.1299435028248588,1.0,177

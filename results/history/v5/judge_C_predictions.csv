@@ -1,0 +1,1261 @@
+case_id,judge,model_id,load_mode,verdict,error_class,severity,confidence,reason,raw_output
+SGX3_BLIND_landcover_change_018,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,temporal resolution,MEDIUM,1.0,"The workflow does not specify the temporal resolution of the resampling operation. Without this information, it is impossible to determine if the resampling is suitable for the intended scientific goal.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""temporal resolution"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow does not specify the temporal resolution of the resampling operation. Without this information, it is impossible to determine if the resampling is suitable for the intended scientific goal.""
+}"
+SGX3_HELDOUT-FAMILY_missing_provenance_001,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing_provenance,MEDIUM,1.0,The provided workflow operations are missing the necessary provenance information to support the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing_provenance"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The provided workflow operations are missing the necessary provenance information to support the scientific goal.""
+}"
+SGX3_BLIND_landcover_change_013,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,temporal resolution,MEDIUM,1.0,"The workflow does not specify the temporal resolution of the resampling operation. Without this information, it is impossible to determine if the resampling is suitable for the intended scientific goal.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""temporal resolution"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow does not specify the temporal resolution of the resampling operation. Without this information, it is impossible to determine if the resampling is suitable for the intended scientific goal.""
+}"
+SGX3_BLIND_flood_remote_sensing_035,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The workflow does not provide a required quantity for the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow does not provide a required quantity for the scientific goal.""
+}"
+SGX3_BLIND_flood_remote_sensing_011,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'flood_extent' is missing from the provided artifacts.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'flood_extent' is missing from the provided artifacts.""
+}"
+SGX3_BLIND_flood_remote_sensing_012,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The workflow does not provide a required quantity for the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow does not provide a required quantity for the scientific goal.""
+}"
+SGX3_BLIND_flood_depth_039,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,short category or NONE,LOW,1.0,"The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing, and the required metadata and evidence are missing.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""short category or NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 1,
+  ""reason"": ""The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing, and the required metadata and evidence are missing.""
+}"
+SGX3_HELDOUT-FAMILY_temporal_split_overlap_003,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,2.0,The required quantity 'time_series' is missing from the provided artifacts.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 2,
+  ""reason"": ""The required quantity 'time_series' is missing from the provided artifacts.""
+}"
+SGX3_BLIND_flood_remote_sensing_017,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'flood_extent' is missing from the provided artifacts.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'flood_extent' is missing from the provided artifacts.""
+}"
+SGX3_BLIND_eo_ml_validation_015,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'training_samples' is missing from the provided evidence.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'training_samples' is missing from the provided evidence.""
+}"
+SGX3_HELDOUT-FAMILY_multisensor_time_mismatch_004,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,short category or NONE,LOW,1.0,The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the required metadata and evidence to determine if the scientific goal is met.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""short category or NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 1,
+  ""reason"": ""The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the required metadata and evidence to determine if the scientific goal is met.""
+}"
+SGX3_HELDOUT-FAMILY_temporal_split_overlap_005,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,temporal_split_overlap,MEDIUM,1.0,"The provided workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose. The required temporal resolution is not specified, and the temporal split mode is not specified. Additionally, the required unit and scale are not specified, and the required value range is not specified.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""temporal_split_overlap"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The provided workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose. The required temporal resolution is not specified, and the temporal split mode is not specified. Additionally, the required unit and scale are not specified, and the required value range is not specified.""
+}"
+SGX3_BLIND_eo_ml_validation_021,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,temporal_tolerance_h,MEDIUM,1.0,The workflow operations do not provide sufficient temporal resolution information to support the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""temporal_tolerance_h"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow operations do not provide sufficient temporal resolution information to support the scientific goal.""
+}"
+SGX3_DEVELOPMENT_unsupported_resolution_gain_014,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required_unit,MEDIUM,1.0,The required_unit is missing from the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required_unit"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required_unit is missing from the scientific goal.""
+}"
+SGX3_BLIND_flood_depth_027,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,short category or NONE,LOW,1.0,The provided workflow operations are insufficient to support the scientific goal. The provided evidence does not provide sufficient information to determine if the workflow is scientifically valid.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""short category or NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 1,
+  ""reason"": ""The provided workflow operations are insufficient to support the scientific goal. The provided evidence does not provide sufficient information to determine if the workflow is scientifically valid.""
+}"
+SGX3_BLIND_flood_remote_sensing_018,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'flood_extent' is missing from the provided artifacts.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'flood_extent' is missing from the provided artifacts.""
+}"
+SGX3_BLIND_flood_remote_sensing_049,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'flood_extent' is missing from the provided artifacts.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'flood_extent' is missing from the provided artifacts.""
+}"
+SGX3_BLIND_eo_ml_validation_018,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,temporal_tolerance_h,MEDIUM,1.0,The workflow operations do not provide sufficient temporal resolution information to support the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""temporal_tolerance_h"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow operations do not provide sufficient temporal resolution information to support the scientific goal.""
+}"
+SGX3_BLIND_flood_depth_034,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,short category or NONE,LOW,1.0,The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the necessary metadata to determine the scientific goal and intent.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""short category or NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 1,
+  ""reason"": ""The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the necessary metadata to determine the scientific goal and intent.""
+}"
+SGX3_BLIND_flood_depth_024,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,short category or NONE,LOW,1.0,The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the necessary metadata to determine the scientific goal and intent.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""short category or NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 1,
+  ""reason"": ""The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the necessary metadata to determine the scientific goal and intent.""
+}"
+SGX3_BLIND_eo_ml_validation_036,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'training_samples' is missing from the provided evidence.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'training_samples' is missing from the provided evidence.""
+}"
+SGX3_DEVELOPMENT_unsupported_resolution_gain_004,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required_unit,MEDIUM,1.0,The required_unit is missing from the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required_unit"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required_unit is missing from the scientific goal.""
+}"
+SGX3_BLIND_flood_remote_sensing_014,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The workflow does not provide a required quantity for the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow does not provide a required quantity for the scientific goal.""
+}"
+SGX3_HELDOUT-FAMILY_scene_overlap_leakage_001,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'max_resolution_m' is missing from the provided artifacts.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'max_resolution_m' is missing from the provided artifacts.""
+}"
+SGX3_DEVELOPMENT_future_information_002,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,2.0,The workflow does not provide the required quantity for the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 2,
+  ""reason"": ""The workflow does not provide the required quantity for the scientific goal.""
+}"
+SGX3_BLIND_landcover_change_044,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,temporal resolution,MEDIUM,1.0,"The workflow does not specify the temporal resolution of the resampling operation. Without this information, it is impossible to determine if the resampling is suitable for the intended scientific goal.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""temporal resolution"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow does not specify the temporal resolution of the resampling operation. Without this information, it is impossible to determine if the resampling is suitable for the intended scientific goal.""
+}"
+SGX3_BLIND_eo_ml_validation_032,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'training_samples' is missing from the provided evidence.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'training_samples' is missing from the provided evidence.""
+}"
+SGX3_DEVELOPMENT_future_information_009,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,2.0,The workflow does not provide the required quantity for the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 2,
+  ""reason"": ""The workflow does not provide the required quantity for the scientific goal.""
+}"
+SGX3_DEVELOPMENT_future_information_008,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,2.0,The workflow does not provide the required quantity for the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 2,
+  ""reason"": ""The workflow does not provide the required quantity for the scientific goal.""
+}"
+SGX3_HELDOUT-FAMILY_uncertainty_missing_003,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'hazard_probability' is missing from the provided evidence.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'hazard_probability' is missing from the provided evidence.""
+}"
+SGX3_BLIND_landcover_change_005,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,temporal resolution,MEDIUM,1.0,"The workflow does not specify the temporal resolution of the resampling operation. Without this information, it is impossible to determine if the resampling is suitable for the intended scientific goal.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""temporal resolution"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow does not specify the temporal resolution of the resampling operation. Without this information, it is impossible to determine if the resampling is suitable for the intended scientific goal.""
+}"
+SGX3_BLIND_flood_remote_sensing_046,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose.""
+}"
+SGX3_BLIND_landcover_change_011,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,temporal resolution,MEDIUM,1.0,"The workflow operations do not provide sufficient evidence to support the scientific goal. The temporal resolution of the resampled land cover data is not specified, which is a critical aspect of the land cover change workflow.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""temporal resolution"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow operations do not provide sufficient evidence to support the scientific goal. The temporal resolution of the resampled land cover data is not specified, which is a critical aspect of the land cover change workflow.""
+}"
+SGX3_BLIND_flood_remote_sensing_002,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The workflow does not provide a required quantity for the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow does not provide a required quantity for the scientific goal.""
+}"
+SGX3_BLIND_landcover_change_007,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,temporal resolution,MEDIUM,1.0,"The workflow does not specify the temporal resolution of the resampling operation. Without this information, it is impossible to determine if the resampling is suitable for the intended scientific goal.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""temporal resolution"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow does not specify the temporal resolution of the resampling operation. Without this information, it is impossible to determine if the resampling is suitable for the intended scientific goal.""
+}"
+SGX3_HELDOUT-FAMILY_physical_range_violation_010,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,2.0,The workflow does not provide the required quantity (NDVI) for the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 2,
+  ""reason"": ""The workflow does not provide the required quantity (NDVI) for the scientific goal.""
+}"
+SGX3_DEVELOPMENT_angular_area_002,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,"The workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose. Specifically, the workflow operations do not specify the required quantity (flood extent) or its unit (km2).","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose. Specifically, the workflow operations do not specify the required quantity (flood extent) or its unit (km2).""
+}"
+SGX3_HELDOUT-FAMILY_temporal_split_overlap_002,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,2.0,The required quantity 'time_series' is missing from the provided artifacts.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 2,
+  ""reason"": ""The required quantity 'time_series' is missing from the provided artifacts.""
+}"
+SGX3_BLIND_landcover_change_022,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,temporal resolution,MEDIUM,1.0,"The workflow operations do not provide sufficient evidence to support the scientific goal. The temporal resolution of the resampled land cover data is not specified, which is a critical aspect of the land cover change workflow.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""temporal resolution"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow operations do not provide sufficient evidence to support the scientific goal. The temporal resolution of the resampled land cover data is not specified, which is a critical aspect of the land cover change workflow.""
+}"
+SGX3_HELDOUT-FAMILY_temporal_split_overlap_000,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,temporal_split_overlap,MEDIUM,1.0,"The provided workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose. The required temporal resolution is not specified, and the temporal split mode is not specified. Additionally, the required unit and scale are not specified, and the required value range is not specified.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""temporal_split_overlap"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The provided workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose. The required temporal resolution is not specified, and the temporal split mode is not specified. Additionally, the required unit and scale are not specified, and the required value range is not specified.""
+}"
+SGX3_BLIND_flood_depth_007,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,short category or NONE,LOW,1.0,The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the necessary metadata to determine the scientific goal and intent.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""short category or NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 1,
+  ""reason"": ""The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the necessary metadata to determine the scientific goal and intent.""
+}"
+SGX3_BLIND_landslide_forecast_036,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,"The workflow requires a bare-earth prediction, but the required quantity (rainfall) is not specified.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow requires a bare-earth prediction, but the required quantity (rainfall) is not specified.""
+}"
+SGX3_HELDOUT-FAMILY_scene_overlap_leakage_004,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'max_resolution_m' is missing from the provided artifacts.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'max_resolution_m' is missing from the provided artifacts.""
+}"
+SGX3_HELDOUT-FAMILY_rate_sum_without_duration_002,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,temporal_aggregate,MEDIUM,1.0,The provided workflow operation is missing the required parameter 'sample_duration_h' for the temporal_aggregate operation.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""temporal_aggregate"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The provided workflow operation is missing the required parameter 'sample_duration_h' for the temporal_aggregate operation.""
+}"
+SGX3_DEVELOPMENT_unsupported_resolution_gain_010,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required_unit,MEDIUM,1.0,The required unit for the scientific goal is missing.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required_unit"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required unit for the scientific goal is missing.""
+}"
+SGX3_BLIND_flood_depth_012,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,short category or NONE,LOW,1.0,The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the necessary metadata to determine the scientific goal and intent.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""short category or NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 1,
+  ""reason"": ""The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the necessary metadata to determine the scientific goal and intent.""
+}"
+SGX3_BLIND_flood_remote_sensing_025,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The workflow does not provide a required quantity for the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow does not provide a required quantity for the scientific goal.""
+}"
+SGX3_DEVELOPMENT_unsupported_resolution_gain_001,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required_unit,MEDIUM,1.0,The required_unit is missing from the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required_unit"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required_unit is missing from the scientific goal.""
+}"
+SGX3_BLIND_flood_depth_020,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,short category or NONE,LOW,1.0,The provided workflow operations are insufficient to support the scientific goal. The provided evidence does not provide sufficient information to determine if the workflow is scientifically valid.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""short category or NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 1,
+  ""reason"": ""The provided workflow operations are insufficient to support the scientific goal. The provided evidence does not provide sufficient information to determine if the workflow is scientifically valid.""
+}"
+SGX3_DEVELOPMENT_spectral_role_002,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose.""
+}"
+SGX3_HELDOUT-FAMILY_uncertainty_missing_000,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'hazard_probability' is missing from the provided evidence.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'hazard_probability' is missing from the provided evidence.""
+}"
+SGX3_BLIND_landslide_forecast_022,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,"The workflow requires a bare-earth mask, but the required quantity is not specified.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow requires a bare-earth mask, but the required quantity is not specified.""
+}"
+SGX3_HELDOUT-FAMILY_scene_overlap_leakage_005,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'max_resolution_m' is missing from the provided artifacts.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'max_resolution_m' is missing from the provided artifacts.""
+}"
+SGX3_DEVELOPMENT_categorical_interpolation_006,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose.""
+}"
+SGX3_HELDOUT-FAMILY_scene_overlap_leakage_010,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'max_resolution_m' is missing from the provided artifacts.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'max_resolution_m' is missing from the provided artifacts.""
+}"
+SGX3_HELDOUT-FAMILY_vertical_datum_mismatch_000,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing_required_quantity,MEDIUM,2.0,The workflow requires a quantity (elevation or water level) but none are provided.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing_required_quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 2,
+  ""reason"": ""The workflow requires a quantity (elevation or water level) but none are provided.""
+}"
+SGX3_DEVELOPMENT_cloud_mask_missing_001,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'surface_reflectance' is missing from the provided artifact.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'surface_reflectance' is missing from the provided artifact.""
+}"
+SGX3_BLIND_landcover_change_032,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The scientific goal and intent are missing required information.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The scientific goal and intent are missing required information.""
+}"
+SGX3_BLIND_flood_depth_026,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,short category or NONE,LOW,1.0,The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the necessary metadata to determine the scientific goal and intent.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""short category or NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 1,
+  ""reason"": ""The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the necessary metadata to determine the scientific goal and intent.""
+}"
+SGX3_BLIND_flood_depth_041,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,short category or NONE,LOW,1.0,The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the necessary metadata to determine the scientific goal and intent.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""short category or NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 1,
+  ""reason"": ""The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the necessary metadata to determine the scientific goal and intent.""
+}"
+SGX3_BLIND_flood_depth_021,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,short category or NONE,LOW,1.0,The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the necessary metadata to determine the scientific goal and intent.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""short category or NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 1,
+  ""reason"": ""The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the necessary metadata to determine the scientific goal and intent.""
+}"
+SGX3_DEVELOPMENT_angular_area_005,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPARSED,,,,,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose. Specifically, the workflow operations do not provide the required quantity of the ""flood_extent"" quantity.""
+}"
+SGX3_BLIND_landslide_forecast_000,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,"The workflow requires a bare-earth prediction, but the required quantity (rainfall) is not specified.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow requires a bare-earth prediction, but the required quantity (rainfall) is not specified.""
+}"
+SGX3_BLIND_flood_remote_sensing_041,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The workflow does not provide a required quantity for the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow does not provide a required quantity for the scientific goal.""
+}"
+SGX3_DEVELOPMENT_angular_area_009,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPARSED,,,,,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose. Specifically, the workflow operations do not provide the required quantity of the ""flood_extent"" quantity, which is necessary to support the ""angular_area"" goal.""
+}"
+SGX3_BLIND_eo_ml_validation_031,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'training_samples' is missing from the provided evidence.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'training_samples' is missing from the provided evidence.""
+}"
+SGX3_BLIND_landcover_change_043,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,temporal resolution,MEDIUM,1.0,"The workflow does not specify the temporal resolution of the resampling operation. Without this information, it is impossible to determine if the resampling is suitable for the intended use case.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""temporal resolution"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow does not specify the temporal resolution of the resampling operation. Without this information, it is impossible to determine if the resampling is suitable for the intended use case.""
+}"
+SGX3_BLIND_eo_ml_validation_022,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'training_samples' is missing from the provided evidence.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'training_samples' is missing from the provided evidence.""
+}"
+SGX3_DEVELOPMENT_band_grid_mismatch_002,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,short category or NONE,LOW,1.0,The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the required 'spectral_index' operation with the specified parameters.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""short category or NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 1,
+  ""reason"": ""The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the required 'spectral_index' operation with the specified parameters.""
+}"
+SGX3_DEVELOPMENT_processing_level_003,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,"The workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose. Specifically, the required quantity of surface reflectance is missing from the provided evidence.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose. Specifically, the required quantity of surface reflectance is missing from the provided evidence.""
+}"
+SGX3_HELDOUT-FAMILY_unit_dimension_mismatch_002,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,unit_dimension_mismatch,MEDIUM,1.0,"The unit of measurement for the distance is meters (m), but the required unit is centimeters (cm). This mismatch could affect the accuracy of the scientific workflow.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""unit_dimension_mismatch"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The unit of measurement for the distance is meters (m), but the required unit is centimeters (cm). This mismatch could affect the accuracy of the scientific workflow.""
+}"
+SGX3_BLIND_eo_ml_validation_049,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,temporal_tolerance_h,MEDIUM,1.0,The workflow operations do not provide sufficient temporal resolution information to support the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""temporal_tolerance_h"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow operations do not provide sufficient temporal resolution information to support the scientific goal.""
+}"
+SGX3_HELDOUT-FAMILY_uncertainty_missing_001,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'hazard_probability' is missing from the provided evidence.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'hazard_probability' is missing from the provided evidence.""
+}"
+SGX3_HELDOUT-FAMILY_temporal_split_overlap_006,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,temporal_split_overlap,MEDIUM,1.0,"The provided workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose. The required temporal resolution is not specified, and the temporal split mode is not specified. Additionally, the required unit and scale are not specified, and the required value range is not specified.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""temporal_split_overlap"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The provided workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose. The required temporal resolution is not specified, and the temporal split mode is not specified. Additionally, the required unit and scale are not specified, and the required value range is not specified.""
+}"
+SGX3_BLIND_flood_remote_sensing_000,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The workflow does not provide a required quantity for the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow does not provide a required quantity for the scientific goal.""
+}"
+SGX3_DEVELOPMENT_spatial_split_leakage_006,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'training_samples' is missing from the provided artifacts.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'training_samples' is missing from the provided artifacts.""
+}"
+SGX3_DEVELOPMENT_nodata_zero_000,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'rainfall' is missing from the provided evidence.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'rainfall' is missing from the provided evidence.""
+}"
+SGX3_HELDOUT-FAMILY_scene_overlap_leakage_009,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'max_resolution_m' is missing from the provided artifacts.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'max_resolution_m' is missing from the provided artifacts.""
+}"
+SGX3_DEVELOPMENT_unsupported_resolution_gain_013,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required_unit,MEDIUM,1.0,The required_unit is missing from the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required_unit"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required_unit is missing from the scientific goal.""
+}"
+SGX3_BLIND_flood_depth_006,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,short category or NONE,LOW,1.0,The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the necessary metadata to determine the scientific goal and intent.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""short category or NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 1,
+  ""reason"": ""The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the necessary metadata to determine the scientific goal and intent.""
+}"
+SGX3_DEVELOPMENT_band_grid_mismatch_000,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,short category or NONE,LOW,1.0,The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the required 'spectral_index' operation with the specified parameters.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""short category or NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 1,
+  ""reason"": ""The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the required 'spectral_index' operation with the specified parameters.""
+}"
+SGX3_DEVELOPMENT_nodata_zero_001,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'rainfall' is missing from the provided evidence.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'rainfall' is missing from the provided evidence.""
+}"
+SGX3_BLIND_landslide_forecast_034,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,"The workflow requires a bare-earth prediction, but the required quantity (rainfall) is not specified.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow requires a bare-earth prediction, but the required quantity (rainfall) is not specified.""
+}"
+SGX3_DEVELOPMENT_unsupported_resolution_gain_009,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required_unit,MEDIUM,1.0,The required_unit is missing from the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required_unit"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required_unit is missing from the scientific goal.""
+}"
+SGX3_HELDOUT-FAMILY_uncertainty_missing_014,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'hazard_probability' is missing from the provided evidence.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'hazard_probability' is missing from the provided evidence.""
+}"
+SGX3_BLIND_eo_ml_validation_047,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,temporal_tolerance_h,MEDIUM,1.0,The workflow operations do not provide sufficient temporal resolution information to support the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""temporal_tolerance_h"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow operations do not provide sufficient temporal resolution information to support the scientific goal.""
+}"
+SGX3_DEVELOPMENT_spatial_split_leakage_000,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'training_samples' is missing from the provided artifacts.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'training_samples' is missing from the provided artifacts.""
+}"
+SGX3_HELDOUT-FAMILY_unit_dimension_mismatch_003,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,unit_dimension_mismatch,MEDIUM,1.0,The provided unit 'm' is not compatible with the required unit 'km' for the 'distance' artifact.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""unit_dimension_mismatch"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The provided unit 'm' is not compatible with the required unit 'km' for the 'distance' artifact.""
+}"
+SGX3_BLIND_flood_remote_sensing_031,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The workflow does not provide a required quantity for the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow does not provide a required quantity for the scientific goal.""
+}"
+SGX3_DEVELOPMENT_spatial_split_leakage_009,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'training_samples' is missing from the provided artifacts.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'training_samples' is missing from the provided artifacts.""
+}"
+SGX3_BLIND_landslide_forecast_025,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required_value_range,MEDIUM,1.0,"The workflow requires a value range for the 'required_value_range' parameter, but it is not provided.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required_value_range"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow requires a value range for the 'required_value_range' parameter, but it is not provided.""
+}"
+SGX3_BLIND_flood_depth_002,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,short category or NONE,LOW,1.0,The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing necessary metadata and evidence to determine the scientific validity of the workflow.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""short category or NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 1,
+  ""reason"": ""The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing necessary metadata and evidence to determine the scientific validity of the workflow.""
+}"
+SGX3_HELDOUT-FAMILY_multisensor_time_mismatch_013,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,short category or NONE,LOW,1.0,The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the required metadata and evidence to determine if the scientific goal is met.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""short category or NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 1,
+  ""reason"": ""The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the required metadata and evidence to determine if the scientific goal is met.""
+}"
+SGX3_BLIND_landcover_change_041,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,temporal resolution,MEDIUM,1.0,"The workflow does not specify the temporal resolution of the resampling operation. Without this information, it is impossible to determine if the resampling is suitable for the intended use case.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""temporal resolution"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow does not specify the temporal resolution of the resampling operation. Without this information, it is impossible to determine if the resampling is suitable for the intended use case.""
+}"
+SGX3_BLIND_flood_remote_sensing_003,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The workflow does not provide a required quantity for the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow does not provide a required quantity for the scientific goal.""
+}"
+SGX3_BLIND_landslide_forecast_030,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required_value_range,MEDIUM,1.0,"The workflow requires a value range for the 'required_value_range' parameter, but it is not provided.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required_value_range"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow requires a value range for the 'required_value_range' parameter, but it is not provided.""
+}"
+SGX3_DEVELOPMENT_angular_area_007,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPARSED,,,,,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose. Specifically, the workflow operations do not provide the required quantity of the ""flood_extent"" quantity.""
+}"
+SGX3_BLIND_flood_remote_sensing_040,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose.""
+}"
+SGX3_HELDOUT-FAMILY_missing_provenance_000,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing_provenance,MEDIUM,1.0,The provided workflow operations are missing the necessary provenance information to support the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing_provenance"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The provided workflow operations are missing the necessary provenance information to support the scientific goal.""
+}"
+SGX3_BLIND_eo_ml_validation_010,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'training_samples' is missing from the provided evidence.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'training_samples' is missing from the provided evidence.""
+}"
+SGX3_BLIND_landcover_change_012,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,temporal resolution,MEDIUM,1.0,"The workflow does not specify the temporal resolution of the resampling operation. Without this information, it is impossible to determine if the resampling is suitable for the intended scientific goal.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""temporal resolution"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow does not specify the temporal resolution of the resampling operation. Without this information, it is impossible to determine if the resampling is suitable for the intended scientific goal.""
+}"
+SGX3_BLIND_flood_remote_sensing_020,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'flood_extent' is missing from the provided artifacts.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'flood_extent' is missing from the provided artifacts.""
+}"
+SGX3_DEVELOPMENT_future_information_004,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,2.0,The workflow does not provide the required quantity for the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 2,
+  ""reason"": ""The workflow does not provide the required quantity for the scientific goal.""
+}"
+SGX3_HELDOUT-FAMILY_categorical_mean_aggregation_002,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,2.0,The workflow operations are missing the required quantity of the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 2,
+  ""reason"": ""The workflow operations are missing the required quantity of the scientific goal.""
+}"
+SGX3_DEVELOPMENT_unsupported_resolution_gain_000,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required_unit,MEDIUM,1.0,The required_unit is missing from the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required_unit"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required_unit is missing from the scientific goal.""
+}"
+SGX3_BLIND_eo_ml_validation_043,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,temporal_tolerance_h,MEDIUM,1.0,The workflow operations do not provide sufficient temporal resolution information to support the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""temporal_tolerance_h"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow operations do not provide sufficient temporal resolution information to support the scientific goal.""
+}"
+SGX3_DEVELOPMENT_DSM_as_DTM_000,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required_unit,MEDIUM,1.0,The required unit for the 'elevation' quantity is missing in the 'terrain' artifact.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required_unit"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required unit for the 'elevation' quantity is missing in the 'terrain' artifact.""
+}"
+SGX3_BLIND_landcover_change_025,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,temporal resolution,MEDIUM,1.0,"The workflow does not specify the temporal resolution of the resampling operation. Without this information, it is impossible to determine if the resampling is suitable for the intended use case.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""temporal resolution"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow does not specify the temporal resolution of the resampling operation. Without this information, it is impossible to determine if the resampling is suitable for the intended use case.""
+}"
+SGX3_HELDOUT-FAMILY_uncertainty_missing_009,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'hazard_probability' is missing from the provided evidence.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'hazard_probability' is missing from the provided evidence.""
+}"
+SGX3_HELDOUT-FAMILY_multisensor_time_mismatch_010,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,short category or NONE,LOW,1.0,The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the required metadata and evidence to determine if the scientific goal is met.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""short category or NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 1,
+  ""reason"": ""The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the required metadata and evidence to determine if the scientific goal is met.""
+}"
+SGX3_BLIND_eo_ml_validation_039,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'training_samples' is missing from the provided evidence.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'training_samples' is missing from the provided evidence.""
+}"
+SGX3_BLIND_flood_depth_033,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,short category or NONE,LOW,1.0,The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the necessary metadata to determine the scientific goal and intent.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""short category or NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 1,
+  ""reason"": ""The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the necessary metadata to determine the scientific goal and intent.""
+}"
+SGX3_DEVELOPMENT_rate_mean_as_accumulation_003,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,temporal_aggregate,MEDIUM,1.0,"The provided workflow operation is not sufficient to support the scientific goal. The 'temporal_aggregate' operation is not defined for the 'accumulation' quantity, and the 'declared_quantity' is not specified.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""temporal_aggregate"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The provided workflow operation is not sufficient to support the scientific goal. The 'temporal_aggregate' operation is not defined for the 'accumulation' quantity, and the 'declared_quantity' is not specified.""
+}"
+SGX3_DEVELOPMENT_processing_level_002,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'reflectance' is missing from the artifact metadata.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'reflectance' is missing from the artifact metadata.""
+}"
+SGX3_BLIND_eo_ml_validation_017,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'training_samples' is missing from the provided evidence.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'training_samples' is missing from the provided evidence.""
+}"
+SGX3_DEVELOPMENT_band_grid_mismatch_001,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,short category or NONE,LOW,1.0,The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the required 'spectral_index' operation with the specified parameters.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""short category or NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 1,
+  ""reason"": ""The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the required 'spectral_index' operation with the specified parameters.""
+}"
+SGX3_BLIND_landslide_forecast_028,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required_value_range,MEDIUM,1.0,"The workflow requires a value range for the 'required_value_range' parameter, but it is not provided.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required_value_range"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow requires a value range for the 'required_value_range' parameter, but it is not provided.""
+}"
+SGX3_DEVELOPMENT_categorical_interpolation_002,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,2.0,"The workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose. Specifically, the required quantity of land cover data is missing.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 2,
+  ""reason"": ""The workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose. Specifically, the required quantity of land cover data is missing.""
+}"
+SGX3_BLIND_landslide_forecast_016,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,"The workflow requires a bare-earth prediction, but the required quantity (rainfall) is not specified.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow requires a bare-earth prediction, but the required quantity (rainfall) is not specified.""
+}"
+SGX3_BLIND_eo_ml_validation_040,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'training_samples' is missing from the provided evidence.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'training_samples' is missing from the provided evidence.""
+}"
+SGX3_HELDOUT-FAMILY_scene_overlap_leakage_012,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'max_resolution_m' is missing from the provided artifacts.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'max_resolution_m' is missing from the provided artifacts.""
+}"
+SGX3_BLIND_landslide_forecast_006,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,"The workflow requires a bare-earth mask, but the required quantity is not specified.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow requires a bare-earth mask, but the required quantity is not specified.""
+}"
+SGX3_BLIND_flood_depth_043,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,short category or NONE,LOW,1.0,The provided workflow operations are insufficient to support the scientific goal. The provided evidence does not provide sufficient information to determine if the workflow is scientifically valid.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""short category or NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 1,
+  ""reason"": ""The provided workflow operations are insufficient to support the scientific goal. The provided evidence does not provide sufficient information to determine if the workflow is scientifically valid.""
+}"
+SGX3_BLIND_flood_depth_045,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,short category or NONE,LOW,1.0,The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the necessary metadata to determine the scientific goal and intent.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""short category or NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 1,
+  ""reason"": ""The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the necessary metadata to determine the scientific goal and intent.""
+}"
+SGX3_HELDOUT-FAMILY_physical_range_violation_000,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing_required_unit,MEDIUM,1.0,The required unit for the NDVI artifact is missing.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing_required_unit"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required unit for the NDVI artifact is missing.""
+}"
+SGX3_BLIND_landcover_change_037,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,temporal resolution,MEDIUM,1.0,"The workflow does not specify the temporal resolution of the resampling operation. Without this information, it is impossible to determine if the resampling is suitable for the intended scientific goal.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""temporal resolution"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow does not specify the temporal resolution of the resampling operation. Without this information, it is impossible to determine if the resampling is suitable for the intended scientific goal.""
+}"
+SGX3_DEVELOPMENT_processing_level_001,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'reflectance' is missing from the artifact metadata.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'reflectance' is missing from the artifact metadata.""
+}"
+SGX3_BLIND_landslide_forecast_003,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,"The workflow requires a bare-earth prediction, but the required quantity (rainfall) is not specified.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow requires a bare-earth prediction, but the required quantity (rainfall) is not specified.""
+}"
+SGX3_DEVELOPMENT_spectral_role_000,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose.""
+}"
+SGX3_DEVELOPMENT_rate_mean_as_accumulation_004,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,temporal_aggregate,MEDIUM,1.0,The provided workflow operation is missing the required parameter 'sample_duration_h' for the temporal aggregation operation.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""temporal_aggregate"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The provided workflow operation is missing the required parameter 'sample_duration_h' for the temporal aggregation operation.""
+}"
+SGX3_HELDOUT-FAMILY_scene_overlap_leakage_006,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'max_resolution_m' is missing from the provided artifacts.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'max_resolution_m' is missing from the provided artifacts.""
+}"
+SGX3_BLIND_landcover_change_047,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,2.0,The scientific goal and intent are missing required information.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 2,
+  ""reason"": ""The scientific goal and intent are missing required information.""
+}"
+SGX3_BLIND_landcover_change_042,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,temporal resolution,MEDIUM,1.0,"The workflow does not specify the temporal resolution of the resampling operation. Without this information, it is impossible to determine if the resampling is suitable for the intended use case.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""temporal resolution"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow does not specify the temporal resolution of the resampling operation. Without this information, it is impossible to determine if the resampling is suitable for the intended use case.""
+}"
+SGX3_BLIND_flood_depth_011,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,short category or NONE,LOW,1.0,The provided workflow operations are insufficient to support the scientific goal. The provided evidence does not provide sufficient information to determine if the workflow is scientifically valid.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""short category or NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 1,
+  ""reason"": ""The provided workflow operations are insufficient to support the scientific goal. The provided evidence does not provide sufficient information to determine if the workflow is scientifically valid.""
+}"
+SGX3_BLIND_landslide_forecast_021,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required_value_range,MEDIUM,1.0,"The workflow requires a value range for the 'required_value_range' parameter, but it is not provided.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required_value_range"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow requires a value range for the 'required_value_range' parameter, but it is not provided.""
+}"
+SGX3_HELDOUT-FAMILY_uncertainty_missing_012,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'hazard_probability' is missing from the provided evidence.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'hazard_probability' is missing from the provided evidence.""
+}"
+SGX3_BLIND_flood_remote_sensing_005,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The workflow does not provide a required quantity for the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow does not provide a required quantity for the scientific goal.""
+}"
+SGX3_BLIND_eo_ml_validation_027,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'training_samples' is missing from the provided evidence.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'training_samples' is missing from the provided evidence.""
+}"
+SGX3_DEVELOPMENT_unsupported_resolution_gain_015,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required_unit,MEDIUM,1.0,The required_unit is missing from the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required_unit"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required_unit is missing from the scientific goal.""
+}"
+SGX3_BLIND_flood_remote_sensing_022,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'flood_extent' is missing from the provided artifacts.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'flood_extent' is missing from the provided artifacts.""
+}"
+SGX3_HELDOUT-FAMILY_temporal_split_overlap_011,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,temporal_split_overlap,MEDIUM,1.0,"The provided workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose. The required temporal resolution is not specified, and the temporal split mode is not specified. Additionally, the required unit and scale are not specified, and the required value range is not specified.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""temporal_split_overlap"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The provided workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose. The required temporal resolution is not specified, and the temporal split mode is not specified. Additionally, the required unit and scale are not specified, and the required value range is not specified.""
+}"
+SGX3_BLIND_flood_depth_014,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,short category or NONE,LOW,1.0,The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the necessary metadata to determine the scientific goal and intent.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""short category or NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 1,
+  ""reason"": ""The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the necessary metadata to determine the scientific goal and intent.""
+}"
+SGX3_HELDOUT-FAMILY_vertical_datum_mismatch_002,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing_required_quantity,MEDIUM,2.0,"The workflow requires a value for the 'vertical_datum' parameter, which is missing from the provided evidence.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing_required_quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 2,
+  ""reason"": ""The workflow requires a value for the 'vertical_datum' parameter, which is missing from the provided evidence.""
+}"
+SGX3_BLIND_landslide_forecast_010,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,"The workflow requires a bare-earth prediction, but the required quantity (rainfall) is not specified.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow requires a bare-earth prediction, but the required quantity (rainfall) is not specified.""
+}"
+SGX3_HELDOUT-FAMILY_vertical_datum_unknown_001,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing_required_quantity,MEDIUM,2.0,"The workflow requires a value for the 'vertical_datum' parameter, which is not provided.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing_required_quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 2,
+  ""reason"": ""The workflow requires a value for the 'vertical_datum' parameter, which is not provided.""
+}"
+SGX3_DEVELOPMENT_unsupported_resolution_gain_012,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required_unit,MEDIUM,1.0,The required_unit is missing from the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required_unit"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required_unit is missing from the scientific goal.""
+}"
+SGX3_BLIND_landcover_change_017,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,2.0,The scientific goal and intent are missing required information.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 2,
+  ""reason"": ""The scientific goal and intent are missing required information.""
+}"
+SGX3_HELDOUT-FAMILY_quality_metadata_loss_001,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'surface_reflectance' is missing from the provided artifact.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'surface_reflectance' is missing from the provided artifact.""
+}"
+SGX3_HELDOUT-FAMILY_scene_overlap_leakage_011,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'max_resolution_m' is missing from the provided artifacts.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'max_resolution_m' is missing from the provided artifacts.""
+}"
+SGX3_BLIND_eo_ml_validation_030,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'training_samples' is missing from the provided evidence.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'training_samples' is missing from the provided evidence.""
+}"
+SGX3_HELDOUT-FAMILY_physical_range_violation_007,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity (NDVI) is missing from the provided evidence.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity (NDVI) is missing from the provided evidence.""
+}"
+SGX3_DEVELOPMENT_categorical_interpolation_012,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,2.0,"The workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose. Specifically, the required quantity of land cover is missing.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 2,
+  ""reason"": ""The workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose. Specifically, the required quantity of land cover is missing.""
+}"
+SGX3_HELDOUT-FAMILY_physical_range_violation_009,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,2.0,The workflow does not provide the required quantity (NDVI) for the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 2,
+  ""reason"": ""The workflow does not provide the required quantity (NDVI) for the scientific goal.""
+}"
+SGX3_HELDOUT-FAMILY_temporal_split_overlap_015,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,temporal_split_overlap,MEDIUM,1.0,"The provided workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose. The required temporal resolution is not specified, and the temporal split mode is not specified. Additionally, the required unit and scale are not specified, and the required value range is not specified.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""temporal_split_overlap"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The provided workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose. The required temporal resolution is not specified, and the temporal split mode is not specified. Additionally, the required unit and scale are not specified, and the required value range is not specified.""
+}"
+SGX3_BLIND_flood_remote_sensing_045,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The workflow does not provide a required quantity for the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow does not provide a required quantity for the scientific goal.""
+}"
+SGX3_DEVELOPMENT_spatial_split_leakage_002,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'training_samples' is missing from the provided artifacts.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'training_samples' is missing from the provided artifacts.""
+}"
+SGX3_BLIND_landcover_change_001,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,temporal resolution,MEDIUM,1.0,"The workflow does not specify the temporal resolution of the resampling operation. Without this information, it is impossible to determine if the resampling is suitable for the intended scientific goal.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""temporal resolution"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow does not specify the temporal resolution of the resampling operation. Without this information, it is impossible to determine if the resampling is suitable for the intended scientific goal.""
+}"
+SGX3_BLIND_landslide_forecast_045,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,"The workflow requires a bare-earth prediction, but the required quantity (rainfall) is not specified.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow requires a bare-earth prediction, but the required quantity (rainfall) is not specified.""
+}"
+SGX3_BLIND_landcover_change_028,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,2.0,The scientific goal and intent are missing required information.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 2,
+  ""reason"": ""The scientific goal and intent are missing required information.""
+}"
+SGX3_BLIND_eo_ml_validation_014,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'training_samples' is missing from the provided evidence.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'training_samples' is missing from the provided evidence.""
+}"
+SGX3_BLIND_flood_remote_sensing_007,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The workflow does not provide a required quantity for the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow does not provide a required quantity for the scientific goal.""
+}"
+SGX3_BLIND_flood_depth_032,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,short category or NONE,LOW,1.0,The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the necessary metadata to determine the scientific goal and intent.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""short category or NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 1,
+  ""reason"": ""The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the necessary metadata to determine the scientific goal and intent.""
+}"
+SGX3_HELDOUT-FAMILY_physical_range_violation_013,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,2.0,The workflow does not provide the required quantity (NDVI) for the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 2,
+  ""reason"": ""The workflow does not provide the required quantity (NDVI) for the scientific goal.""
+}"
+SGX3_HELDOUT-FAMILY_rate_sum_without_duration_005,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,temporal_aggregate,MEDIUM,1.0,The provided workflow operation is missing the required parameter 'sample_duration_h' for the temporal_aggregate operation.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""temporal_aggregate"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The provided workflow operation is missing the required parameter 'sample_duration_h' for the temporal_aggregate operation.""
+}"
+SGX3_HELDOUT-FAMILY_uncertainty_missing_011,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'hazard_probability' is missing from the provided evidence.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'hazard_probability' is missing from the provided evidence.""
+}"
+SGX3_BLIND_eo_ml_validation_004,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,temporal_tolerance_h,MEDIUM,1.0,The workflow operations do not provide sufficient temporal resolution information to support the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""temporal_tolerance_h"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow operations do not provide sufficient temporal resolution information to support the scientific goal.""
+}"
+SGX3_DEVELOPMENT_future_information_007,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,2.0,The workflow does not provide the required quantity for the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 2,
+  ""reason"": ""The workflow does not provide the required quantity for the scientific goal.""
+}"
+SGX3_DEVELOPMENT_spectral_role_001,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'reflectance' is missing from the provided artifacts.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'reflectance' is missing from the provided artifacts.""
+}"
+SGX3_DEVELOPMENT_categorical_interpolation_003,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,2.0,"The workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose. Specifically, the required quantity of land cover is missing.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 2,
+  ""reason"": ""The workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose. Specifically, the required quantity of land cover is missing.""
+}"
+SGX3_DEVELOPMENT_unsupported_resolution_gain_008,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The workflow operations do not provide sufficient evidence to support the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow operations do not provide sufficient evidence to support the scientific goal.""
+}"
+SGX3_HELDOUT-FAMILY_uncertainty_missing_008,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'hazard_probability' is missing from the provided evidence.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'hazard_probability' is missing from the provided evidence.""
+}"
+SGX3_HELDOUT-FAMILY_multisensor_time_mismatch_008,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,short category or NONE,LOW,1.0,The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing necessary metadata and evidence to determine if the provided evidence is sufficient to support the stated scientific workflow for its declared purpose.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""short category or NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 1,
+  ""reason"": ""The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing necessary metadata and evidence to determine if the provided evidence is sufficient to support the stated scientific workflow for its declared purpose.""
+}"
+SGX3_HELDOUT-FAMILY_physical_range_violation_002,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing_required_quantity,MEDIUM,1.0,The required quantity (NDVI) is missing from the provided evidence.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing_required_quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity (NDVI) is missing from the provided evidence.""
+}"
+SGX3_DEVELOPMENT_future_information_000,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,2.0,The workflow does not provide the required quantity for the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 2,
+  ""reason"": ""The workflow does not provide the required quantity for the scientific goal.""
+}"
+SGX3_DEVELOPMENT_future_information_006,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,2.0,The workflow does not provide the required quantity for the scientific goal.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 2,
+  ""reason"": ""The workflow does not provide the required quantity for the scientific goal.""
+}"
+SGX3_HELDOUT-FAMILY_multisensor_time_mismatch_014,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,short category or NONE,LOW,1.0,The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the required metadata and evidence to determine if the scientific goal is met.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""short category or NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 1,
+  ""reason"": ""The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the required metadata and evidence to determine if the scientific goal is met.""
+}"
+SGX3_DEVELOPMENT_categorical_interpolation_010,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose.""
+}"
+SGX3_BLIND_eo_ml_validation_013,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,1.0,The required quantity 'training_samples' is missing from the provided evidence.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 1,
+  ""reason"": ""The required quantity 'training_samples' is missing from the provided evidence.""
+}"
+SGX3_BLIND_flood_depth_029,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,short category or NONE,LOW,1.0,The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the necessary metadata to determine the scientific goal and intent.,"{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""short category or NONE"",
+  ""severity"": ""LOW"",
+  ""confidence"": 1,
+  ""reason"": ""The provided evidence is insufficient to support the stated scientific workflow for its declared purpose. The workflow operations are missing the necessary metadata to determine the scientific goal and intent.""
+}"
+SGX3_DEVELOPMENT_categorical_interpolation_004,judge_C,HuggingFaceTB/SmolLM2-1.7B-Instruct,fp16,UNPROVEN,missing required quantity,MEDIUM,2.0,"The workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose. Specifically, the required quantity of land cover is missing.","{
+  ""verdict"": ""UNPROVEN"",
+  ""error_class"": ""missing required quantity"",
+  ""severity"": ""MEDIUM"",
+  ""confidence"": 2,
+  ""reason"": ""The workflow operations do not provide sufficient evidence to support the stated scientific workflow for its declared purpose. Specifically, the required quantity of land cover is missing.""
+}"

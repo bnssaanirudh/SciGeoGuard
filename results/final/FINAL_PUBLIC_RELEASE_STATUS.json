@@ -1,0 +1,16 @@
+{
+  "release_version": "1.0.0",
+  "frozen_on": "2026-10-04",
+  "science_ready": true,
+  "human_validation_status": "pending",
+  "core_evidence": [
+    "v3 controlled benchmark",
+    "v6 strong LLM baselines",
+    "v8.1 Sentinel/WorldCover/CopDEM",
+    "v8.2 four-region IMERG"
+  ],
+  "do_not_claim": [
+    "independent human-validated accuracy",
+    "human Cohen kappa until v7 reviewers complete"
+  ]
+}

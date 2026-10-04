@@ -1,0 +1,15 @@
+metric,value
+consensus_coverage,0.0
+unresolved_cases,180.0
+A_vs_generated_accuracy,0.03333333333333333
+B_vs_generated_accuracy,0.4594594594594595
+C_vs_generated_accuracy,0.34831460674157305
+consensus_vs_generated_accuracy,
+scigeoguard_vs_consensus_accuracy,
+kappa_A_B,0.0052714812862414305
+kappa_consensus_scigeoguard,
+A_FSCR_vs_generated,0.017857142857142856
+B_FSCR_vs_generated,0.48214285714285715
+C_FSCR_vs_generated,0.5982142857142857
+consensus_FSCR_vs_generated,0.0
+scigeoguard_FSCR_vs_generated,0.0

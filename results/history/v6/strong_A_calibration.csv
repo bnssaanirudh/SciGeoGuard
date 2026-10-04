@@ -1,0 +1,163 @@
+cal_id,truth,model_name,model_id,verdict,obligation_parse_rate,confidence,obligations_json,summary,raw_output
+P1,PROVEN,strong_A,Qwen/Qwen2.5-7B-Instruct,REFUTED,1.0,5,"{""provenance"": {""status"": ""PASS"", ""reason"": ""source is supplied""}, ""categorical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""spatial_support_resolution"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""units_quantity"": {""status"": ""PASS"", ""reason"": ""correct units used for area calculation""}, ""crs_geometry_area"": {""status"": ""FAIL"", ""reason"": ""planar area calculation on angular coordinates""}, ""spectral_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""processing_quality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""vertical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""temporal_causality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""evaluation_independence"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""nodata_physical_domain"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""uncertainty_fitness"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}}",planar area calculation on angular coordinates is incorrect,"{
+  ""obligations"": {
+    ""provenance"": {""status"": ""PASS"", ""reason"": ""source is supplied""},
+    ""categorical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""spatial_support_resolution"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""units_quantity"": {""status"": ""PASS"", ""reason"": ""correct units used for area calculation""},
+    ""crs_geometry_area"": {""status"": ""FAIL"", ""reason"": ""planar area calculation on angular coordinates""},
+    ""spectral_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""processing_quality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""vertical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""temporal_causality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""evaluation_independence"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""nodata_physical_domain"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""uncertainty_fitness"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}
+  },
+  ""summary"": ""planar area calculation on angular coordinates is incorrect"",
+  ""confidence"": 5
+}"
+P2,PROVEN,strong_A,Qwen/Qwen2.5-7B-Instruct,PROVEN,1.0,5,"{""provenance"": {""status"": ""PASS"", ""reason"": ""both sources are supplied""}, ""categorical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""spatial_support_resolution"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""units_quantity"": {""status"": ""PASS"", ""reason"": ""same units and vertical datums are used""}, ""crs_geometry_area"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""spectral_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""processing_quality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""vertical_semantics"": {""status"": ""PASS"", ""reason"": ""same vertical datums are used""}, ""temporal_causality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""evaluation_independence"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""nodata_physical_domain"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""uncertainty_fitness"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}}",Vertical quantities are combined using compatible vertical datums.,"{
+  ""obligations"": {
+    ""provenance"": {""status"": ""PASS"", ""reason"": ""both sources are supplied""},
+    ""categorical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""spatial_support_resolution"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""units_quantity"": {""status"": ""PASS"", ""reason"": ""same units and vertical datums are used""},
+    ""crs_geometry_area"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""spectral_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""processing_quality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""vertical_semantics"": {""status"": ""PASS"", ""reason"": ""same vertical datums are used""},
+    ""temporal_causality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""evaluation_independence"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""nodata_physical_domain"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""uncertainty_fitness"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}
+  },
+  ""summary"": ""Vertical quantities are combined using compatible vertical datums."",
+  ""confidence"": 5
+}"
+P3,PROVEN,strong_A,Qwen/Qwen2.5-7B-Instruct,REFUTED,1.0,5,"{""provenance"": {""status"": ""PASS"", ""reason"": ""source is supplied""}, ""categorical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""spatial_support_resolution"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""units_quantity"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""crs_geometry_area"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""spectral_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""processing_quality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""vertical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""temporal_causality"": {""status"": ""FAIL"", ""reason"": ""test set uses future data""}, ""evaluation_independence"": {""status"": ""PASS"", ""reason"": ""spatial and temporal independence is ensured""}, ""nodata_physical_domain"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""uncertainty_fitness"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}}",Temporal causality is violated due to future test data.,"{
+  ""obligations"": {
+    ""provenance"": {""status"": ""PASS"", ""reason"": ""source is supplied""},
+    ""categorical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""spatial_support_resolution"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""units_quantity"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""crs_geometry_area"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""spectral_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""processing_quality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""vertical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""temporal_causality"": {""status"": ""FAIL"", ""reason"": ""test set uses future data""},
+    ""evaluation_independence"": {""status"": ""PASS"", ""reason"": ""spatial and temporal independence is ensured""},
+    ""nodata_physical_domain"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""uncertainty_fitness"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}
+  },
+  ""summary"": ""Temporal causality is violated due to future test data."",
+  ""confidence"": 5
+}"
+R1,REFUTED,strong_A,Qwen/Qwen2.5-7B-Instruct,REFUTED,1.0,5,"{""provenance"": {""status"": ""PASS"", ""reason"": ""source is supplied""}, ""categorical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""spatial_support_resolution"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""units_quantity"": {""status"": ""FAIL"", ""reason"": ""planar area calculation in angular coordinates""}, ""crs_geometry_area"": {""status"": ""FAIL"", ""reason"": ""planar area calculation in angular coordinates""}, ""spectral_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""processing_quality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""vertical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""temporal_causality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""evaluation_independence"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""nodata_physical_domain"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""uncertainty_fitness"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}}",Planar area calculation in angular coordinates is incorrect,"{
+  ""obligations"": {
+    ""provenance"": {""status"": ""PASS"", ""reason"": ""source is supplied""},
+    ""categorical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""spatial_support_resolution"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""units_quantity"": {""status"": ""FAIL"", ""reason"": ""planar area calculation in angular coordinates""},
+    ""crs_geometry_area"": {""status"": ""FAIL"", ""reason"": ""planar area calculation in angular coordinates""},
+    ""spectral_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""processing_quality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""vertical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""temporal_causality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""evaluation_independence"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""nodata_physical_domain"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""uncertainty_fitness"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}
+  },
+  ""summary"": ""Planar area calculation in angular coordinates is incorrect"",
+  ""confidence"": 5
+}"
+R2,REFUTED,strong_A,Qwen/Qwen2.5-7B-Instruct,REFUTED,1.0,5,"{""provenance"": {""status"": ""PASS"", ""reason"": ""authoritative source is supplied""}, ""categorical_semantics"": {""status"": ""FAIL"", ""reason"": ""bilinear interpolation destroys class identity""}, ""spatial_support_resolution"": {""status"": ""PASS"", ""reason"": ""coarsening does not claim new spatial information""}, ""units_quantity"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""crs_geometry_area"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""spectral_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""processing_quality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""vertical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""temporal_causality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""evaluation_independence"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""nodata_physical_domain"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""uncertainty_fitness"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}}",bilinear interpolation destroys categorical semantics,"{
+  ""obligations"": {
+    ""provenance"": {""status"": ""PASS"", ""reason"": ""authoritative source is supplied""},
+    ""categorical_semantics"": {""status"": ""FAIL"", ""reason"": ""bilinear interpolation destroys class identity""},
+    ""spatial_support_resolution"": {""status"": ""PASS"", ""reason"": ""coarsening does not claim new spatial information""},
+    ""units_quantity"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""crs_geometry_area"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""spectral_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""processing_quality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""vertical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""temporal_causality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""evaluation_independence"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""nodata_physical_domain"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""uncertainty_fitness"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}
+  },
+  ""summary"": ""bilinear interpolation destroys categorical semantics"",
+  ""confidence"": 5
+}"
+R3,REFUTED,strong_A,Qwen/Qwen2.5-7B-Instruct,PROVEN,1.0,5,"{""provenance"": {""status"": ""PASS"", ""reason"": ""source is supplied""}, ""categorical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""spatial_support_resolution"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""units_quantity"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""crs_geometry_area"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""spectral_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""processing_quality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""vertical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""temporal_causality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""evaluation_independence"": {""status"": ""PASS"", ""reason"": ""spatial separation within dependence range""}, ""nodata_physical_domain"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""uncertainty_fitness"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}}",Spatial independence is satisfied given the specified parameters.,"{
+  ""obligations"": {
+    ""provenance"": {""status"": ""PASS"", ""reason"": ""source is supplied""},
+    ""categorical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""spatial_support_resolution"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""units_quantity"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""crs_geometry_area"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""spectral_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""processing_quality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""vertical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""temporal_causality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""evaluation_independence"": {""status"": ""PASS"", ""reason"": ""spatial separation within dependence range""},
+    ""nodata_physical_domain"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""uncertainty_fitness"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}
+  },
+  ""summary"": ""Spatial independence is satisfied given the specified parameters."",
+  ""confidence"": 5
+}"
+U1,UNPROVEN,strong_A,Qwen/Qwen2.5-7B-Instruct,REFUTED,1.0,5,"{""provenance"": {""status"": ""FAIL"", ""reason"": ""missing authoritative source""}, ""categorical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""spatial_support_resolution"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""units_quantity"": {""status"": ""PASS"", ""reason"": ""unit is consistent""}, ""crs_geometry_area"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""spectral_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""processing_quality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""vertical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""temporal_causality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""evaluation_independence"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""nodata_physical_domain"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""uncertainty_fitness"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}}",Missing provenance metadata for scientific certification,"{
+  ""obligations"": {
+    ""provenance"": {""status"": ""FAIL"", ""reason"": ""missing authoritative source""},
+    ""categorical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""spatial_support_resolution"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""units_quantity"": {""status"": ""PASS"", ""reason"": ""unit is consistent""},
+    ""crs_geometry_area"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""spectral_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""processing_quality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""vertical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""temporal_causality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""evaluation_independence"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""nodata_physical_domain"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""uncertainty_fitness"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}
+  },
+  ""summary"": ""Missing provenance metadata for scientific certification"",
+  ""confidence"": 5
+}"
+U2,UNPROVEN,strong_A,Qwen/Qwen2.5-7B-Instruct,REFUTED,1.0,5,"{""provenance"": {""status"": ""PASS"", ""reason"": ""source is supplied""}, ""categorical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""spatial_support_resolution"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""units_quantity"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""crs_geometry_area"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""spectral_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""processing_quality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""vertical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""temporal_causality"": {""status"": ""FAIL"", ""reason"": ""feature availability time is unknown, cannot ensure past availability""}, ""evaluation_independence"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""nodata_physical_domain"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""uncertainty_fitness"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}}","Feature availability time is unknown, cannot ensure past availability for forecasting","{
+  ""obligations"": {
+    ""provenance"": {""status"": ""PASS"", ""reason"": ""source is supplied""},
+    ""categorical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""spatial_support_resolution"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""units_quantity"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""crs_geometry_area"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""spectral_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""processing_quality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""vertical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""temporal_causality"": {""status"": ""FAIL"", ""reason"": ""feature availability time is unknown, cannot ensure past availability""},
+    ""evaluation_independence"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""nodata_physical_domain"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""uncertainty_fitness"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}
+  },
+  ""summary"": ""Feature availability time is unknown, cannot ensure past availability for forecasting"",
+  ""confidence"": 5
+}"
+U3,UNPROVEN,strong_A,Qwen/Qwen2.5-7B-Instruct,PROVEN,1.0,5,"{""provenance"": {""status"": ""PASS"", ""reason"": ""source is supplied""}, ""categorical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""spatial_support_resolution"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""units_quantity"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""crs_geometry_area"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""spectral_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""processing_quality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""vertical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""temporal_causality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""evaluation_independence"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""nodata_physical_domain"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}, ""uncertainty_fitness"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}}",No specific obligations are applicable for bare-earth terrain analysis given the provided workflow.,"{
+  ""obligations"": {
+    ""provenance"": {""status"": ""PASS"", ""reason"": ""source is supplied""},
+    ""categorical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""spatial_support_resolution"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""units_quantity"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""crs_geometry_area"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""spectral_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""processing_quality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""vertical_semantics"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""temporal_causality"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""evaluation_independence"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""nodata_physical_domain"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""},
+    ""uncertainty_fitness"": {""status"": ""NOT_APPLICABLE"", ""reason"": ""not required""}
+  },
+  ""summary"": ""No specific obligations are applicable for bare-earth terrain analysis given the provided workflow."",
+  ""confidence"": 5
+}"

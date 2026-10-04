@@ -1,0 +1,17 @@
+{
+  "judge_A": {
+    "model_id": "Qwen/Qwen2.5-3B-Instruct",
+    "revision_sha": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+    "pipeline_tag": "text-generation"
+  },
+  "judge_B": {
+    "model_id": "microsoft/Phi-4-mini-instruct",
+    "revision_sha": "cfbefacb99257ffa30c83adab238a50856ac3083",
+    "pipeline_tag": "text-generation"
+  },
+  "judge_C": {
+    "model_id": "HuggingFaceTB/SmolLM3-3B",
+    "revision_sha": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+    "pipeline_tag": "text-generation"
+  }
+}

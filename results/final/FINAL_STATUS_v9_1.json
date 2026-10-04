@@ -1,0 +1,8 @@
+{
+  "created_utc": "2026-10-04T13:57:28.659387+00:00",
+  "science_ready": true,
+  "v7_human_complete": false,
+  "release_ready": false,
+  "final_scientific_decision": "READY",
+  "paper_policy": "Use v3 as controlled reference evidence; v6 as LLM baselines; v8.1 and v8.2 as real-input counterfactual replication. Do not claim human-validated accuracy unless v7 is complete."
+}

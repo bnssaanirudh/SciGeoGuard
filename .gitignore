@@ -1,0 +1,10 @@
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+http_cache/
+model_cache/
+local_outputs/
+.DS_Store

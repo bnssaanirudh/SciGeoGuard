@@ -1,0 +1,9 @@
+check,passed
+60_unique_cases,True
+reviewer_A_has_60,True
+reviewer_B_has_60,True
+same_case_set_A_B,True
+different_order_A_B,True
+A_no_forbidden_columns,True
+B_no_forbidden_columns,True
+neutral_ids_only,True

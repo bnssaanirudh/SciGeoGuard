@@ -1,0 +1,4 @@
+judge,parse_success,max_label_fraction,calibration_ok,eligible
+judge_A,1.0,0.9555555555555556,False,False
+judge_B,0.6166666666666667,0.8738738738738738,False,False
+judge_C,0.9888888888888889,0.6123595505617978,False,False

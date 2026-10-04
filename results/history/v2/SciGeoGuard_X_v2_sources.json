@@ -1,0 +1,63 @@
+{
+  "sentinel2": {
+    "item_id": "S2A_MSIL2A_20231107T144731_R139_T20QRF_20231107T182159",
+    "epsg": 32620,
+    "datetime": "2023-11-07T14:47:31.024000Z",
+    "cloud_cover_percent": 4.217,
+    "B04": {
+      "role": "red",
+      "gsd_m": 10,
+      "url": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/20/Q/RF/2023/11/07/S2A_MSIL2A_20231107T144731_N0509_R139_T20QRF_20231107T182159.SAFE/GRANULE/L2A_T20QRF_A043751_20231107T144729/IMG_DATA/R10m/T20QRF_20231107T144731_B04_10m.tif"
+    },
+    "B08": {
+      "role": "nir",
+      "gsd_m": 10,
+      "url": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/20/Q/RF/2023/11/07/S2A_MSIL2A_20231107T144731_N0509_R139_T20QRF_20231107T182159.SAFE/GRANULE/L2A_T20QRF_A043751_20231107T144729/IMG_DATA/R10m/T20QRF_20231107T144731_B08_10m.tif"
+    },
+    "B11": {
+      "role": "swir16",
+      "gsd_m": 20,
+      "url": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/20/Q/RF/2023/11/07/S2A_MSIL2A_20231107T144731_N0509_R139_T20QRF_20231107T182159.SAFE/GRANULE/L2A_T20QRF_A043751_20231107T144729/IMG_DATA/R20m/T20QRF_20231107T144731_B11_20m.tif"
+    },
+    "SCL": {
+      "role": "scene_classification",
+      "gsd_m": 20,
+      "url": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/20/Q/RF/2023/11/07/S2A_MSIL2A_20231107T144731_N0509_R139_T20QRF_20231107T182159.SAFE/GRANULE/L2A_T20QRF_A043751_20231107T144729/IMG_DATA/R20m/T20QRF_20231107T144731_SCL_20m.tif"
+    }
+  },
+  "worldcover": {
+    "product": "ESA WorldCover 2021 v200",
+    "tile": "ESA_WorldCover_10m_2021_v200_N18W063_Map.tif",
+    "resolution_m": 10,
+    "classes": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      95,
+      100
+    ],
+    "url": "https://huggingface.co/datasets/cariflux/landcover-caribbean/resolve/main/ESA_WorldCover_10m_2021_v200_N18W063_Map.tif"
+  },
+  "copdem": {
+    "product": "Copernicus DEM GLO-30",
+    "type": "DSM",
+    "horizontal_crs": "EPSG:4326",
+    "vertical_datum": "EGM2008 / EPSG:3855",
+    "resolution_arcsec": 1,
+    "resolution_m_approx": 30,
+    "url": "https://copernicus-dem-30m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_10_N18_00_W061_00_DEM/Copernicus_DSM_COG_10_N18_00_W061_00_DEM.tif"
+  },
+  "imerg": {
+    "dataset_id": "precipitation_2024_v07",
+    "units": "MM/Hr",
+    "temporal_resolution_minutes": 30,
+    "spatial_resolution_degree": 0.1,
+    "base": "https://erddap.aoml.noaa.gov/hdb/erddap/griddap/precipitation_2024_v07"
+  }
+}

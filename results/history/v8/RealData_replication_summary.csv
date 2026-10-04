@@ -1,0 +1,5 @@
+experiment,successful_replicates,primary_metric,median_effect,secondary_metric,median_secondary
+Sentinel spectral-role mismatch,8,mean_absolute_index_difference,0.09456492215394974,sign_flip_fraction,0.026062593476196237
+WorldCover categorical interpolation,4,bilinear_invalid_fraction,0.12994791666666666,nearest_valid_fraction,1.0
+IMERG missing-duration rate sum,7,median_raw_sum_overstatement_factor,2.0,median_mean_as_accum_fraction_of_true,0.15384615384615385
+CopDEM unsupported resolution claim,4,derived_output_fraction_without_distinct_source_sample,0.8888888888888888,pixel_count_inflation_factor,9.0
