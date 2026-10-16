@@ -25,11 +25,15 @@ See `RESULTS_SUMMARY.md`, `results/final/v11/README.md`, and `results/final/FINA
 
 ## Quick start
 
-For the original verifier:
+Install the core package and run the original verifier example:
 
 ```bash
+python -m pip install .
 python examples/quickstart.py
+python -m unittest discover -s tests -v
 ```
+
+The frozen v3 verifier is available as the importable `scigeoguard_core` module; notebook execution is not required for the quickstart.
 
 For the confirmed v11 repair experiment, open `notebooks/core/v11_earthrefine_repair_confirmed.ipynb`.
 

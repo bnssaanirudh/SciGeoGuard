@@ -1,0 +1,37 @@
+{
+  "execution_mode": "fresh in-process Python execution of notebook code cells 1, 3, 5, and 7; no Jupyter kernel or Colab runtime",
+  "git_head": "0e74b70e59a26239913cd5c88fad3d5a1f33f483",
+  "inputs": {
+    "notebooks/core/v11_earthrefine_repair_confirmed.ipynb": "8dcb27b570fdeaee1522dd532b248abec1f38a9d76199c20d368c8af2ac4fa96",
+    "results/history/v6/Blinded_180_cases.csv": "9ba8f05960b0ad0ff67d15ab1691b0bd9ca7ef81e4d70d4a05bc01f723fa17ca",
+    "results/history/v6/Frozen_v3_reference.csv": "c43c7f4898ddbb5754bd1461a13351e54fc5e8321bf88aaf011b2f8ab6e00040",
+    "src/scigeoguard_core.py": "4b2112a9e2ed62bddd7d87d48ecd83e52b77f2e067292cd6748e0744ccfc280f",
+    "src/scigeoguard_v11.py": "8598a1e47c5e4d926e342d7ae220c85a57a8292b0b15ebd69b46875af6518550"
+  },
+  "limitations": [
+    "This does not reproduce the claimed fresh Colab execution.",
+    "The notebook code asserts against the generated frozen reference; this is not independent ground truth.",
+    "Repair success indicates re-verification by the same rule engine, not independently assessed scientific correctness."
+  ],
+  "outputs": {
+    "reports/reproduction_20261016/metamorphic.csv": "d1f401323b084ff851bce853b25768b6edf02cf4842e0023a8ee81554001b879",
+    "reports/reproduction_20261016/per_case.csv": "373102d42359cd4045f3796ef1d9a63333f332ce2090d53876742ae745d3be76",
+    "reports/reproduction_20261016/summary.json": "228aadc157ae1fffbb949b529a8905fd2a159f24d9415fb3502ccedcc9a719b3"
+  },
+  "pandas": "2.2.3",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "summary": {
+    "cases": 180,
+    "diagnostic_codes": 23,
+    "mean_successful_repair_cost": 1.0,
+    "obligation_families": 18,
+    "reference_matches": 180,
+    "refuted": 112,
+    "reverified_proven": 47,
+    "safe_repair_rate": 0.41964285714285715,
+    "safe_repairs": 47
+  },
+  "timestamp_utc": "2026-10-16T16:05:47.525122+00:00",
+  "working_tree_dirty": true
+}

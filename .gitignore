@@ -8,3 +8,7 @@ http_cache/
 model_cache/
 local_outputs/
 .DS_Store
+
+*.egg-info/
+dist/
+build/
