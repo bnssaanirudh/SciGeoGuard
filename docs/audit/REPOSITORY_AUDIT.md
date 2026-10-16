@@ -15,7 +15,7 @@ Reviewed public `main` at `0e74b70` (`origin/main`), root documentation, v11 sou
 
 ## Changes made
 
-Added `src/scigeoguard_core.py` as a static extraction of frozen notebook cells 6/7/9, routed quickstart and v11 imports through it, added package metadata, two regression tests, GitHub Actions configuration, and the accompanying evidence/validity/roadmap documents. Built a wheel and installed it in a new virtual environment; core and v11 imports and a verifier smoke case passed.
+Added `src/scigeoguard_core.py` as a static extraction of frozen notebook cells 6/7/9, routed quickstart and v11 imports through it, added package metadata, core and baseline regression tests, GitHub Actions configuration, label-isolated baseline/ablation runners, local pilot outputs, and the accompanying evidence/validity/roadmap documents. Built a wheel and installed it in a new virtual environment; core and v11 imports and a verifier smoke case passed.
 
 ## Assessment
 

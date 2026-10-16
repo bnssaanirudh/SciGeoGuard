@@ -18,9 +18,9 @@
 - Add CI wheel build, fresh virtualenv install, import, tests, quickstart, and source hashes.
 
 ### B. Fair baselines
-- Implement metadata-only, quantity/unit-aware, and provenance-aware validators with explicit schemas.
-- Implement intent-conditioning and repair ablations.
-- Prevent reference/target-label access; include per-case applicability and leakage checks.
+- Pilot metadata-only, quantity/unit-aware, and provenance-aware validators; expand their narrow rules and validate applicability against domain-reviewed cases.
+- Implemented intent-conditioning and repair ablations; add complementary repair outcome metrics.
+- Prediction runners use allowlisted inputs and separate scoring; extend leakage checks and assess all outputs against independent labels.
 
 ### C. Evaluation harness
 - Emit per-case predictions, confusion matrices, per-class recall, false certification, abstention, diagnostic coverage, grouped intervals, manifests, and failures.

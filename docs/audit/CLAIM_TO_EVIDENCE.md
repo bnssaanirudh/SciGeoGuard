@@ -11,8 +11,9 @@
 | v11 repairs 47/112 refuted cases and re-verifies 47/47 | Same v11 evidence | VERIFIED (local in-process replay) | Self-reverification is not independent repair correctness |
 | Colab rerun byte-matched seven outputs | v11 README/manifest | UNSUPPORTED as a fresh Colab claim in this audit | Local in-process replay passed; Colab not run |
 | Independent human accuracy, adjudicated labels, or kappa established | `validation/v7_pending/STATUS.md` | CONTRADICTED | Repository explicitly says verdicts unavailable |
-| Scientifically more accurate than conventional validators | No comparable conventional baseline in reviewed release | UNSUPPORTED | LLM comparisons do not establish this |
+| Scientifically more accurate than conventional validators | Narrow conservative baseline pilots in `reports/BASELINE_ABLATION_RESULTS_20261016.md` | UNSUPPORTED | Baselines never certify and lack independent labels; no superiority claim is justified |
 | All frozen notebooks reproduce from clean checkout | Not run end-to-end | UNSUPPORTED | Local smoke tests do not cover network/GPU/data workflows |
 | Core imports without notebook execution | package metadata, module, tests | VERIFIED (local) | Editable install/import smoke passed |
 
 | Built wheel installs and core/v11 imports in a clean virtual environment | Local wheel build and fresh-venv smoke test | VERIFIED (local) | Does not show GitHub CI pass yet |
+| Baseline/ablation pilot outputs are available for the frozen 180-case subset | `experiments/baselines/results_20261016/`; `experiments/ablations/results_20261016/` | VERIFIED (local run) | Generated-reference pilot; narrow rule coverage; no independent human validation |
