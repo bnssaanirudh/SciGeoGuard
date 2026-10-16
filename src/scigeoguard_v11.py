@@ -18,7 +18,10 @@ import hashlib
 import json
 
 
-from scigeoguard_core import Artifact, Step, Intent, verify_science, parse_dt
+try:  # Support both ``import src.scigeoguard_v11`` and installed flat modules.
+    from .scigeoguard_core import Artifact, Step, Intent, verify_science, parse_dt
+except ImportError:  # pragma: no cover - exercised by flat-module installation
+    from scigeoguard_core import Artifact, Step, Intent, verify_science, parse_dt
 
 
 OBLIGATION_LIBRARY = {
