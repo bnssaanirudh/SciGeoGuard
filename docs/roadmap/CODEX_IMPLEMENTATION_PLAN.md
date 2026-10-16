@@ -6,6 +6,9 @@
 2. Route quickstart and v11 imports through module; add package metadata.
 3. Add deterministic regression tests and Python 3.10/3.12 CI configuration.
 4. Document evidence mapping, reproducibility gaps, and validity threats.
+5. Implement label-isolated conservative metadata, quantity/unit, and provenance baselines plus separate scoring.
+6. Implement no-intent and no-repair ablations; run both on the 180-case frozen subset.
+7. Add a pinned Colab CPU notebook that packages pilot outputs and environment metadata.
 
 ## Next phases
 

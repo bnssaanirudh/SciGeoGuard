@@ -4,6 +4,8 @@
 
 `score_predictions.py` is a separate process for scoring already-written predictions against the generated frozen reference. This preserves the prediction/target boundary in the baseline implementation. Current generated-reference scores are descriptive; the targets are not independent scientific truth. The current baseline coverage is deliberately incomplete and should not be described as a comprehensive state-of-the-art comparison.
 
+Run the pinned CPU Colab notebook `SciGeoGuard_Baseline_Ablation_Pilot.ipynb` for a clean-runtime run that records environment metadata and downloads a ZIP. The notebook pins the commit containing the runners.
+
 Reproduce locally:
 
 ```bash

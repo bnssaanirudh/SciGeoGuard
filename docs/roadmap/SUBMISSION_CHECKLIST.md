@@ -4,7 +4,8 @@
 - [ ] Reproduce v11 in fresh Colab; compare structured output hashes and investigate differences.
 - [ ] Rerun targeted frozen notebooks from a pinned commit and record skips/failures.
 - [ ] Complete blinded review with two qualified reviewers and adjudication.
-- [ ] Add conventional baselines and ablations on identical compatible cases.
+- [x] Implement and run conservative baseline/ablation pilots on identical frozen cases.
+- [ ] Expand to competitive conventional validators and independently assessed test cases.
 - [ ] Assess repair correctness independently from verifier self-reverification.
 - [ ] Add unseen workflow structures and grouped uncertainty analysis.
 
