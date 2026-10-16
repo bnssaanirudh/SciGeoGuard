@@ -15,5 +15,5 @@
 | All frozen notebooks reproduce from clean checkout | Not run end-to-end | UNSUPPORTED | Local smoke tests do not cover network/GPU/data workflows |
 | Core imports without notebook execution | package metadata, module, tests | VERIFIED (local) | Editable install/import smoke passed |
 
-| Built wheel installs and core/v11 imports in a clean virtual environment | Local wheel build and fresh-venv smoke test | VERIFIED (local) | Does not show GitHub CI pass yet |
+| Built wheel installs and core/v11 imports in a clean virtual environment | Local wheel build and fresh-venv smoke test | VERIFIED (local) | GitHub Actions passed on code commit `366f6e5`; docs-only follow-up not rerun |
 | Baseline/ablation pilot outputs are available for the frozen 180-case subset | `experiments/baselines/results_20261016/`; `experiments/ablations/results_20261016/` | VERIFIED (local run) | Generated-reference pilot; narrow rule coverage; no independent human validation |

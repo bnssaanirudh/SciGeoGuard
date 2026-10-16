@@ -13,7 +13,8 @@
 - [x] Provide importable core verifier module.
 - [x] Add basic deterministic regression tests and CI configuration.
 - [x] Build wheel and smoke-test install/import in a clean virtual environment.
-- [ ] Add notebook/package parity fixture and confirm CI on GitHub.
+- [x] Confirm GitHub Actions passed on code-and-experiment commit.
+- [ ] Add notebook/package parity fixture and rerun CI after any code changes.
 - [ ] Pin experiment dependencies; record Python/platform, commit, timestamps, seeds, and hashes.
 - [ ] Document data licenses, availability, and version snapshots.
 

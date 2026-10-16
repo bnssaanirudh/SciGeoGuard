@@ -19,4 +19,4 @@ Added `src/scigeoguard_core.py` as a static extraction of frozen notebook cells 
 
 ## Assessment
 
-The package/import reproducibility issue is locally addressed. CI has not yet run on GitHub; wheel build and clean virtual-environment install/import smoke passed locally. The v11 assertions passed in a local in-process replay, while full Colab and all other frozen experiments remain unverified until notebooks are run cleanly and outputs compared with committed hashes.
+The package/import reproducibility issue is locally addressed. GitHub Actions passed on the code-and-experiment commit `366f6e5`; the subsequent audit-documentation-only commit has no separate run yet. Wheel build and clean virtual-environment install/import smoke also passed locally. The v11 assertions passed in a local in-process replay, while full Colab and all other frozen experiments remain unverified until notebooks are run cleanly and outputs compared with committed hashes.
