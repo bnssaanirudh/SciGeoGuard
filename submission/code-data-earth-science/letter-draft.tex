@@ -1,0 +1,60 @@
+% Draft for Springer Nature "Code&Data in Earth Science" call.
+% Transfer this content into the official Letter template linked on the call page.
+% Author names, affiliations, corresponding author, and final maintenance commitment require author confirmation.
+\documentclass[10pt]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\title{SciGeoGuard-X: Evidence-Carrying Verification and Conservative Repair for Earth-Observation Workflows}
+\author{[Author names and affiliations to be completed]}
+\date{}
+
+\begin{document}
+\maketitle
+\textbf{Article type:} Code \& Data in Earth Science
+
+\textbf{Abstract.} Earth-observation workflows can run without errors yet violate the scientific meaning of their inputs or outputs. SciGeoGuard-X is an open-source Python tool that checks workflow descriptions against explicit scientific intent and metadata, reports evidence-linked findings, and proposes conservative repairs only when the required evidence is present. Its v11 EarthRefine layer organizes findings as named refinement obligations, emits machine-readable certificates, and re-verifies candidate repairs. The repository includes an executable quick start, tests, notebooks, and frozen result files. In controlled author-generated evaluations, the current release detected 10/10 designed semantic mutations; 9/10 mutation families had a safe one-edit repair, and all 9 repairs re-verified under the encoded rules. A frozen set of 180 generated-reference cases showed 180/180 agreement with its reference labels. These results measure internal consistency and performance on controlled cases, not independent scientific accuracy. An IMERG rate-to-accumulation example demonstrates how the verifier can expose a common semantic error before interpretation.
+
+\textbf{Keywords:} Earth observation; workflow verification; geospatial software; provenance; scientific reproducibility
+
+\textbf{Resource and purpose.} SciGeoGuard-X targets a practical gap between successful execution and scientifically valid interpretation. A script may produce a raster even when it has treated a rate as an accumulation, interpolated nominal classes as continuous measurements, used a digital surface model for a bare-earth claim, or allowed information from the future into a predictive evaluation. The package makes selected assumptions inspectable by representing artifacts, processing steps, and analysis intent as Python objects. It is a rule-based checker: its results apply only to the constraints and metadata supplied by the user and implemented in the software.
+
+\textbf{How to use it.} The core interface accepts \texttt{Artifact}, \texttt{Step}, and \texttt{Intent} records and calls \texttt{verify\_science(artifacts, steps, intent)}. Each artifact can record quantity, unit, spatial and temporal resolution, CRS, processing level, acquisition and availability times, provenance, measurement scale, and relevant domain attributes. Steps describe operations such as resampling, temporal aggregation, index calculation, and model evaluation. Intent states the requested quantity, units, time, spatial support, quality constraints, or physical range. The result is \texttt{PROVEN}, \texttt{REFUTED}, or \texttt{UNPROVEN}; findings include diagnostic codes and evidence. \texttt{evidence\_certificate} serializes these findings with a hash of the described workflow. The hash identifies the input description; it does not attest to the correctness of source data.
+
+The v11 layer groups diagnostics under named obligations and records what evidence is missing. \texttt{synthesize\_minimal\_repair} searches a bounded set of one- or two-edit candidates. It accepts a candidate only if rerunning the same verifier returns \texttt{PROVEN}. It does not generate missing observations or establish that a proposed workflow is scientifically suitable beyond the encoded checks. Users can install the repository and run \texttt{python examples/quickstart.py}; the v11 notebook reproduces the repair experiment. The repository provides unit tests and CSV/JSON outputs for inspection [1].
+
+\textbf{Earth-science example.} NASA documents IMERG precipitation fields in rate units such as mm h$^{-1}$ and distinguishes them from precipitation accumulations in mm [2]. A half-hourly rate cannot be summed directly and interpreted as a depth: the rate must be integrated over the sample duration. A user can register the product as an artifact with unit \texttt{mm/hr} and temporal resolution 0.5 h, describe a temporal aggregation as a sum with declared output quantity \texttt{accumulation}, and request a daily depth in mm. If the step omits duration weighting, SciGeoGuard-X reports \texttt{RATE\_SUM\_WITHOUT\_DURATION} or \texttt{RATE\_AVERAGED\_AS\_ACCUMULATION}, depending on the operation. Where the declared sample duration is available, the repair layer can propose duration-weighted integration and then re-run the checks. This is a metadata-level usage example, not a new analysis of IMERG observations or an independent validation of rainfall estimates.
+
+\textbf{Evaluation and limits.} The v11 run detected all 10 author-designed metamorphic mutations; safe one-edit repair was found for 9 families, and each found repair passed re-verification. On the frozen 180-case generated-reference set, the tool agreed with all stored labels; among 112 cases labeled \texttt{REFUTED}, 47 received a conservative one-edit repair and all 47 re-verified. The reference labels and mutations are controlled by the project authors. Thus, counts describe reproducibility of the implementation against its encoded rules, not sensitivity, specificity, field performance, or agreement with independent experts. Rule coverage is incomplete, and incorrect or missing metadata can produce misleading conclusions. Review of a separate blinded case packet is not yet complete and is not included in these results.
+
+\textbf{Availability and maintenance.} Source code, installation instructions, examples, notebooks, tests, and frozen outputs are available at \url{https://github.com/bnssaanirudh/SciGeoGuard} [1]. The authors should confirm the release/tag and commit to keeping the resource available for at least two years after publication, linking the published paper from the repository, as required by the call.
+
+\textbf{Figure 1.} SciGeoGuard-X workflow. The verifier evaluates declared workflow semantics against encoded obligations; repair is conditional and must pass the same verifier.
+
+\begin{center}
+\begin{tikzpicture}[node distance=0.35cm, every node/.style={draw, rounded corners, align=center, minimum height=0.75cm, text width=2.6cm, font=\small}, arr/.style={->, thick}]
+\node (in) {Artifacts + steps\\+ scientific intent};
+\node[right=of in] (check) {Rule checks\\and evidence};
+\node[right=of check] (verdict) {PROVEN / REFUTED\\/ UNPROVEN};
+\node[below=0.9cm of verdict] (repair) {Bounded repair\\candidates};
+\node[left=of repair] (again) {Re-run verifier\\and certificate};
+\draw[arr] (in)--(check);
+\draw[arr] (check)--(verdict);
+\draw[arr] (verdict)--(repair);
+\draw[arr] (repair)--(again);
+\draw[arr] (again)--(verdict);
+\end{tikzpicture}
+\end{center}
+
+\textbf{References}
+\begin{enumerate}[leftmargin=*,nosep]
+\item SciGeoGuard-X contributors. SciGeoGuard-X source repository and reproducibility materials. \url{https://github.com/bnssaanirudh/SciGeoGuard}. Accessed 16 October 2026.
+\item NASA Global Precipitation Measurement Mission. IMERG: Integrated Multi-satellitE Retrievals for GPM; product and technical documentation. \url{https://gpm.nasa.gov/data/imerg}. Accessed 16 October 2026.
+\end{enumerate}
+
+\end{document}
