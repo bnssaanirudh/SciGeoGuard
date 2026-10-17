@@ -1,17 +1,19 @@
 # Code & Data in Earth Science Letter draft
 
-This folder contains a concise manuscript draft and one editable workflow figure for the Springer Nature call hosted by *Frontiers of Computer Science*.
+The manuscript has been adapted to the current Frontiers of Computer Science LaTeX template structure and the call's short Letter limits. The official FCS download page lists the recommended 2026 LaTeX template ZIP and a 2025 Word template:
 
-- `letter-draft.tex`: content-first LaTeX draft; approximately 912 whitespace-separated tokens including commands and references (the journal's word-count convention may differ).
-- `figure-1-workflow.svg`: editable SVG version of Figure 1; the manuscript currently draws the same single figure using TikZ.
+- Official template downloads: https://journal.hep.com.cn/fcs/EN/download_templates
+- Manuscript source: `letter-draft.tex`
+- Editable workflow figure: `figure-1-workflow.svg`
 
-## Before journal submission
+The TeX source uses the `fcs` document class and should be compiled alongside the `fcs.cls` and companion files from the official template ZIP. It omits an abstract, as the FCS Letter instructions say that Letters do not require one. It has one figure and two references.
 
-1. Transfer the manuscript content into the official Letter template linked from the call page. The current source uses a plain article class and is not represented as the official template.
-2. Fill in all author names, affiliations, corresponding-author details, and any declarations the template requires.
-3. Confirm the chosen stable release/tag, authors' two-year availability commitment, and link-back plan.
-4. Re-run the exact released code for every result reported and confirm the sample IMERG metadata example against the current checker behavior.
-5. Compile the Letter template and check the final page/word limit. The call allows at most 12 references and one figure and limits length to fewer than two journal pages or 1,500 words.
-6. Obtain author approval before submission; this is a draft, not a submitted manuscript.
+## Remaining author checks
 
-The evaluation wording distinguishes author-controlled generated-reference consistency from independent scientific accuracy. No independent-review results are claimed.
+1. Replace the bracketed author name, affiliation, corresponding-author email, and funding/acknowledgement/competing-interest statement.
+2. Confirm the exact release/tag and the authors' two-year maintenance commitment and paper link-back plan.
+3. Run the exact released code for all reported results and verify the IMERG metadata example against that version.
+4. Compile with the official 2026 ZIP, inspect the PDF for the call's <2-page / 1,500-word condition, and adjust if the template layout exceeds it.
+5. At submission, select manuscript type exactly `Code & Data in Earth Science`. This draft has not been submitted.
+
+The results are described as author-controlled generated-reference consistency and metamorphic checks, not independent scientific accuracy. The separate blinded reviewer packet remains incomplete and is not reported.
