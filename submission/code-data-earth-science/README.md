@@ -10,7 +10,7 @@ The TeX source uses the `fcs` document class and should be compiled alongside th
 
 ## Remaining author checks
 
-1. Confirm the VIT campus/city and country for the affiliation, and complete funding, acknowledgements, and competing-interest statements. Author name, school, institute, and email have been entered.
+1. The author affiliation now names VIT Vellore Campus and the official School of Computer Science and Engineering (SCOPE). Complete funding, acknowledgements, and competing-interest statements.
 2. Confirm the exact release/tag and the authors' two-year maintenance commitment and paper link-back plan.
 3. Run the exact released code for all reported results and verify the IMERG metadata example against that version.
 4. Compile with the official 2026 ZIP, inspect the PDF for the call's <2-page / 1,500-word condition, and adjust if the template layout exceeds it.
