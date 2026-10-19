@@ -14,46 +14,15 @@ from dataclasses import asdict
 from datetime import timedelta
 from copy import deepcopy
 from collections import deque
-from pathlib import Path
 import hashlib
 import json
 
 
-def _load_frozen_verifier():
-    root = Path(__file__).resolve().parents[1]
-    nb_path = root / "notebooks" / "history" / "v3_controlled_benchmark.ipynb"
-    if not nb_path.exists():
-        raise FileNotFoundError(f"Frozen verifier notebook not found: {nb_path}")
+try:  # Support both ``import src.scigeoguard_v11`` and installed flat modules.
+    from .scigeoguard_core import Artifact, Step, Intent, verify_science, parse_dt
+except ImportError:  # pragma: no cover - exercised by flat-module installation
+    from scigeoguard_core import Artifact, Step, Intent, verify_science, parse_dt
 
-    nb = json.loads(nb_path.read_text(encoding="utf-8"))
-    namespace = {}
-    selected = []
-    for cell in nb.get("cells", []):
-        source = "".join(cell.get("source", []))
-        if "@dataclass\nclass Artifact:" in source:
-            source = source.split("@dataclass\nclass BenchCase:")[0]
-            selected.append(source)
-        elif "AREA_UNITS =" in source and "def artifact_copy" in source:
-            selected.append(source)
-        elif "def verify_science" in source:
-            selected.append(source)
-
-    prelude = (
-        "from dataclasses import dataclass, field, asdict, replace\n"
-        "from datetime import datetime, timezone\n"
-        "from typing import Any, Dict, List, Optional\n"
-    )
-    exec(prelude + "\n" + "\n\n".join(selected), namespace)
-    return (
-        namespace["Artifact"],
-        namespace["Step"],
-        namespace["Intent"],
-        namespace["verify_science"],
-        namespace["parse_dt"],
-    )
-
-
-Artifact, Step, Intent, verify_science, parse_dt = _load_frozen_verifier()
 
 OBLIGATION_LIBRARY = {
 'CATEGORICAL_INTERPOLATION': ('R-TYPE-MEASUREMENT-SCALE', 'Continuous interpolation requires a continuous measurement scale.', ['measurement_scale','method']),

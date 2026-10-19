@@ -1,0 +1,11 @@
+family,valid_verdict,mutated_verdict,detected,repair_status,repair_cost,reverified_proven,first_code
+categorical_interpolation,PROVEN,REFUTED,True,REPAIRED,1.0,True,CATEGORICAL_INTERPOLATION
+spectral_role_substitution,PROVEN,REFUTED,True,REPAIRED,1.0,True,SPECTRAL_ROLE_MISMATCH
+rate_to_accumulation,PROVEN,REFUTED,True,REPAIRED,1.0,True,RATE_SUM_WITHOUT_DURATION
+unsupported_resolution_gain,PROVEN,REFUTED,True,REPAIRED,1.0,True,UNSUPPORTED_RESOLUTION_GAIN
+future_information,PROVEN,REFUTED,True,REPAIRED,1.0,True,FUTURE_INFORMATION
+dsm_as_dtm,PROVEN,REFUTED,True,REPAIRED,1.0,True,DSM_USED_AS_DTM
+spatial_leakage,PROVEN,REFUTED,True,REPAIRED,1.0,True,SPATIAL_DEPENDENCE_LEAKAGE
+categorical_aggregation,PROVEN,REFUTED,True,REPAIRED,1.0,True,CATEGORICAL_AGGREGATION_INVALID
+processing_level,PROVEN,REFUTED,True,REPAIRED,1.0,True,PROCESSING_LEVEL_MISMATCH
+vertical_datum_mismatch,PROVEN,REFUTED,True,NO_SAFE_REPAIR_FOUND,,False,VERTICAL_DATUM_MISMATCH

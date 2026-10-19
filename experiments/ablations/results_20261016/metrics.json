@@ -1,0 +1,83 @@
+{
+  "full_v11": {
+    "abstention_rate": 0.022222222222222223,
+    "accuracy": 1.0,
+    "applicable_rate": 1.0,
+    "confusion_matrix": {
+      "PROVEN->PROVEN": 64,
+      "REFUTED->REFUTED": 112,
+      "UNPROVEN->UNPROVEN": 4
+    },
+    "false_certification_rate": 0.0,
+    "n": 180,
+    "per_class": {
+      "PROVEN": {
+        "recall": 1.0,
+        "support": 64
+      },
+      "REFUTED": {
+        "recall": 1.0,
+        "support": 112
+      },
+      "UNPROVEN": {
+        "recall": 1.0,
+        "support": 4
+      }
+    }
+  },
+  "no_intent_conditioning": {
+    "abstention_rate": 0.022222222222222223,
+    "accuracy": 0.9722222222222222,
+    "applicable_rate": 1.0,
+    "confusion_matrix": {
+      "PROVEN->PROVEN": 64,
+      "REFUTED->PROVEN": 3,
+      "REFUTED->REFUTED": 108,
+      "REFUTED->UNPROVEN": 1,
+      "UNPROVEN->PROVEN": 1,
+      "UNPROVEN->UNPROVEN": 3
+    },
+    "false_certification_rate": 0.034482758620689655,
+    "n": 180,
+    "per_class": {
+      "PROVEN": {
+        "recall": 1.0,
+        "support": 64
+      },
+      "REFUTED": {
+        "recall": 0.9642857142857143,
+        "support": 112
+      },
+      "UNPROVEN": {
+        "recall": 0.75,
+        "support": 4
+      }
+    }
+  },
+  "no_repair": {
+    "abstention_rate": 0.022222222222222223,
+    "accuracy": 1.0,
+    "applicable_rate": 1.0,
+    "confusion_matrix": {
+      "PROVEN->PROVEN": 64,
+      "REFUTED->REFUTED": 112,
+      "UNPROVEN->UNPROVEN": 4
+    },
+    "false_certification_rate": 0.0,
+    "n": 180,
+    "per_class": {
+      "PROVEN": {
+        "recall": 1.0,
+        "support": 64
+      },
+      "REFUTED": {
+        "recall": 1.0,
+        "support": 112
+      },
+      "UNPROVEN": {
+        "recall": 1.0,
+        "support": 4
+      }
+    }
+  }
+}

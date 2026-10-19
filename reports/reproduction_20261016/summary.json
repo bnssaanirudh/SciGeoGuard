@@ -1,0 +1,11 @@
+{
+  "cases": 180,
+  "diagnostic_codes": 23,
+  "mean_successful_repair_cost": 1.0,
+  "obligation_families": 18,
+  "reference_matches": 180,
+  "refuted": 112,
+  "reverified_proven": 47,
+  "safe_repair_rate": 0.41964285714285715,
+  "safe_repairs": 47
+}

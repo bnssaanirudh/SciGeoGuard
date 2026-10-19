@@ -25,11 +25,15 @@ See `RESULTS_SUMMARY.md`, `results/final/v11/README.md`, and `results/final/FINA
 
 ## Quick start
 
-For the original verifier:
+Install the core package and run the original verifier example:
 
 ```bash
+python -m pip install .
 python examples/quickstart.py
+python -m unittest discover -s tests -v
 ```
+
+The frozen v3 verifier is available as the importable `scigeoguard_core` module; notebook execution is not required for the quickstart.
 
 For the confirmed v11 repair experiment, open `notebooks/core/v11_earthrefine_repair_confirmed.ipynb`.
 
@@ -40,6 +44,7 @@ The reusable v11 repair layer is in `src/scigeoguard_v11.py`.
 - `examples/quickstart.py` - minimal executable verifier example.
 - `src/scigeoguard_v11.py` - evidence certificates and conservative repair synthesis.
 - `notebooks/core/v11_earthrefine_repair_confirmed.ipynb` - compact public v11 reproduction notebook.
+- `experiments/baselines/SciGeoGuard_Baseline_Ablation_Pilot.ipynb` - pinned Colab CPU run for conservative baselines and ablations.
 - `notebooks/history/v3_controlled_benchmark.ipynb` - frozen 445-case controlled scientific-invariant benchmark.
 - `notebooks/core/v6_strong_decomposed_llm_baselines.ipynb` - Qwen/Mistral 7B baseline evaluation.
 - `notebooks/core/v8_multiregion_realworld_replication.ipynb` - live Sentinel/WorldCover/IMERG/CopDEM replication.
